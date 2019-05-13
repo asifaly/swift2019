@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;300 Usage Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 300 Usage Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT300UsageRules">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 300 Usage Rules">
+<meta name="Type" content="UsageRules">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 300 Usage Rules" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 300">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 300 Usage Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="afe.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="afd.htm";
+var linkup="";
+var linkright="aff.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genafe"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;300 Usage Rules</h2>
+
+
+<p class="stem">The following rules apply when sending/exchanging an MT300:
+</p>
+
+<ul>
+<li>
+<p>For the actual transfer of funds or the confirmation of credits and debits, other messages outside Category 3 are available, such as the MTs 202/203/205, Financial Institution Transfer messages and the MTs 900/910/950, Confirmation of Debit/Credit and Statement, respectively.
+</p>
+<p>In all cases, the common reference of the MT 300 must be quoted in the relevant reference field, that is, field 21 of the MTs 202, 203, 205. When an MT 202 covers the deal, the party identification fields 56a, 57a and 58a of the MT 300 directly map onto the same fields in the MT 202 with the exception of the account number, as the account number indicated in the party identification fields 56a and 57a of the MT 300 is serviced (not owned) by the party indicated in the same field.
+</p></li>
+
+<li>
+<p>The MT 300, split settlement is used when an amount is too big to be settled as a whole because of certain limits. The beneficiary is the same for each part.
+</p></li>
+
+<li>
+<p class="stem">When cancelling a previously sent message (field 22A is CANC) using MT 300:
+</p>
+
+<ul>
+<li>
+<p>field 21 must contain the reference, that is, the content of field 20, of the message containing the instruction to be cancelled;
+</p></li>
+
+<li>
+<p>the cancellation message must contain a copy of at least the mandatory fields of the general information and transaction details sequences.
+</p></li>
+
+</ul>
+</li>
+
+<li>
+<p>Sending an MT 300 with code word CANC in field 22A, cancels both the underlying contract and the previously sent confirmation message as referred to in field 21 Related Reference.
+</p></li>
+
+<li>
+<p class="stem">To amend a previously sent message (field 22A is AMND):
+</p>
+
+<ul>
+<li>
+<p>field 21 must contain the reference, that is, the content of field 20, of the message containing the instruction to be amended;
+</p></li>
+
+<li>
+<p>the amendment message must contain both the unchanged and the changed/new fields of the original message;
+</p></li>
+
+<li>
+<p>the amendment message replaces the original message.
+</p></li>
+
+</ul>
+</li>
+
+<li>
+<p>When the MT 300 is used to confirm the exercise of a foreign currency option, that is, when the preceding message was an MT 305 or an MT 306, field 21 should contain the contents of field 20 of the related MT 305 or MT 306.
+</p></li>
+
+<li>
+<p>For NDF reminders, an MT 399 should be used.
+</p></li>
+
+</ul>
+
+
+
+<h3>Industry Requirements</h3>
+
+
+
+<ul>
+<li>
+<p>If field 77H specifies ISDA as the type of master agreement, the 1998 FX and Currency Option Definitions (the FX definitions, as published by the International Swaps and Derivatives Association, Inc., the Emerging Markets Traders Association and The Foreign Exchange Committee) as amended and supplemented from time to time are incorporated into this confirmation unless field 14C states another version of the above mentioned FX definitions.
+</p></li>
+
+<li>
+<p>If field 77H specifies ISDA as the type of master agreement and Party A and Party B are parties to an ISDA Master Agreement or an Interest Rate and Currency Exchange Agreement (each an Agreement), this Confirmation constitutes a Confirmation as referred to in, and supplements, forms a part of, and is subject to that Agreement .
+</p>
+<p>If Party A and Party B have not entered into any ISDA Master Agreement or other master agreement, Party A and Party B agree to use all reasonable efforts to promptly negotiate, execute, and deliver an agreement in the form of a 2002 ISDA Master Agreement (the "ISDA Form"), with such modifications as Party A and Party B will in good faith agree. Upon the execution by Party A and Party B of such an agreement, this Confirmation will supplement, form part of, and be subject to that agreement. All provisions contained or incorporated by reference in that agreement upon its execution will govern this Confirmation.
+</p></li>
+
+<li>
+<p>If field 77H specifies DERV as the type of master agreement and if Party A and Party B are parties to a Rahmenvertrag f&uuml;r Finanztermingesch&auml;fte (the German Master Agreement), this Transaction is subject to the terms and conditions of that German Master Agreement.
+</p>
+<p>If Party A and Party B have not entered into a German Master Agreement ("Rahmenvertrag f&uuml;r Finanztermingesch&auml;fte"), Party A and Party B agree to use all reasonable efforts to promptly negotiate, execute, and deliver a German Master Agreement. Upon the execution by Party A and Party B of such an agreement, this Confirmation will supplement, form part of, and be subject to that agreement. All provisions contained or incorporated by reference in that agreement upon its execution will govern this Confirmation.
+</p></li>
+
+<li>
+<p>If some of the standard definitions linked to the agreement specified in field 77H do not apply to the confirmation of a trade under that agreement, a long form confirmation must be sent.
+</p></li>
+
+</ul>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="afd.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aff.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

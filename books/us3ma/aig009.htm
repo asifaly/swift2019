@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;306 - 9. Field 12F: Option Style</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 306 - 9. Field 12F: Option Style">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT306-9-FIELD-12F">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 306 - 9. Field 12F: Option Style">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 306 - 9. Field 12F: Option Style" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 306">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 306 - 9. Field 12F: Option Style" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="aig009.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="aig008.htm";
+var linkup="";
+var linkright="aig010.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt306-9-field-12f"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<br>
+
+
+<h2 class="mtfldblock">MT&nbsp;306 Field Specifications</h2>
+
+
+
+<h3>9. Field 12F: Option Style</h3>
+
+
+
+<h4 class="fldfmt">FORMAT</h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="26%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option F</td>
+
+<td align="LEFT" valign="TOP" width="74%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc">PRESENCE</h4>
+
+
+<p>Mandatory in mandatory sequence A
+</p>
+
+<h4 class="flddef">DEFINITION</h4>
+
+
+<p>This field specifies the option style.
+</p>
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>Option Style must contain one of the following codes <span class="ecodes">(Error code(s): T64)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AVRF</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">An Average Rate Forward has a pre-determined forward rate (agreed on trade date) which is compared to the average spot observations.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AVRO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">An Average Rate Option is an option where the average of the spot prices is compared to the strike price on expiration date.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AVSF</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">An Average Strike Forward is a type of forward in which the forward price is based on an average of the spot rate over a period of time.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AVSO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">An Average Strike Option is a type of Asian option in which the strike price is based on an average of the spot rate over a period of time. The dates used to calculate the average strike price cover the life of the option, and are referred to as the "fixings".</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BINA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A binary option is an agreement under which a fixed amount is paid out if a specific condition is met at any time during the exercise period. The expiration style is European or American. The binary option has only "payment triggers".</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DAVF</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A Double Average Forward is a forward which combines the features of an average rate forward and an average strike forward.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DAVO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A Double Average Option is an option which combines the features of an average rate option and an average strike option.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DIGI</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A digital option is an agreement under which a fixed amount is paid out if a specific condition is met on expiration date. The digital option has only "payment triggers" which may be single or double trigger level.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NOTO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A notouch option is an agreement under which a fixed amount is paid unless a specific condition is met. The notouch option has only "no payment triggers" which may be single or double trigger levels.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">VANI</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A vanilla option is a contract that provides the buyer the right but not the obligation to buy or sell the underlying currency at a predetermined rate with expiration determined by the expiration style. The expiration style is European, American, Asian or Bermudan.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="aig008.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aig010.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,160 @@
+.deletedmt { 
+   color : red !IMPORTANT ;
+   text-decoration : none !IMPORTANT ;
+   background-color : transparent !IMPORTANT ;
+}
+.deletedmt .deleted { 
+   color : red !IMPORTANT ;
+   text-decoration : none !IMPORTANT ;
+   background-color : transparent !IMPORTANT ;
+}
+.spaceupdated { background-color : aqua; }
+.cellupdated { background-color : lightgrey; }
+.deleted { color : red; text-decoration : line-through; }
+.from { color : red; text-decoration : line-through; }
+.inserted { color : blue; }
+.moved { color : green; }
+.movefr { background-color : yellow; }
+.moveto { background-color : silver; }
+.to { color : blue; }
+.toc+frag-del { color : red; text-decoration : line-through; }
+.toc+frag-ins { color : blue; }
+.toc+frag-movefr { background-color : yellow; }
+.toc+frag-moveto { background-color : silver; }
+.toc-del { color : red; text-decoration : line-through; }
+.toc-ins { color : blue; }
+.toc-movefr { background-color : yellow; }
+.toc-moveto { background-color : silver; }
+
+/* blue background #00CCFF or #3366CC */
+DIV.INSERTED P.PIMG {
+    background-color : #00CCFF ;
+}
+
+/* red background #FF6633 or #FF3333 */
+DIV.DELETED P.PIMG {
+    background-color : #FF6633;
+}
+
+/* grey background #CCCCCC or lightgrey */
+DIV.DELETED TD.NOTEHEAD {
+   background-color : lightgrey;
+}
+
+DIV.INSERTED TD.NOTEHEAD {
+   background-color : lightgrey;
+}
+
+BODY.BOOK .cellupdated { 
+    background-color : #CCCCCC;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+/* other specific rules */
+DIV.INSERTED p.volume {
+    color : blue;
+}
+
+DIV.DELETED table {
+    color : red;
+	text-decoration : line-through;
+}
+
+DIV.INSERTED table {
+    color : blue;
+}
+
+DIV.DELETED CODE {
+    font-family : monospace, courier;
+    font-size : small;
+    color : red;
+    text-decoration : line-through;
+}
+
+DIV.INSERTED CODE {
+    font-family : monospace, courier;
+    font-size : small;
+    color : blue;
+}
+
+CODE DIV.DELETED {
+    font-family : monospace, courier;
+    font-size : small;
+    color : red;
+    text-decoration : line-through;
+}
+
+CODE DIV.INSERTED {
+    font-family : monospace, courier;
+    font-size : small;
+    color : blue;
+}
+
+/* changes in headings */
+
+BODY.BOOK H1 INS, H1 INS {
+    color : blue ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H2 INS , H2 INS {
+    color : blue ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H3 INS, H3 INS {
+    color : blue ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H4 INS , H4 INS {
+    color : blue ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H5 INS , H5 INS {
+    color : blue ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H6 INS , H6 INS {
+    color : blue ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H1 DEL, H1 DEL {
+    text-decoration : line-through ;
+    color : red ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H2 DEL , H2 DEL {
+    text-decoration : line-through ;
+    color : red ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H3 DEL, H3 DEL {
+    text-decoration : line-through ;
+    color : red ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H4 DEL , H4 DEL {
+    text-decoration : line-through ;
+    color : red ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H5 DEL , H5 DEL {
+    text-decoration : line-through ;
+    color : red ;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+BODY.BOOK H6 DEL , H6 DEL {
+    text-decoration : line-through ;
+    color : red ;
+    font-family : "Arial","Helvetica","sans-serif";
+}

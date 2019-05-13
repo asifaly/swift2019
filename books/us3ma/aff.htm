@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;300 Guidelines</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 300 Guidelines">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT300Title">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 300 Guidelines">
+<meta name="Type" content="Title">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 300 Guidelines" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 300">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 300 Guidelines" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="aff.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="afe.htm";
+var linkup="";
+var linkright="afg001.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genaff"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;300 Guidelines</h2>
+
+
+<ol type="1">
+<li value="1">
+<p><b>Cancellation of a Message</b>
+</p>
+<p class="stem">An MT 392 can be used for cancellation. The following issues however, have to be considered:
+</p>
+
+<ul>
+<li>
+<p>Acknowledgement: by sending the MT 392, the sender requests the receiver to cancel the confirmation previously sent. The receiver must acknowledge the request by sending an MT 396 back to the sender of the MT 392.
+</p></li>
+
+<li>
+<p>Routing: the MT 392 might not be routed to the same destination as the MT 300 to be cancelled.
+</p></li>
+
+<li>
+<p>Repetition of the original message: in the MT 392, only the sender's reference of the previous message is mandatory, all other fields are optional. When an MT 300 with CANC is used, the fields to be copied are mandated by the standard.
+</p></li>
+
+</ul>
+</li>
+
+<li class="UPDATED" value="2">
+<p><b>Settlement Details</b>
+</p>
+<p>The table below shows how the different settlement parties involved in the deal can be identified .<b>The table is presented from party A's point of view.</b>
+</p>
+<ins><div id="ES2119" class="inserted">
+<p><span class="INSERTED"><a name="c1"><img src="cursor0.gif" alt="" name="imgC1" height="10" width="10"></a>For matching purposes, option A must be used to identify institutions when possible. Option J must only be used when the party cannot be identified solely with a BIC and account number.</span>
+</p>
+</div>
+</ins>
+<del><div id="ES915" class="deleted">
+<p><span class="DELETED">Whenever possible, users should use option A to identify institutions in these fields. Use of free text, that is, option D, except when used to specify recognized code words, is strongly discouraged. Option D not only precludes party B from matching and further processing the message automatically but also is contrary to the message text standards which state that option D is only to be used when no other option is available.</span>
+</p>
+<p><span class="DELETED">Option J is only used when exchanging messages with fund managers.</span>
+</p>
+</div>
+</del>
+
+
+<p>Normally, the beneficiary is party A for the amount bought and party B for the amount sold. If party A or party B forwards the funds to an ultimate beneficiary institution, this institution is included in field 58a of the amount sold.
+</p>
+
+<ul>
+<li>
+<p>Party A services account of party B. No separate settlement messages are sent.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will debit party B's account.</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will credit party B's account</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57a:[/account no of party B]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">party A</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57a:[/account no of party B]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">party A</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p></li>
+
+<li>
+<p>Party B services account of party A. No separate settlement messages are sent.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party B will credit party A's account</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party B will debit party A's account</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57a:[/account no of party A]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">party B</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">57a:[/account no of party A]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">party B</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p></li>
+
+<li>
+<p>Beneficiary's account serviced by a financial institution other than party A or party B. The payer sends an MT 202 to its correspondent which will then send an MT 205 or equivalent to the correspondent of the payee. The correspondent can be a branch of the party.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Credit to party A's account with that financial institution</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Credit to party B's account with that financial institution</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[:53a:Correspondent of party B]</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[:53a:Correspondent of party A]</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57a:[/account no of party A]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">correspondent of party A</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57a:[/account no of party B]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">correspondent of party B</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p></li>
+
+<li>
+<p>Beneficiary receives the funds through another institution (for example, BANK x for party x).
+</p>
+<p>The payer sends an MT 202 to its correspondent. The correspondent will then send an MT 205 or equivalent to the correspondent of BANK x, that is, CORR x. CORR x will then send an MT 202 to BANK x who will then send an MT 950 to party x.
+</p>
+<p>Field 56a identifies where BANK x will receive the funds.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BANK A will receive the funds for party A</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BANK B will receive the funds for party B</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[:53a:Correspondent of party B]</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[:53a:Correspondent of party A]</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a:[/account no of BANK A]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">CORR A</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a:[/account no of BANK B]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">CORR B</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57a:[/account no of party A]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">BANK A</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57a: [/account no of party B]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">BANK B</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p></li>
+
+<li>
+<p>Beneficiary to receive the funds directly through a clearing system.
+</p>
+<p>The payer sends an MT 202 to its correspondent who will then send an MT 202 the payee.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will receive the funds through clearing</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party B will receive the funds through clearing</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[:53a:Correspondent of party B]</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[:53a:Correspondent of party A]</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2130.0000" class="inserted"><a name="c2"><img src="cursor0.gif" alt="" name="imgC2" height="10" width="10"></a>:57J:/CLRC/Clearing system code of</span></ins>
+<del><span id="ES1719.0000" class="deleted">:57J:/CLRC/</span></del>
+ party A</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2131.0000" class="inserted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57J:/CLRC/Clearing system code of</span></ins>
+<del><span id="ES1725.0000" class="deleted">:57J:/CLRC/</span></del>
+ party B</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p></li>
+
+<li>
+<p>The counterparties use their standing settlement instructions.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2134.0000.0000" class="inserted"><a name="c3"><img src="cursor0.gif" alt="" name="imgC3" height="10" width="10"></a>:57J:/NOSI/SSIS</span></ins>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2134.0003.0000" class="inserted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57J:/NOSI/SSIS</span></ins>
+</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><del><span id="ES1790.0000.0000" class="deleted"><a name="c4"><img src="cursor0.gif" alt="" name="imgC4" height="10" width="10"></a>:57D:SSI</span></del>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><del><span id="ES1790.0003.0000" class="deleted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57D:SSI</span></del>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p></li>
+
+<li>
+<p>The payment flows are netted based on a bilateral agreement.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2137.0000.0000" class="inserted"><a name="c5"><img src="cursor0.gif" alt="" name="imgC5" height="10" width="10"></a>:57J:/NOSI/NETS</span></ins>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2137.0003.0000" class="inserted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57J:/NOSI/NETS </span></ins>
+</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><del><span id="ES1859.0000.0000" class="deleted"><a name="c6"><img src="cursor0.gif" alt="" name="imgC6" height="10" width="10"></a>:57D:NET</span></del>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><del><span id="ES1859.0003.0000" class="deleted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57D:NET</span></del>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p></li>
+
+<li><del><div id="ES1866.0000" class="deleted">
+<p><span class="DELETED"><a name="c7"><img src="cursor0.gif" alt="" name="imgC7" height="10" width="10"></a>The payment flows are netted using a netting system.</span>
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th class="cellupdated" align="CENTER" valign="TOP" width="50%"><span class="DELETED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</span></th>
+
+<th class="cellupdated" align="CENTER" valign="TOP" width="50%"><span class="DELETED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</span></th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><span class="DELETED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><span class="DELETED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><span class="DELETED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><span class="DELETED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><span class="DELETED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57a:identification of the system for example, :57A:ACCOBEB3 for Accord netting</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><span class="DELETED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57a:identification of the system for example, :57A:ACCOBEB3 for Accord netting</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</del>
+</li>
+
+<li>
+<p>There is no payment (amount is zero) or the settlement details are irrelevant.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2140.0000.0000" class="inserted"><a name="c8"><img src="cursor0.gif" alt="" name="imgC8" height="10" width="10"></a>:57J:/NOSI/NONE</span></ins>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2140.0003.0000" class="inserted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57J:/NOSI/NONE</span></ins>
+</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><del><span id="ES2019.0000.0000" class="deleted"><a name="c9"><img src="cursor0.gif" alt="" name="imgC9" height="10" width="10"></a>:57D:NONE</span></del>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><del><span id="ES2019.0003.0000" class="deleted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57D:NONE</span></del>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p></li>
+
+<li>
+<p>The settlement details are not known at the time the confirmation is issued.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will RECEIVE funds from Party B</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party A will PAY funds to Party B</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:53a: not used</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:56a: not used</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2143.0000.0000" class="inserted"><a name="c10"><img src="cursor0.gif" alt="" name="imgC10" height="10" width="10"></a>:57J:/NOSI/UKWN</span></ins>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><ins><span id="ES2143.0003.0000" class="inserted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57J:/NOSI/UKWN </span></ins>
+</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><del><span id="ES2091.0000.0000" class="deleted"><a name="c11"><img src="cursor0.gif" alt="" name="imgC11" height="10" width="10"></a>:57D:UNKNOWN</span></del>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><del><span id="ES2091.0003.0000" class="deleted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:57D:UNKNOWN</span></del>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="itemnote"><b><i>Note:</i></b>&nbsp;It is only necessary to quote an account number when multiple accounts are serviced for the same institution.
+</p></li>
+
+</ul>
+</li>
+
+</ol>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="afe.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="afg001.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

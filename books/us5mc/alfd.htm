@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;565 Network Validated Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 3 (MT 544 - MT 567), Standards Release Guide, MT 565 Network Validated Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT565NVR">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 3">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 565 Network Validated Rules">
+<meta name="Type" content="NVR">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 565 Network Validated Rules" ;
+// --></script>
+<meta name="bookid" content="cat5v3">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 565">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 3 (MT 544 - MT 567) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 565 Network Validated Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 3";
+var linkself="alfd.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="alfc.htm";
+var linkup="";
+var linkright="alfe.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genalfd"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;565 Network Validated Rules</h2>
+
+
+<dl>
+<dt><b>C1&nbsp;</b></dt>
+
+<dd>
+<p>If the message is a cancellation, that is, Function of the Message (field 23G) is CANC, then subsequence A1 (Linkages) must be present at least once in the message, and in one and only one occurrence of A1, field :20C::PREV must be present; consequently, in all other occurrences of A1, field :20C::PREV is not allowed <span class="ecodes">(Error code(s): E08)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :23G: is ...</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then subsequence A1 is ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And field :20C::PREV is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CANC</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory (minimum one occurrence of A1 must be present)</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory in one occurrence of subsequence A1, and not allowed in all other occurrences of subsequence A1</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NEWM</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C2&nbsp;</b></dt>
+
+<dd>
+<p>In sequence D, if field :22F::CAOP//SPLI is present, then field :70E::INST is mandatory in the same sequence <span class="ecodes">(Error code(s): E79)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence D<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :22F::CAOP//SPLI is ... &nbsp;
+<a class="FOOTNOTEREF" href="#foot1041">(1)</a>&nbsp;</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then field :70E::INST is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory (that is minimum one occurrence)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="FOOTNOTE"><span class="FOOTNOTENUMBER">(1)</span>
+<a name="foot1041"></a>&nbsp; if Data Source Scheme is present in field :22F::CAOP//SPLI then the conditional rule does not apply.
+</p>
+</dd>
+
+<dt><b>C3&nbsp;</b></dt>
+
+<dd>
+<p>In subsequence B2, field :93B::ELIG cannot appear more than twice (maximum two occurrences). When repeated, one occurrence must have Quantity Type Code FAMT and the other occurrence must have Quantity Type Code AMOR <span class="ecodes">(Error code(s): C71)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Subsequence B2<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :93B::ELIG is ...</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then one occurrence of :93B::ELIG must be ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And the other occurrence of :93B::ELIG must be ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Repeated</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:93B::ELIG//FAMT and DSS must not be present</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:93B::ELIG//AMOR and DSS must not be present</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not repeated</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C4&nbsp;</b></dt>
+
+<dd>
+<p>In sequence D, field :36B::QINS cannot appear more than twice (maximum two occurrences). When repeated, one occurrence must have Quantity Type Code FAMT and the other occurrence must have Quantity Type Code AMOR <span class="ecodes">(Error code(s): C72)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence D<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :36B::QINS is ...</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then one occurrence of :36B::QINS must be ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And the other occurrence of :36B::QINS must be ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Repeated</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:36B::QINS//FAMT</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:36B::QINS//AMOR</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not repeated</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="itemnote"><b><i>Note:</i></b>&nbsp;When used with format option C, field 36a qualifier QINS cannot be repeated.
+</p>
+</dd>
+
+<dt><b>C5&nbsp;</b></dt>
+
+<dd>
+<p>In sequence D, if field :36a::QINS is present, then field :19B::QCAS is not allowed and if field :36a::QINS is not present, then field :19B::QCAS is mandatory <span class="ecodes">(Error code(s): E62)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="51%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence D<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :36a::QINS is ...</th>
+
+<th align="CENTER" valign="TOP" width="49%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">then field :19B::QCAS is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="51%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="49%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="51%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="49%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><ins><span class="INSERTED"><b><a name="c1"><img src="cursor0.gif" alt="" name="imgC1" height="10" width="10"></a>C6&nbsp;</b></span></ins>
+</dt>
+
+<dd class="FullChange"><ins><div id="ES11216.0000" class="inserted">
+<p><span class="INSERTED">In each occurrence of sequence C:</span>
+</p>
+
+<ul>
+<li>
+<p><span class="INSERTED">Field :95L::OWND must not be present more than once.</span>
+</p></li>
+
+<li>
+<p><span class="INSERTED">Field :95P::OWND must not be present more than once.</span>
+</p></li>
+
+<li>
+<p><span class="INSERTED">Field :95R::OWND must not be present more than once.</span>
+</p></li>
+
+<li>
+<p><span class="INSERTED">Field :95V::OWND must not be present more than once.</span>
+</p></li>
+
+</ul>
+
+<p><span class="INSERTED">And one of the following fields :95P::OWND or :95R::OWND or :95V::OWND must be present.</span>
+</p>
+<p><span class="INSERTED">Field :95L::OWND may be present only if one of the fields :95P::OWND or :95R::OWND or :95V::OWND is present <span class="ecodes"><span class="INSERTED">(Error code(s): E77)</span></span> .</span>
+</p>
+</div>
+</ins>
+</dd>
+
+<dt><ins><span class="INSERTED"><b><a name="c2"><img src="cursor0.gif" alt="" name="imgC2" height="10" width="10"></a>C7&nbsp;</b></span></ins>
+</dt>
+
+<dd class="FullChange"><ins><div id="ES11217.0000" class="inserted">
+<p><span class="INSERTED">In sequence D, if field :36B::RDUQ is present, then field :36a::QINS is mandatory in the same sequence <span class="ecodes"><span class="INSERTED">(Error code(s): E90)</span></span>.</span>
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence D<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :36B::RDUQ is ...</span></th>
+
+<th align="CENTER" valign="TOP" width="50%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then field:36a::QINS is ...</span></th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</span></td>
+
+<td align="LEFT" valign="TOP" width="50%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</span></td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</span></td>
+
+<td align="LEFT" valign="TOP" width="50%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+</div>
+</ins>
+</dd>
+
+</dl>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="alfc.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="alfe.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

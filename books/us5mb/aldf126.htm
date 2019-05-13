@@ -1,0 +1,1256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;537 - 126. Field 24B: Reason Code</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 2 (MT 519 - MT 543), Standards Release Guide, MT 537 - 126. Field 24B: Reason Code">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT537-126-FIELD-24B">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 2">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 537 - 126. Field 24B: Reason Code">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 537 - 126. Field 24B: Reason Code" ;
+// --></script>
+<meta name="bookid" content="cat5v2">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 537">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 2 (MT 519 - MT 543) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 537 - 126. Field 24B: Reason Code" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 2";
+var linkself="aldf126.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="aldf125.htm";
+var linkup="";
+var linkright="aldf127.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt537-126-field-24b"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<ins><div id="ES5000" class="inserted">
+
+<h2 class="mtfldblock"><span class="INSERTED"><a name="c1"><img src="cursor0.gif" alt="" name="imgC1" height="10" width="10"></a>MT&nbsp;537 Field Specifications</span></h2>
+
+
+
+<h3><span class="INSERTED">126. Field 24B: Reason Code</span></h3>
+
+
+
+<h4 class="fldfmt"><span class="INSERTED">FORMAT</span></h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option B</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="30%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="50%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(Data Source Scheme)(Reason Code)</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc"><span class="INSERTED">PRESENCE</span></h4>
+
+
+<p><span class="INSERTED">Mandatory in optional subsequence D1a1A2a1A</span>
+</p>
+
+<h4 class="fldqlfr"><span class="INSERTED">QUALIFIER</span></h4>
+
+
+<p><span class="ecodes"><span class="INSERTED">(Error code(s): T89)</span></span>
+</p>
+<table width="98%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th class="cellupdated" align="CENTER" valign="TOP" width="10%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Order</span></th>
+
+<th class="cellupdated" align="CENTER" valign="TOP" width="8%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M/O</span></th>
+
+<th class="cellupdated" align="CENTER" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier</span></th>
+
+<th class="cellupdated" align="CENTER" valign="TOP" width="6%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R/N</span></th>
+
+<th class="cellupdated" align="CENTER" valign="TOP" width="8%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CR</span></th>
+
+<th class="cellupdated" align="CENTER" valign="TOP" width="10%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Options</span></th>
+
+<th class="cellupdated" align="CENTER" valign="TOP" width="45%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier Description</span></th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="10%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">1</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="8%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NMAT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="6%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="8%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C8</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="10%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="45%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unmatched Reason</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="10%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="8%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">or</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PENF</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="6%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="8%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C8</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="10%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="45%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Pending/Failing Reason</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="flddef"><span class="INSERTED">DEFINITION</span></h4>
+
+
+<p><span class="INSERTED">This qualified generic field specifies:</span>
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NMAT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unmatched Reason</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Specifies the reason why the instruction has an unmatched status.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PENF</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Pending/Failing Reason</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Specifies the reason why the instruction has a failing settlement status.</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes"><span class="INSERTED">CODES</span></h4>
+
+
+<p><span class="INSERTED">If Qualifier is NMAT and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecodes"><span class="INSERTED">(Error code(s): K24)</span></span>:</span>
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACRU</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Accrued Interest Amount</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Accrued interest amount does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ADEA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account Servicer Deadline Missed</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction was received after the account servicer's deadline. Processed on best effort basis.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CADE</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Transaction Call Delay</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Transaction call delay does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CLAT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty too Late for Matching</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty's instruction was too late for matching.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CMIS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Matching Instruction Not Found</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A matching instruction from your counterparty could not be found.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CPCA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty Cancelled Instruction</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty cancelled their instruction.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DCMX</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Cum Ex</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement if trade was executed cum or ex.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DDAT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Settlement Date</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement date/time does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DDEA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Deal Price</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Deal price does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DELN</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Direction of Trade</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Direction of the trade does not match. Counterparty expects a delivery from you, not a receipt or vice versa.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DEPT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Place of Settlement</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place of settlement does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DMCT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Automatic Generation</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement on automatic generation of market claim or transformation.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DMON</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Settlement Amount</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement amount does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DQUA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Quantity</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of financial instrument does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DSEC</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Security</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instrument identification does not match, for example, ISIN differs, Financial Instrument Attributes differs.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DTRA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not Recognised</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty has been contacted or contacted us, and does not recognise the transaction.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DTRD</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Trade Date</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Trade date does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FORF</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Forfeit Amount</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Forfeit amount does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FRAP</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Payment Code</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment type does not match: your instruction is free of payment, your counterparty's instruction is against payment or vice versa.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ICAG</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Incorrect Agent</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Delivering or receiving agent (counterparty) does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ICUS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Receiving or Delivering Custodian</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Delivering or receiving custodian does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">IEXE</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Incorrect Buyer or Seller</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Buyer (receiver) or seller (deliverer) does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">IIND</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Common Reference</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Common reference does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INPS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Place of Safekeeping</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">The place of safekeeping information does not allow matching to take place.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INVE</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Investor Party</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Investor party does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LATE</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Market Deadline Missed</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction was received after market deadline.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LEOG</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Letter of Guarantee Indicator</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty is for settlement through Letter of Guarantee (L/G), your instruction is not, or vice versa.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MIME</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Missing Market Side Details</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Market side execution details are missing.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NARR</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Narrative Reason</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">See narrative for details.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NCRR</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Currency Settlement Amount</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement amount currency does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NMAS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">No Matching Started</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Matching process has not yet started.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHYS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Physical Settlement</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty's instruction is physical settlement, your instruction is not, or vice versa.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PLCE</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Place of Trade</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place of trade does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PLIS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Place of Listing</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place of listing does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PODU</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Possible Duplicate Instruction</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction has not been matched. It is a possible duplicate instruction.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REGD</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Registration Details</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Registration details linked to the transaction are incorrect.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Termination Transaction Amount</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Termination transaction amount does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPO</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Repurchase Rate</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Repurchase rate does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPP</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Premium Amount</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Premium amount does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">RERT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Repurchase Rate Type</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Repurchase rate type does not match.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">RTGS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement RTGS System</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty is for Real Time Gross Settlement (RTGS) system, you are for non-RTGS or vice versa.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SAFE</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Safekeeping Account</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Safekeeping account used as matching criteria on the market concerned does not match. This includes Buyer/seller's account, direct client's account at the receiving/delivering agent, or receiving/delivering agent's account at the CSD.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SETR</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Settlement Transaction</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement transaction type does not match (relates to the settlement transaction type codes available for sequence E field 22F, qualifier SETR).</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SETS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Settlement System/Method</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement system/method does not match (for example, instruction is to settle using settlement system/method A. Counterparty expects settlement to occur using settlement system/method B).</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TERM</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Closing Date/Time</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Closing date/time does not match (repo).</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXST</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Tax Status</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement on the tax status of the financial instruments to be settled.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">UNBR</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unmatched Market Side Details</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Market side trade is unmatched.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">VASU</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement Variable Rate Support</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Variable rate support does not match.</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes"><span class="INSERTED">CODES</span></h4>
+
+
+<p><span class="INSERTED">If Qualifier is PENF and Data Source Scheme is not present, Reason Code must contain one of the following codes <span class="ecodes"><span class="INSERTED">(Error code(s): K24)</span></span>:</span>
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ADEA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account Servicer Deadline Missed</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction was received after the account servicer's deadline. Processed on best effort basis.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AWMO</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting Money</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments are delivered, but still awaiting money from the counterparty.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AWSH</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting Securities from Counterparty</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments have not yet been received from the counterparty (if receive against payment), the money has been delivered.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BATC</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Processing Batch Difference</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Processing batch differs in the counterparty's instruction, for example, daytime/real-time versus overnight.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BENO</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Beneficial Ownership Disagreement</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disagreement in beneficial ownership.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BLOC</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account Blocked</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Your account is blocked, no instruction can settle over the account.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BOTH</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Both Instructions on Hold</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty's instruction and your instruction are on hold/frozen/in a preadvice mode.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BYIY</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Buy-in Procedure</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A buy-in procedure has started on the market (on your behalf if your instruction is a receipt, by the counterparty if your instruction is a delivery).</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CAIS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting Securities</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting financial instruments from a corporate action issue or other procedure, for example, conversion, dematerialisation, exchange, registration, stamping, splitting.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CANR</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Cancellation/Confirmation Request</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A cancellation or confirmation of instruction is required.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CDLR</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Conditional Delivery Awaiting Release</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction is in a hold/frozen/preadvice mode - infrastructure platform is awaiting release.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CERT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Wrong Certificate Numbers</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Certificate number error.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHAS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Enquiry Sent</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A chaser/enquiry has been sent.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CLAC</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty Insufficient Securities</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Insufficient deliverable financial instruments in counterparty's account or counterparty does not hold financial instruments.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CLAT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty too Late for Settlement</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty's instruction was too late for settlement (that is received too late, matching or settlement problems solved too late).</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CLHT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Clearing House Trade</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructed settlement date does not agree with the settlement date on the Clearing House trade, that is, a specific type of trade in India.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CMON</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty Insufficient Money</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Insufficient money in counterparty's account.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">COLL</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Securities Pledged as Collateral</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments are not deliverable as they are pledged as collateral.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CPEC</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty In Receivership</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty is in receivership (form of bankruptcy where a court appointed person, the receiver, manages the affairs of the business).</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CSDH</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CSD Hold</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Central securities depository has set the instruction in a hold/frozen/preadvice mode.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CVAL</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CSD Validation</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction is in a hold/frozen/preadvice mode as it fulfils predefined conditions of a restriction processing type in the market infrastructure platform.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CYCL</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting Next Settlement Cycle</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction is confirmed in the local market or is ready for settlement, awaiting next settlement cycle.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DENO</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unavailable Deliverable Denominated Quantity</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity instructed does not match the denomination available/deliverable. Physical financial instruments need to be obtained in deliverable denominated quantities.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DEPO</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Refused Deposit for Issue of Depositary Receipts</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Deposit of shares for the issuing of depositary receipts has been refused. The allotment granted by the issuer is exceeded by your transaction.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DISA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Natural Disaster</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Exceptional closing of all financial institutions due to natural disaster, for example, typhoon, flooding, earthquake, hurricane.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DKNY</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty Returned Shares</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty has returned or refused the financial instruments.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DOCC</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting Documents/Registration Instruction/Endorsements from Counterparty</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting documents, registration instruction or endorsements from counterparty.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DOCY</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting Documents/Registration Instruction/Endorsements from You</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting documents, registration instruction or endorsements from you.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FLIM</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Maximum Foreign Limit Reached</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Insufficient deliverable financial instruments in your account as maximum foreign limit has been reached.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FROZ</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Securities Frozen At CSD</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments are blocked at the CSD following a corporate event.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">GLOB</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Global Form Securities</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement cannot be executed; financial instruments are in global form.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">IAAD</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Status Reason Investigation</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Failing reason being investigated.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INBC</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Incomplete Number Count</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not all the instructions part of a pool have been received.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INCA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Income Adjustment Required</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments require income adjustment, for example, dividend or interest.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LAAW</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting Other Transaction</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Awaiting settlement of a purchase to cover failing positions.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LACK</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Lack of Securities</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Insufficient deliverable financial instruments in your account.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LALO</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Securities are Loaned Out</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments are out on loan.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LATE</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Market Deadline Missed</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction was received after market deadline.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Pending Linked Instruction</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A linked instruction is pending/failing.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LIQU</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Insufficient Central Bank Liquidity</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Central Bank Liquidity is insufficient.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MINO</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Minimum Settlement Quantity</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity instructed is lower than the minimum existing settlement quantity for the financial instrument.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MLAT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Money/Securities too Late for Settlement</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Covering money/financial instruments were received too late for completing settlement on a same day basis.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MONY</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Insufficient Money</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Insufficient money in your account and/or credit line is insufficient.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MUNO</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Multiple Settlement Quantity</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity instructed is not a multiple of an existing settlement quantity lot for the financial instrument.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NARR</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Narrative Reason</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">See narrative field for reason.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NCON</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirmation Not Received</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirmation of settlement has not yet been received.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NEWI</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">New Issues</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instrument is a new issue and not yet available/tradable.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NOFX</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">No Foreign Exchange Instruction</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A foreign exchange instruction from you is missing.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">OBJT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Under Objection</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments are stolen, in dispute, under objection etc.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PART</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Trade Settles in Partials</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Trade will settle in partials.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHCK</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Physical Securities in Verification Process</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Physical financial instruments have been received and are being checked for authenticity.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHSE</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Physical Delivery Delay</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement is physical. Financial instruments are being delivered.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PRCY</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty Instruction on Hold</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Counterparty's instruction is on hold/frozen/in a preadvice mode.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PREA</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Your Instruction on Hold</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Your instruction is on hold/frozen/in a preadvice mode.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PRSY</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">On Hold by System</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">The transaction was put on hold by the system.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REFS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not In Good Order</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Delivery/receipt was refused because physical financial instruments are not in good order.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REGT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Certificates Rejected</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Certificates have been lodged with the registrar but rejected due to incomplete documentation or foreign ownership limitation reached.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SBLO</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Securities Blocked</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments are blocked due to a corporate action event, realignment, etc.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SDUT</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Lack of Stamp Duty Information</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Stamp duty information is missing.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SETS</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement System/Method Modified</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement system/method has been modified at CSD to allow settlement.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">STCD</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirmation Discrepancy</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Discrepancy in the settlement confirmation.</span></td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="13%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">YCOL</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Collateral Shortage</span></td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="67%"><span class="INSERTED"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Insufficient collateral in your account to execute the instruction.</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldusgrls"><span class="INSERTED">USAGE RULES</span></h4>
+
+
+<p><span class="INSERTED">Using of a settlement status/reason alone means that the transaction is matched (if a matching process exists in the concerned market or at the concerned account servicer).</span>
+</p>
+<p><span class="INSERTED">A pending transaction (PEND) becomes a failing transaction (PENF) on the settlement date instructed in the message, during the end of day reporting.</span>
+</p>
+</div>
+</ins>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="aldf125.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aldf127.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

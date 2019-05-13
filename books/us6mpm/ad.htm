@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 6 - Category 6 Commodities Message Types</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 6, Message Reference Guide, Standards Release Guide, Category 6 Commodities Message Types">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="Category6CommoditiesMessageTypes">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 6, Treasury Markets - Commodities">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 6PM">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="Category 6 Commodities Message Types">
+<meta name="Type" content="Category6CommoditiesMessageTypes">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "Category 6 Commodities Message Types" ;
+// --></script>
+<meta name="bookid" content="cat6PM">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 6 - Treasury Markets - Commodities">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="Category 6 Commodities Message Types">
+<meta name="Book.Product" content="Category 6 - Treasury Markets - Commodities for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "Category 6 Commodities Message Types" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 6PM";
+var linkself="ad.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ac.htm";
+var linkup="";
+var linkright="ae.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genad"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h1>Category 6 Commodities Message Types</h1>
+
+
+<p>The following table lists all message types defined in category 6 Commodities.
+</p>
+<p>For each message type, there is a short description, an indicator whether the message type is signed (Y or N), the maximum message length for input (2,000 or 10,000 characters) and whether the use of the message requires registration with SWIFT for use in a message user group (Y or N).
+</p>
+<table width="98%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MT</th>
+
+<th align="CENTER" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MT Name</th>
+
+<th align="CENTER" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Purpose</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Signed&nbsp;
+<a class="FOOTNOTEREF" href="#fnot79604">(1)</a>&nbsp;</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Max. Length</th>
+
+<th align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MUG</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">600</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Commodity Trade Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the details of a commodity trade and its settlement</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">601</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Commodity Option Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the details of a commodity option contract</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">604</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Commodity Transfer/Delivery Order</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs the Receiver to transfer by book-entry, or physically deliver, a specified type and quantity of commodity to a specified party</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">605</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Commodity Notice to Receive</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Notifies the Receiver of an impending book-entry transfer or physical delivery of a specified type and quantity of commodity</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">606</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Commodity Debit Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the Receiver of a debit entry to a specified commodity account</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">607</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Commodity Credit Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the Receiver of a credit entry to a specified commodity account</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">608</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Statement of a Commodity Account</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides the details of all bookings to a commodity account</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">620</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Commodity Fixed Loan/Deposit Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the terms of a contract relative to a commodity fixed loan/deposit transaction.</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">690</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of Charges, Interest and Other Adjustments</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises an Account Owner of charges, interest or other adjustments to its account</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">691</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Request for Payment of Charges, Interest or Other Expenses</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests payment of charges, interest and other expenses</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">692</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Request for Cancellation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests the Receiver to consider cancellation of the message identified in the request</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">695</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Queries</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests information relating to a previous message or amendment to a previous message</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">696</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Answers</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Responds to a MT&nbsp;695 Queries message or MT&nbsp;692 Request for Cancellation or other messages where no specific message type has been provided for the response</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">698</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Proprietary Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Contains formats defined and agreed to between users and for those messages not yet live</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">699</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Free Format Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Contains information for which no other message type has been defined</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="FOOTNOTE"><span class="FOOTNOTENUMBER">(1)</span>
+<a name="fnot79604"></a>&nbsp;A Relationship Management Application (RMA) authorisation is required in order to sign a message.
+</p>
+<table class="tblnote" width="90%" border="0">
+<tbody>
+<tr>
+<td class="notehead" valign="TOP"><b><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">Note:</i></b>&nbsp;</td>
+
+<td>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">A Message User Group (MUG), for the purposes of this book, is a group of users who have voluntarily agreed to support the specified message type and have registered with SWIFT to send or receive the specified message type. These messages are indicated in the preceding table in the column MUG.
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">Registration is free of charge. To register to use one or more message types, submit a registration request (<b>Order Message User Group</b>) through the forms available on <b>www.swift.com</b> > Ordering &amp; Support > Ordering > Order Products and Services > Message User Group (MUG).
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">To withdraw from a MUG, use the <b>Terminate your MUG subscription</b> request. These forms are available at <b>www.swift.com</b> > Ordering &amp; Support > Ordering > Terminate and deactivate > Message User Group (MUG).
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">To get the list of other members of a particular MUG, send an MT 999 to the Customer Implementation team (SWHQBEBBCOS).
+</p>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ac.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="ae.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+<a name="page-break"></a>
+</body>
+</html>
+

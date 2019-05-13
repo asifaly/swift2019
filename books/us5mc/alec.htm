@@ -1,0 +1,2467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;564 Format Specifications</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 3 (MT 544 - MT 567), Standards Release Guide, MT 564 Format Specifications">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT564FormatSpec">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 3">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 564 Format Specifications">
+<meta name="Type" content="FormatSpec">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 564 Format Specifications" ;
+// --></script>
+<meta name="bookid" content="cat5v3">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 564">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 3 (MT 544 - MT 567) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 564 Format Specifications" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 3";
+var linkself="alec.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="aleb.htm";
+var linkup="";
+var linkright="aled.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genalec"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;564 Format Specifications</h2>
+
+
+<table class="formatspec" width="98%" border="1" cellpadding="5"><caption align="LEFT"><b>MT&nbsp;564 Corporate Action Notification</b></caption>
+
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Status</th>
+
+<th align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tag</th>
+
+<th align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier</th>
+
+<th align="CENTER" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Generic Field Name</th>
+
+<th align="CENTER" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Detailed Field Name</th>
+
+<th align="CENTER" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Content/Options</th>
+
+<th align="CENTER" valign="TOP" width="7%"><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">No.</i></th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory Sequence A General Information</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">GENL</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg001.htm#mt564-1-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>1</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">28E</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Page Number/Continuation Indicator</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">5n/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg002.htm#mt564-2-field-28e"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>2</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">20C</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reference</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//16x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg003.htm#mt564-3-field-20c"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>3</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">23G</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Function of the Message</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c[/4!c]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg004.htm#mt564-4-field-23g"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>4</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg005.htm#mt564-5-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>5</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PREP</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Preparation Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg006.htm#mt564-6-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>6</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">25D</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PROC</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Status Code</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Processing Status</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg007.htm#mt564-7-field-25d"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>7</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Subsequence A1 Linkages</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg008.htm#mt564-8-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>8</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Linkage Type Indicator</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg009.htm#mt564-9-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>9</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">13a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Identification</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Linked Message</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg010.htm#mt564-10-field-13a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>10</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">20C</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reference</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//16x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg011.htm#mt564-11-field-20c"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>11</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg012.htm#mt564-12-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>12</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Subsequence A1 Linkages</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">GENL</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg013.htm#mt564-13-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>13</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Sequence A General Information</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory Sequence B Underlying Securities</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">USECU</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg014.htm#mt564-14-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>14</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">35B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Identification of the Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[ISIN1!e12!c]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">[4*35x]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg015.htm#mt564-15-field-35b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>15</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional Subsequence B1 Financial Instrument Attributes</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIA</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg016.htm#mt564-16-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>16</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PLIS</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place of Listing</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c[/30x]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg017.htm#mt564-17-field-94b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>17</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MICO</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method of Interest Computation Indicator</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg018.htm#mt564-18-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>18</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">12a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Type of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg019.htm#mt564-19-field-12a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>19</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">11A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DENO</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency of Denomination</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg020.htm#mt564-20-field-11a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>20</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//8!n</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg021.htm#mt564-21-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>21</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, D, or K</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg022.htm#mt564-22-field-92a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>22</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">36B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//4!c/15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg023.htm#mt564-23-field-36b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>23</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIA</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg024.htm#mt564-24-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>24</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Subsequence B1 Financial Instrument Attributes</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Mandatory Repetitive Subsequence B2 Account Information</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACCTINFO</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg025.htm#mt564-25-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>25</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">95a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACOW</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account Owner</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">P or R</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg026.htm#mt564-26-field-95a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>26</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">97a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SAFE</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Safekeeping Account</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg027.htm#mt564-27-field-97a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>27</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SAFE</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place of Safekeeping</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B, C, or F</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg028.htm#mt564-28-field-94a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>28</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">93a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Balance</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg029.htm#mt564-29-field-93a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>29</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACCTINFO</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg030.htm#mt564-30-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>30</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Subsequence B2 Account Information</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">USECU</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg031.htm#mt564-31-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>31</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Sequence B Underlying Securities</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional Sequence C Intermediate Securities</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTSEC</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg032.htm#mt564-32-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>32</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">35B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Identification of the Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[ISIN1!e12!c]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">[4*35x]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg033.htm#mt564-33-field-35b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>33</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">36a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">QINT</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Intermediate Securities</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg034.htm#mt564-34-field-36a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>34</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">93a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Balance</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg035.htm#mt564-35-field-93a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>35</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg036.htm#mt564-36-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>36</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92D</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">RTUN</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Intermediate Securities to Underlying</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//15d/15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg037.htm#mt564-37-field-92d"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>37</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">90B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MRKT</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Price</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Market Price</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//4!c/3!a15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg038.htm#mt564-38-field-90b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>38</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg039.htm#mt564-39-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>39</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">69a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TRDP</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Period</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Trading Period</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, C, D, E, or F</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg040.htm#mt564-40-field-69a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>40</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTSEC</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg041.htm#mt564-41-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>41</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Sequence C Intermediate Securities</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional Sequence D Corporate Action Details</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CADETL</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg042.htm#mt564-42-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>42</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, C, or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg043.htm#mt564-43-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>43</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">69a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Period</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, C, D, E, F, or J</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg044.htm#mt564-44-field-69a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>44</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">99A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DAAC</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Count</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number of Days Accrued</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//[N]3!n</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg045.htm#mt564-45-field-99a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>45</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, F, K, or P</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg046.htm#mt564-46-field-92a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>46</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">90a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Price</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, E, or L</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg047.htm#mt564-47-field-90a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>47</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">36a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg048.htm#mt564-48-field-36a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>48</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">13a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">COUP</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Identification</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Coupon Number</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg049.htm#mt564-49-field-13a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>49</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">17B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Flag</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//1!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg050.htm#mt564-50-field-17b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>50</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg051.htm#mt564-51-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>51</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94E</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//10*35x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg052.htm#mt564-52-field-94e"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>52</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">70a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Narrative</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">E or G</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg053.htm#mt564-53-field-70a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>53</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CADETL</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg054.htm#mt564-54-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>54</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Sequence D Corporate Action Details</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Sequence E Corporate Action Options</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CAOPTN</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg055.htm#mt564-55-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>55</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">13A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CAON</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Identification</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CA Option Number</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg056.htm#mt564-56-field-13a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>56</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg057.htm#mt564-57-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>57</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94C</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//2!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg058.htm#mt564-58-field-94c"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>58</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">11A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">OPTN</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency Option</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg059.htm#mt564-59-field-11a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>59</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">17B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Flag</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//1!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg060.htm#mt564-60-field-17b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>60</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">35B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Identification of the Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[ISIN1!e12!c]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">[4*35x]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg061.htm#mt564-61-field-35b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>61</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, C, E, F, J, or K</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg062.htm#mt564-62-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>62</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">69a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Period</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, C, D, E, F, or J</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg063.htm#mt564-63-field-69a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>63</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, F, H, J, K, or R</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg064.htm#mt564-64-field-92a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>64</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">90a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Price</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg065.htm#mt564-65-field-90a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>65</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">36a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg066.htm#mt564-66-field-36a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>66</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Subsequence E1 Securities Movement</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SECMOVE</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg067.htm#mt564-67-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>67</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F or H</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg068.htm#mt564-68-field-22a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>68</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">35B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Identification of the Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[ISIN1!e12!c]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">[4*35x]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg069.htm#mt564-69-field-35b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>69</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional Subsequence E1a Financial Instrument Attributes</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIA</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg070.htm#mt564-70-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>70</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PLIS</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place of Listing</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c[/30x]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg071.htm#mt564-71-field-94b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>71</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MICO</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method of Interest Computation Indicator</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg072.htm#mt564-72-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>72</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">12a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Type of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg073.htm#mt564-73-field-12a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>73</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">11A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DENO</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency of Denomination</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg074.htm#mt564-74-field-11a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>74</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//8!n</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg075.htm#mt564-75-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>75</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">90a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ISSU</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Price</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Issue Price</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg076.htm#mt564-76-field-90a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>76</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or K</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg077.htm#mt564-77-field-92a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>77</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">36B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//4!c/15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg078.htm#mt564-78-field-36b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>78</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIA</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg079.htm#mt564-79-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>79</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Subsequence E1a Financial Instrument Attributes</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">36B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ENTL</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Entitled Quantity</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//4!c/15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg080.htm#mt564-80-field-36b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>80</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B, C, or F</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg081.htm#mt564-81-field-94a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>81</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DISF</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Disposition of Fractions</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg082.htm#mt564-82-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>82</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">11A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">OPTN</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency Option</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg083.htm#mt564-83-field-11a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>83</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">69a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TRDP</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Period</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Trading Period</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, C, D, E, F, or J</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg084.htm#mt564-84-field-69a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>84</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">90a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Price</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, E, F, J, K, or L</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg085.htm#mt564-85-field-90a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>85</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, D, F, K, L, M, or N</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg086.htm#mt564-86-field-92a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>86</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, C, or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg087.htm#mt564-87-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>87</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SECMOVE</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg088.htm#mt564-88-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>88</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Subsequence E1 Securities Movement</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Subsequence E2 Cash Movement</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CASHMOVE</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg089.htm#mt564-89-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>89</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F or H</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg090.htm#mt564-90-field-22a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>90</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94C</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">COIN</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Country of Income Source</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//2!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg091.htm#mt564-91-field-94c"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>91</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">97a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CASH</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Cash Account</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg092.htm#mt564-92-field-97a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>92</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">19B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Amount</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg093.htm#mt564-93-field-19b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>93</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, C, or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg094.htm#mt564-94-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>94</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, F, H, J, K, M, or R</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg095.htm#mt564-95-field-92a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>95</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">90a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Price</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, E, F, J, K, or L</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg096.htm#mt564-96-field-90a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>96</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CASHMOVE</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg097.htm#mt564-97-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>97</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Subsequence E2 Cash Movement</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">70E</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Narrative</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//10*35x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg098.htm#mt564-98-field-70e"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>98</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CAOPTN</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg099.htm#mt564-99-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>99</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Sequence E Corporate Action Options</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional Sequence F Additional Information</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ADDINFO</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg100.htm#mt564-100-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>100</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">70E</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Narrative</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//10*35x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg101.htm#mt564-101-field-70e"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>101</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">95a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="18%"><ins><span id="ES7345.0000" class="inserted"><a name="c1"><img src="cursor0.gif" alt="" name="imgC1" height="10" width="10"></a>L,</span></ins>
+ P, Q, or R</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg102.htm#mt564-102-field-95a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>102</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ADDINFO</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="aleg103.htm#mt564-103-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>103</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Sequence F Additional Information</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="CENTER" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M = Mandatory, O = Optional - Network Validated Rules may apply</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="aleb.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aled.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

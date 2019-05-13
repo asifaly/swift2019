@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 1 - MT&#160;103 REMIT - 4. Field 23E: Instruction Code</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 1, Message Reference Guide, Standards Release Guide, MT 103 REMIT - 4. Field 23E: Instruction Code">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT103REMIT-4-FIELD-23E">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 1, Customer Payments and Cheques">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 103 REMIT - 4. Field 23E: Instruction Code">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 103 REMIT - 4. Field 23E: Instruction Code" ;
+// --></script>
+<meta name="bookid" content="cat1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 1 - Customer Payments and Cheques">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 103REMIT">
+<meta name="Book.Product" content="Category 1 - Customer Payments and Cheques for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 103 REMIT - 4. Field 23E: Instruction Code" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 1";
+var linkself="ajh004.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ajh003.htm";
+var linkup="";
+var linkright="ajh005.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt103remit-4-field-23e"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<br>
+
+
+<h2 class="mtfldblock">MT&nbsp;103 REMIT Field Specifications</h2>
+
+
+
+<h3>4. Field 23E: Instruction Code</h3>
+
+
+
+<h4 class="fldfmt">FORMAT</h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option E</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c[/30x]</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Instruction Code)(Additional Information)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc">PRESENCE</h4>
+
+
+<p>Conditional (see rule C3)
+</p>
+
+<h4 class="flddef">DEFINITION</h4>
+
+
+<p>This field specifies an instruction.
+</p>
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>Instruction Code must contain one of the following codes <span class="ecodes">(Error code(s): T47)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHQB</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Cheque</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Pay beneficiary customer by cheque only. The optional account number line in field 59a must not be used.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CORT</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Corporate Trade</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment is made in settlement of a trade, for example, foreign exchange deal, securities transaction.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">HOLD</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Hold</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Beneficiary customer/claimant will call; pay upon identification.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTC</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Intra-Company Payment</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A payment between two companies belonging to the same group.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHOB</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Phone Beneficiary</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise/contact beneficiary/claimant by phone.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHOI</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Phone Intermediary</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise the intermediary institution by phone.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHON</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Telephone</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise account with institution by phone.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPA</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Related Payment</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment has a related e-Payments reference.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SDVA</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Same Day Value</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment must be executed with same day value to the beneficiary.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELB</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Telecommunication</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise/contact beneficiary/claimant by the most efficient means of telecommunication.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELE</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Telecommunication</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise the account with institution by the most efficient means of telecommunication.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELI</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Telecommunication</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise the intermediary institution by the most efficient means of telecommunication.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldvalrls">NETWORK VALIDATED RULES</h4>
+
+
+<p>Additional Information is only allowed when Instruction Code consists of one of the following codes: PHON, PHOB, PHOI, TELE, TELB, TELI, HOLD or REPA <span class="ecodes">(Error code(s): D97)</span>.
+</p>
+<p>If this field is repeated, the codes must appear in the following order <span class="ecodes">(Error code(s): D98)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SDVA</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTC</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPA</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CORT</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">HOLD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHQB</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHOB</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELB</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHON</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELE</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHOI</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELI</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+<p>When this field is used more than once, the following combinations are not allowed <span class="ecodes">(Error code(s): D67)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SDVA</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">HOLD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SDVA</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHQB</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTC</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">HOLD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTC</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHQB</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPA</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">HOLD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPA</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHQB</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPA</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CORT</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CORT</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">HOLD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CORT</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHQB</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">HOLD</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHQB</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHOB</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELB</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHON</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELE</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="12%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHOI</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">with</td>
+
+<td align="LEFT" valign="TOP" width="69%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELI</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p>If this field is repeated, the same code word must not be present more than once <span class="ecodes">(Error code(s): E46)</span>.
+</p>
+
+<h4 class="fldusgrls">USAGE RULES</h4>
+
+
+<p>This field may be repeated to give several coded instructions to one or more parties.
+</p>
+<p>Code REPA indicates that the payment is the result of an initiation performed via an e-payments product between the customers. This code is intended for the beneficiary's bank who should act according to the specifications of the e-payments product.
+</p>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ajh003.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="ajh005.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

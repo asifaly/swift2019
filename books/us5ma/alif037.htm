@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;514 - 37. Field 98A: Date/Time</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 1 (MT 500 - MT 518), Standards Release Guide, MT 514 - 37. Field 98A: Date/Time">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT514-37-FIELD-98A">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 514 - 37. Field 98A: Date/Time">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 514 - 37. Field 98A: Date/Time" ;
+// --></script>
+<meta name="bookid" content="cat5v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 514">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 500 - MT 518) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 514 - 37. Field 98A: Date/Time" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 1";
+var linkself="alif037.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="alif036.htm";
+var linkup="";
+var linkright="alif038.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt514-37-field-98a"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<br>
+
+
+<h2 class="mtfldblock">MT&nbsp;514 Field Specifications</h2>
+
+
+
+<h3>37. Field 98A: Date/Time</h3>
+
+
+
+<h4 class="fldfmt">FORMAT</h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option A</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//8!n</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(Date)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc">PRESENCE</h4>
+
+
+<p>Optional in optional subsequence B2
+</p>
+
+<h4 class="fldqlfr">QUALIFIER</h4>
+
+
+<p><span class="ecodes">(Error code(s): T89)</span>
+</p>
+<table width="98%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Order</th>
+
+<th align="CENTER" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M/O</th>
+
+<th align="CENTER" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier</th>
+
+<th align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R/N</th>
+
+<th align="CENTER" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CR</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Options</th>
+
+<th align="CENTER" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier Description</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">1</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">COUP</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Coupon Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">EXPI</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Expiry Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">3</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FRNR</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Floating Rate Note Reset Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MATU</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Maturity Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">5</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ISSU</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Issue Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">6</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CALD</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Call Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">7</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CONV</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Conversion Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">8</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PUTT</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Put Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">9</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DDTE</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Dated Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FCOU</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">First Coupon Date</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">11</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NWFC</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Next Factor Date</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="flddef">DEFINITION</h4>
+
+
+<p>This qualified generic field specifies:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CALD</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Call Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date on which a financial instrument is called away/redeemed before its scheduled maturity date.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CONV</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Conversion Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Deadline by which a convertible security must be converted, according to the terms of the issue.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">COUP</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Coupon Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Next payment date of an interest bearing financial instrument.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DDTE</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Dated Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date on which an interest bearing financial instrument begins to accrue interest.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">EXPI</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Expiry Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date on which an order expires or on which a privilege or offer terminates.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FCOU</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">First Coupon Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">First payment date of an interest bearing financial instrument.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FRNR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Floating Rate Note Reset Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date on which the interest rate of an interest bearing financial instrument will be/was calculated and reset, according to the terms of the issue.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ISSU</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Issue Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date on which the financial instrument is issued.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MATU</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Maturity Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date on which a financial instrument becomes due and assets are to be repaid.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NWFC</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Next Factor Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date on which the current factor will be changed to the next factor.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PUTT</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Put Date</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date on which a holder of a financial instrument has the right to request redemption of the principal amount prior to its scheduled maturity date.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldvalrls">NETWORK VALIDATED RULES</h4>
+
+
+<p>Date must be a valid date expressed as YYYYMMDD <span class="ecodes">(Error code(s): T50)</span>.
+</p>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="alif036.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="alif038.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

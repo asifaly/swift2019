@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;305 Network Validated Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 305 Network Validated Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT305NVR">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 305 Network Validated Rules">
+<meta name="Type" content="NVR">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 305 Network Validated Rules" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 305">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 305 Network Validated Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="ahd.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ahc.htm";
+var linkup="";
+var linkright="ahe.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genahd"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;305 Network Validated Rules</h2>
+
+
+<dl>
+<dt><b>C1&nbsp;</b></dt>
+
+<dd>
+<p>Field 31C may only be present when field 23 specifies an American style option <span class="ecodes">(Error code(s): C79)</span>.
+</p>
+</dd>
+
+<dt><b>C2&nbsp;</b></dt>
+
+<dd>
+<p>The currency code in field 23 must be the same as the currency code in field 32B <span class="ecodes">(Error code(s): C88)</span>.
+</p>
+</dd>
+
+<dt><b>C3&nbsp;</b></dt>
+
+<dd>
+<p>In sequence B, if field 15B is present then at least one of the other fields of sequence B must be present <span class="ecodes">(Error code(s): C98)</span>.
+</p>
+</dd>
+
+<dt><b>C4&nbsp;</b></dt>
+
+<dd>
+<p>In all optional sequences and subsequences, the fields with status M must be present if the sequence or subsequence is present, and are otherwise not allowed <span class="ecodes">(Error code(s): C32)</span>.
+</p>
+</dd>
+
+<dt><b>C5&nbsp;</b></dt>
+
+<dd>
+<p>In sequence B, when field 17Z is "Y" then 22Q must be present <span class="ecodes">(Error code(s): C56)</span>.
+</p>
+</dd>
+
+<dt><b>C6&nbsp;</b></dt>
+
+<dd>
+<p>In sequence A, if field 17F is present and contains "Y", then field 32E and at least one occurrence of field 14S is mandatory, otherwise field 32E is not allowed and field 14S is optional <span class="ecodes">(Error code(s): C87)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="29%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field 17F is ...</th>
+
+<th align="CENTER" valign="TOP" width="39%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">then field 32E is ...</th>
+
+<th align="CENTER" valign="TOP" width="32%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">and field 14S is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="29%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="39%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+<td align="LEFT" valign="TOP" width="32%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="29%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="39%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+<td align="LEFT" valign="TOP" width="32%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="29%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="39%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+<td align="LEFT" valign="TOP" width="32%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+</dl>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ahc.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="ahe.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

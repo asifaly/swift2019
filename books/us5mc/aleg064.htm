@@ -1,0 +1,1021 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;564 - 64. Field 92a: Rate</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 3 (MT 544 - MT 567), Standards Release Guide, MT 564 - 64. Field 92a: Rate">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT564-64-FIELD-92A">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 3">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 564 - 64. Field 92a: Rate">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 564 - 64. Field 92a: Rate" ;
+// --></script>
+<meta name="bookid" content="cat5v3">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 564">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 3 (MT 544 - MT 567) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 564 - 64. Field 92a: Rate" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 3";
+var linkself="aleg064.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="aleg063.htm";
+var linkup="";
+var linkright="aleg065.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt564-64-field-92a"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<br>
+
+
+<h2 class="mtfldblock">MT&nbsp;564 Field Specifications</h2>
+
+
+
+<h3>64. Field 92a: Rate</h3>
+
+
+
+<h4 class="fldfmt">FORMAT</h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option A</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//[N]15d</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(Sign)(Rate)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option B</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a/3!a/15d</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(First Currency Code)(Second Currency Code)(Rate)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option F</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a15d</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(Currency Code)(Amount)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option H</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a15d/4!c</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(Currency Code)(Amount)(Rate Status)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option J</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c/3!a15d[/4!c]</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(Data Source Scheme)(Rate Type Code)(Currency Code)(Amount)(Rate Status)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option K</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//4!c</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(Rate Type Code)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option R</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c/15d</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(Data Source Scheme)(Rate Type Code)(Rate)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc">PRESENCE</h4>
+
+
+<p>Optional in optional sequence E
+</p>
+
+<h4 class="fldqlfr">QUALIFIER</h4>
+
+
+<p><span class="ecodes">(Error code(s): T89)</span>
+</p>
+<table width="98%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Order</th>
+
+<th align="CENTER" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M/O</th>
+
+<th align="CENTER" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier</th>
+
+<th align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R/N</th>
+
+<th align="CENTER" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CR</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Options</th>
+
+<th align="CENTER" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier Description</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">1</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">GRSS</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C7, C8</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F, H, J, or K</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Gross Dividend Rate</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TAXR</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C7, C8, C19</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, F, K, or R</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Withholding Tax Rate</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">3</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ATAX</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, F, or K</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Additional Tax</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INDX</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, F, or K</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Index Factor</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">5</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">OVEP</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or K</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Maximum Allowed Oversubscription Rate</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">6</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PROR</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or K</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Pro-Ration Rate</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">7</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTP</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, F, J, or K</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Interest Rate Used for Payment</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">8</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TDMT</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">J</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Taxable Income Per Dividend/Share</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">9</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NETT</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C7, C8</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F, H, J, or K</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Net Dividend Rate</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">IDFX</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Issuer Declared Exchange Rate</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">11</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXIN</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, F, or K</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tax on Income</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">12</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">WITL</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C7, C8</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, F, K, or R</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Second Level Tax</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="flddef">DEFINITION</h4>
+
+
+<p>This qualified generic field specifies:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ATAX</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Additional Tax</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate used for additional tax that cannot be categorised.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">GRSS</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Gross Dividend Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Cash dividend amount per equity before deductions or allowances have been made.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">IDFX</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Issuer Declared Exchange Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Exchange rate (provided by the issuer) between the dividend or interest rate in the paid currency and the declared dividend or interest rate.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INDX</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Index Factor</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Public index rate applied to the amount paid to adjust it to inflation.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTP</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Interest Rate Used for Payment</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">The actual interest rate used for the payment of the interest for the specified interest period.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NETT</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Net Dividend Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Cash dividend amount per equity after deductions or allowances have been made.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">OVEP</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Maximum Allowed Oversubscription Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A maximum percentage of shares available through the over subscription privilege, usually a percentage of the basic subscription shares, for example, an account owner subscribing to 100 shares may over subscribe to a maximum of 50 additional shares when the over subscription maximum is 50%.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PROR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Pro-Ration Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Percentage of securities accepted by the offeror/issuer.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TAXR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Withholding Tax Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Percentage of a cash distribution that will be withheld by the tax authorities of the jurisdiction of the issuer, for which a relief at source and/or reclaim may be possible.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TDMT</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Taxable Income Per Dividend/Share</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Amount included in the dividend/NAV that is identified as gains directly or indirectly derived from interest payments, for example, in the context of the EU Savings directive.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXIN</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tax on Income</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Overall tax withheld at source by fund managers prior to considering the tax obligation of each unit holder.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">WITL</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Second Level Tax</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate at which the income will be withheld by a jurisdiction other than the jurisdiction of the issuer's country of tax incorporation, for which a relief at source and/or reclaim may be possible. It is levied in complement or offset of the withholding tax rate (TAXR) levied by the jurisdiction of the issuer's tax domicile.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>In option H, Rate Status must contain one of the following codes <span class="ecodes">(Error code(s): K92)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACTU</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate is actual.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INDI</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicative Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate is indicative.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>In option J, if Qualifier is GRSS and Data Source Scheme is not present, Rate Type Code must contain one of the following codes <span class="ecodes">(Error code(s): K92)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CAPO</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Capital Portion</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which capital is distributed.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CDFI</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Conduit Foreign Income</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to a conduit foreign income type.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FLFR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Fully Franked</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate resulting from a fully franked dividend paid by a company; rate includes tax credit for companies that have made sufficient tax payments during fiscal period.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INCO</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Income Portion</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which income is distributed.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Interest</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which interest is paid.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LTCG</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Long Term Capital Gain</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Long term capital gain.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REES</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Real Estate Property Income Portion</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate of income distribution originated by real estate investment.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SOIC</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sundry/Other Income</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which other income is paid.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">STCG</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Short Term Capital Gain</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Short term capital gain.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXBL</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Taxable Portion</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which tax is charged.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXDF</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tax Deferred</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which tax is deferred.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXFR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tax Free</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security which is not taxable.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">UNFR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unfranked</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unfranked.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>In option J, if Data Source Scheme is not present, Rate Status, when present, must contain one of the following codes <span class="ecodes">(Error code(s): K92)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACTU</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate is actual.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INDI</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicative Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate is indicative.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>In option K, if Qualifier is GRSS or Qualifier is INTP, Rate Type Code must contain one of the following codes <span class="ecodes">(Error code(s): K92)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NILP</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Nil Payment</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate will not be paid.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">UKWN</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unknown Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate is unknown by the sender or has not been established.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>In option K, if Qualifier is TAXR or Qualifier is ATAX or Qualifier is INDX or Qualifier is OVEP or Qualifier is PROR or Qualifier is NETT or Qualifier is TXIN or Qualifier is WITL, Rate Type Code must contain the following code <span class="ecodes">(Error code(s): K92)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">UKWN</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unknown Rate</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate is unknown by the sender or has not been established.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>In option R, if Data Source Scheme is not present, Rate Type Code must contain one of the following codes <span class="ecodes">(Error code(s): K92)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BWIT</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Back Up Withholding</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Withholding tax related to payments subject to Back up Withholding.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FTCA</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FATCA Tax</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Withholding Tax related to income subject to FATCA (Foreign Account Tax Compliance Act).</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NRAT</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NRA Tax</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Withholding tax related to income subject NRA (Non Resident Alien).</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>In option J, if Qualifier is INTP and Data Source Scheme is not present, Rate Type Code must contain one of the following codes <span class="ecodes">(Error code(s): K92)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SCHD</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Scheduled</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate of the scheduled payment.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">USCD</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unscheduled</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate of the unscheduled payment.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>In option J, if Qualifier is TDMT and Data Source Scheme is not present, Rate Type Code must contain the following code <span class="ecodes">(Error code(s): K92)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXBL</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Taxable Portion</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which tax is charged.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>In option J, if Qualifier is NETT and Data Source Scheme is not present, Rate Type Code must contain one of the following codes <span class="ecodes">(Error code(s): K92)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CAPO</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Capital Portion</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which capital is distributed.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CDFI</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Conduit Foreign Income</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to a conduit foreign income type.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FLFR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Fully Franked</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate resulting from a fully franked dividend paid by a company; rate includes tax credit for companies that have made sufficient tax payments during fiscal period.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INCO</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Income Portion</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which income is distributed.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INTR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Interest</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which interest is paid.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REES</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Real Estate Property Income Portion</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate of income distribution originated by real estate investment.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SOIC</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sundry/Other Income</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which other income is paid.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXBL</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Taxable Portion</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which tax is charged.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXDF</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tax Deferred</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security for which tax is deferred.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TXFR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tax Free</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate relating to the underlying security which is not taxable.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">UNFR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unfranked</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unfranked.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldvalrls">NETWORK VALIDATED RULES</h4>
+
+
+<p>The integer part of Quantity, Rate and Amount must contain at least one digit. A decimal comma is mandatory and is included in the maximum length <span class="ecodes">(Error code(s): T40,T43)</span>.
+</p>
+<p>When Sign is present, Rate must not be zero <span class="ecodes">(Error code(s): T14)</span>.
+</p>
+<p>Currency Code, First Currency Code and Second Currency Code must be valid ISO 4217 currency codes <span class="ecodes">(Error code(s): T52)</span>.
+</p>
+
+<h4 class="fldusgrls">USAGE RULES</h4>
+
+
+<p>ACTU is the default value for Rate Status.
+</p>
+<p>Sign must be present when Rate is negative.
+</p>
+<p>Except if notified differently in the rate definition, the rate must be expressed as a percentage, not as a decimal fraction (12% must be identified by 12, and not 0,12).
+</p>
+<p>Rate Type Code NILP (Nil Payment), available for use with rate qualifier GRSS (Gross Dividend Rate) and INTP (Interest Rate Used for Payment), can only be used with Corporate Action Event Types :22F::CAEV//DVCA (Cash Dividend) and :22F::CAEV//INTR (Interest Payment).
+</p>
+<p>Sequence D Interest Rate :92a::INTR and sequence E Interest Rate Used for Payment :92a::INTP usage must not be mixed. INTR is used to provide the annual rate of the financial instrument. INTP is used to provide the applicable rate for the current payment, after all calculations have been performed, that is, application of period and method of interest computation.
+</p>
+<p>In format option B, for the calculation of the rate itself, the First Currency Code will be the base currency and the Second Currency Code will be the quoted currency. (1,00 of First Currency Code = [Rate] of Second Currency Code).
+</p>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="aleg063.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aleg065.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

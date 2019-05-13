@@ -1,0 +1,643 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;513 - 49. Field 22F: Indicator</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 1 (MT 500 - MT 518), Standards Release Guide, MT 513 - 49. Field 22F: Indicator">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT513-49-FIELD-22F">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 513 - 49. Field 22F: Indicator">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 513 - 49. Field 22F: Indicator" ;
+// --></script>
+<meta name="bookid" content="cat5v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 513">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 500 - MT 518) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 513 - 49. Field 22F: Indicator" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 1";
+var linkself="alhf049.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="alhf048.htm";
+var linkup="";
+var linkright="alhf050.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt513-49-field-22f"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<br>
+
+
+<h2 class="mtfldblock">MT&nbsp;513 Field Specifications</h2>
+
+
+
+<h3>49. Field 22F: Indicator</h3>
+
+
+
+<h4 class="fldfmt">FORMAT</h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option F</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Qualifier)(Data Source Scheme)(Indicator)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc">PRESENCE</h4>
+
+
+<p>Optional in optional subsequence C3
+</p>
+
+<h4 class="fldqlfr">QUALIFIER</h4>
+
+
+<p><span class="ecodes">(Error code(s): T89)</span>
+</p>
+<table width="98%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Order</th>
+
+<th align="CENTER" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M/O</th>
+
+<th align="CENTER" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier</th>
+
+<th align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">R/N</th>
+
+<th align="CENTER" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CR</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Options</th>
+
+<th align="CENTER" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier Description</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">1</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MICO</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method of Interest Computation Indicator</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FORM</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Form of Securities Indicator</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">3</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PFRE</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment Frequency Indicator</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PAYS</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment Status Indicator</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">5</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CFRE</td>
+
+<td align="LEFT" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="LEFT" valign="TOP" width="8%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F</td>
+
+<td align="LEFT" valign="TOP" width="45%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Variable Rate Change Frequency Indicator</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="flddef">DEFINITION</h4>
+
+
+<p>This qualified generic field specifies:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CFRE</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Variable Rate Change Frequency Indicator</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Specifies the frequency of change to the variable rate of an interest bearing instrument.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FORM</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Form of Securities Indicator</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Specifies the form of the financial instrument.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MICO</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method of Interest Computation Indicator</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Specifies the computation method of (accrued) interest of the financial instrument.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PAYS</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment Status Indicator</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Specifies the status of the payment of a financial instrument at a particular time, as agreed with the issuer.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PFRE</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment Frequency Indicator</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Specifies the frequency of a payment.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>If Qualifier is MICO and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecodes">(Error code(s): K22)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A001</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30/360 (ISDA) or 30/360 (American Basic Rule)</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on a 30-day month and a 360-day year. Accrued interest to a value date on the last day of a month shall be the same as to the 30th calendar day of the same month, except for February, and provided that the interest period started on a 30th or a 31st. This means that a 31st is assumed to be a 30th if the period started on a 30th or a 31st and the 28 Feb (or 29 Feb for a leap year) is assumed to be a 28th (or 29th). It is the most commonly used 30/360 method for US straight and convertible bonds.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A002</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30/365</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on a 30-day month in a way similar to the 30/360 (basic rule) and a 365-day year. Accrued interest to a value date on the last day of a month shall be the same as to the 30th calendar day of the same month, except for February. This means that a 31st is assumed to be a 30th and the 28 Feb (or 29 Feb for a leap year) is assumed to be a 28th (or 29th).</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A003</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30/Actual</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on a 30-day month in a way similar to the 30/360 (basic rule) and the assumed number of days in a year in a way similar to the Actual/Actual (ICMA). Accrued interest to a value date on the last day of a month shall be the same as to the 30th calendar day of the same month, except for February. This means that a 31st is assumed to be a 30th and the 28 Feb (or 29 Feb for a leap year) is assumed to be a 28th (or 29th). The assumed number of days in a year is computed as the actual number of days in the coupon period multiplied by the number of interest payments in the year.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A004</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/360</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on the actual number of accrued days in the interest period and a 360-day year.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A005</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/365 (Fixed)</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on the actual number of accrued days in the interest period and a 365-day year.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A006</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/Actual (ICMA)</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on the actual number of accrued days and the assumed number of days in a year, that is, the actual number of days in the coupon period multiplied by the number of interest payments in the year. If the coupon period is irregular (first or last coupon), it is extended or split into quasi interest periods that have the length of a regular coupon period and the computation is operated separately on each quasi interest period and the intermediate results are summed up.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A007</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E/360 or Eurobond basis</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on a 30-day month and a 360-day year. Accrued interest to a value date on the last day of a month shall be the same as to the 30th calendar day of the same month. This means that a 31st is assumed to be a 30th and the 28 Feb (or 29 Feb for a leap year) is assumed to be equivalent to a 30 Feb. However, if the last day of the maturity coupon period is the last day of February, it will not be assumed to be a 30th. It is a variation of the 30/360 (ICMA) method commonly used for eurobonds. The usage of this variation is only relevant when the coupon periods are scheduled to end on the last day of the month.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A008</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/Actual (ISDA)</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on the actual number of accrued days of the interest period that fall on a normal year, divided by 365, added to the actual number of days of the interest period that fall on a leap year, divided by 366.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A009</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/365L or Actual/Actual (basic rule)</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on the actual number of accrued days and a 365-day year (if the coupon payment date is NOT in a leap year) or a 366-day year (if the coupon payment date is in a leap year).</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A010</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/Actual (AFB)</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on the actual number of accrued days and a 366-day year (if 29 Feb falls in the coupon period) or a 365-day year (if 29 Feb does not fall in the coupon period). If a coupon period is longer than one year, it is split by repetitively separating full year sub-periods counting backwards from the end of the coupon period (a year backwards from a 28 Feb being 29 Feb, if it exists). The first of the sub-periods starts on the start date of the accrued interest period and thus is possibly shorter than a year. Then the interest computation is operated separately on each sub-period and the intermediate results are summed up.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A011</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30/360 (ICMA) or 30/360 (basic rule)</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on a 30-day month and a 360-day year. Accrued interest to a value date on the last day of a month shall be the same as to the 30th calendar day of the same month, except for February. This means that a 31st is assumed to be a 30th and the 28 Feb (or 29 Feb for a leap year) is assumed to be a 28th (or 29th). It is the most commonly used 30/360 method for non-US straight and convertible bonds issued before 01/01/1999.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A012</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E2/360 or Eurobond basis model 2</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on a 30-day month and a 360-day year. Accrued interest to a value date on the last day of a month shall be the same as to the 30th calendar day of the same month, except for the last day of February whose day of the month value shall be adapted to the value of the first day of the interest period if the latter is higher and if the period is one of a regular schedule. This means that a 31st is assumed to be a 30th and the 28th Feb of a non-leap year is assumed to be equivalent to a 29th Feb when the first day of the interest period is a 29th, or to a 30th Feb when the first day of the interest period is a 30th or a 31st. The 29th Feb of a leap year is assumed to be equivalent to a 30th Feb when the first day of the interest period is a 30th or a 31st. Similarly, if the coupon period starts on the last day of February, it is assumed to produce only one day of interest in February as if it was starting on a 30th Feb when the end of the period is a 30th or a 31st, or two days of interest in February when the end of the period is a 29th, or 3 days of interest in February when it is the 28th Feb of a non-leap year and the end of the period is before the 29th.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A013</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E3/360 or Eurobond basis model 3</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on a 30-day month and a 360-day year. Accrued interest to a value date on the last day of a month shall be the same as to the 30th calendar day of the same month. This means that a 31st is assumed to be a 30th and the 28 Feb (or 29 Feb for a leap year) is assumed to be equivalent to a 30 Feb. It is a variation of the 30E/360 (or Eurobond basis) method where the last day of February is always assumed to be a 30th, even if it is the last day of the maturity coupon period.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A014</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/365NL or Actual/365 No Leap</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Method whereby interest is calculated based on the actual number of accrued days in the interest period, excluding any leap day from the count, and a 365-day year.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">OTHR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Other</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Other method than A001-A014. See Narrative.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>If Qualifier is FORM and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecodes">(Error code(s): K22)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BEAR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Bearer Security</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments are in bearer form.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REGD</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Registered Security</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instruments are in registered form.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>If Qualifier is PFRE and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecodes">(Error code(s): K22)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ANNU</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Annual</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment frequency is annual.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MNTH</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Monthly</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment frequency is monthly.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">QUTR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quarterly</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment frequency is quarterly.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SEMI</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Semi-Annual</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment frequency is semi-annual.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">WEEK</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Weekly</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Payment frequency is weekly.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>If Qualifier is PAYS and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecodes">(Error code(s): K22)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FULL</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Fully Paid</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instrument is fully paid.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NILL</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Nil Paid</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instrument is nil paid.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PART</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Partially Paid</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial instrument is partially paid.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>If Qualifier is CFRE and Data Source Scheme is not present, Indicator must contain one of the following codes <span class="ecodes">(Error code(s): K22)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ANNU</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Annual</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Frequency is annual.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MNTH</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Monthly</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Frequency is monthly.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">QUTR</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quarterly</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Frequency is quarterly.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SEMI</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Semi-Annual</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Frequency is semi-annual.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">WEEK</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Weekly</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Frequency is weekly.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="alhf048.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="alhf050.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

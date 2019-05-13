@@ -1,0 +1,999 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - Category 5 Message Types</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 3 (MT 544 - MT 567), Standards Release Guide, Category 5 Message Types">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="Category5MessageTypes">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 3">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="Category 5 Message Types">
+<meta name="Type" content="Category5MessageTypes">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "Category 5 Message Types" ;
+// --></script>
+<meta name="bookid" content="cat5v3">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="Category 5 Message Types">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 3 (MT 544 - MT 567) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "Category 5 Message Types" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 3";
+var linkself="ad.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ac.htm";
+var linkup="";
+var linkright="ae.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genad"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h1>Category 5 Message Types</h1>
+
+
+<p>The following table lists all message types defined in Category 5.
+</p>
+<p>For each message type, there is a short description, an indicator whether the message type is signed (Y/N), the maximum message length (2,000 or 10,000 characters) and whether the use of the message requires registration with SWIFT for use in a message user group (Y/N).
+</p>
+<table width="98%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MT</th>
+
+<th align="CENTER" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MT Name</th>
+
+<th align="CENTER" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Purpose</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Signed&nbsp;
+<a class="FOOTNOTEREF" href="#fnot79603">(1)</a>&nbsp;</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Max. Length</th>
+
+<th align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MUG</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">500</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction to Register</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs the registration, deregistration or reregistration of a financial instrument at the registration provider</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">501</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirmation of Registration or Modification</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the registration, reregistration or deregistration of a beneficial owner or shareholder with the registration provider. Confirm the modification of registration details</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">502</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Order to Buy or Sell</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs the purchase or sale of a given quantity of a specified financial instrument under specified conditions</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">503</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Collateral Claim</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests new or additional collateral, or the return or recall of collateral</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">504</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Collateral Proposal</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Proposes new or additional collateral</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">505</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Collateral Substitution</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Proposes or requests the substitution of collateral held</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">506</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Collateral and Exposure Statement</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides the details of the valuation of both the collateral and the exposure</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">507</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Collateral Status and Processing Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the status of a collateral claim, a collateral proposal, or a proposal/request for collateral substitution</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">508</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Intra-Position Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reports on the movement of securities within the holding</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">509</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Trade Status Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides information about the status of a previously executed trade</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">510</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Registration Status and Processing Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the status of a registration instruction or modification, or the status of the registration process previously sent by the account owner</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">513</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Client Advice of Execution</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides brief and early information about a securities deal, for example, a block trade that is to be allocated before final confirmation</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">514</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Trade Allocation Instruction</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs the allocation of a block trade</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">515</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Client Confirmation of Purchase or Sale</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides a detailed accounting of financial instruments purchased or sold by the Sender on behalf of the Receiver or its client. It may also convey the payment details of the purchase or sale. It may also be sent by, or via an ETC service provider</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">516</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Securities Loan Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the details of a securities loan, including collateral arrangements. It may also confirm the details of a partial recall or return of securities previously out on loan</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">517</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Trade Confirmation Affirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Positively affirms the details of a previously received confirmation/contract note</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">518</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Market-Side Securities Trade Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the details of a trade and, where necessary, its settlement to a trading counterparty</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">519</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Modification of Client Details</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs the modification of client details at the registration provider</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">524</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Intra-Position Instruction</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs the movement of securities within the holding</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">526</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">General Securities Lending/Borrowing Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests the borrowing of securities or notifies the return or recall of securities previously out on loan. It may also be used to list securities available for lending</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">527</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Triparty Collateral Instruction</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Performs a specific action on a collateral management transaction</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">530</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Transaction Processing Command</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests the modification of a processing indicator or other non-matching information.</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">535</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Statement of Holdings</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reports at a specified time, the quantity and identification of securities and other holdings which the account servicer holds for the account owner</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">536</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Statement of Transactions</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides details of increases and decreases of holdings which occurred during a specified period</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">537</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Statement of Pending Transactions</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides details of pending increases and decreases of holdings at a specified time.</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">538</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Statement of Intra-Position Advices</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides details of increases and decreases in securities within the holding during a specified period</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">540</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Receive Free</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs a receipt of financial instruments free of payment. It may also be used to request a cancellation or preadvise an instruction</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">541</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Receive Against Payment</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs a receipt of financial instruments against payment. It may also be used to request a cancellation or preadvise an instruction</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">542</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Deliver Free</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs a delivery of financial instruments free of payment. It may also be used to request a cancellation or preadvise an instruction</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">543</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Deliver Against Payment</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs a delivery of financial instruments against payment. It may also be used to request a cancellation or preadvise an instruction</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">544</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Receive Free Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms a receipt of financial instruments free of payment. It may also be used to cancel or reverse a confirmation</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">545</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Receive Against Payment Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms a receipt of financial instruments against payment. It may also be used to cancel or reverse a confirmation</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">546</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Deliver Free Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms a delivery of financial instruments free of payment. It may also be used to cancel or reverse a confirmation</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">547</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Deliver Against Payment Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms a delivery of financial instruments against payment. It may also be used to cancel or reverse a confirmation</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">548</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement Status and Processing Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the status of a settlement instruction or replies to a cancellation request</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">549</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Request for Statement/Status Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests a statement or a status message</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">558</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Triparty Collateral Status and Processing Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides validation results and status advice re collateral instructions and proposed collateral movements</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">559</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Paying Agent's Claim</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Claims reimbursement of income or redemption proceeds, or a combination of both</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">564</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Corporate Action Notification</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides an account owner with details of a corporate action event and the choices available to the account owner. It also provides the account owner with details on the impact a corporate action event will have on a safekeeping or cash account, for example, entitlement calculation</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">565</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Corporate Action Instruction</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructs the custodian on the investment decision made by an account owner relative to a corporate action event</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">566</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Corporate Action Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms to the account owner that securities and/or cash have been credited/debited to an account as a result of a corporate action event</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">567</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Corporate Action Status and Processing Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicates the status, or a change in status, of a corporate action-related transaction previously instructed by, or executed on behalf of, the account owner</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">568</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Corporate Action Narrative</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides complex instructions or narrative details relating to a corporate action event</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">569</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Triparty Collateral and Exposure Statement</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides the details of the valuation of both the collateral and the exposure</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">575</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Report of Combined Activity</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reports on all securities and cash activity for a given combination of safekeeping and cash accounts</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">576</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Statement of Open Orders</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides details of orders to buy or to sell financial instruments, as at a specified date, which have been accepted by the Sender, but which have not yet been executed</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">578</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Settlement Allegement</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the account owner that a counterparty has alleged a settlement instruction on the account owner's account</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">581</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Collateral Adjustment Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Claims or notifies a change in the amount of collateral held against securities out on loan or for other reasons</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">586</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Statement of Settlement Allegements</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides details of pending settlement allegements</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">590</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of Charges, Interest and Other Adjustments</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises an account owner of charges, interest or other adjustments to its account</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">591</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Request for Payment of Charges, Interest and Other Expenses</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests payment of charges, interest or other expenses</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">592</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Request for Cancellation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests the Receiver to consider cancellation of the message identified in the request</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">595</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Queries</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests information relating to a previous message or amendment to a previous message</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">596</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Answers</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Responds to an MT&nbsp;595 Queries or MT&nbsp;592 Request for Cancellation or other message where no specific message type has been provided for the response</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">598</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Proprietary Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Contains formats defined and agreed to between users and for those messages not yet live</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">599</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Free Format Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Contains information for which no other message type has been defined</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="FOOTNOTE"><span class="FOOTNOTENUMBER">(1)</span>
+<a name="fnot79603"></a>&nbsp;A Relationship Management Application (RMA) authorisation is required in order to sign a message.
+</p>
+<table class="tblnote" width="90%" border="0">
+<tbody>
+<tr>
+<td class="notehead" valign="TOP"><b><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">Note:</i></b>&nbsp;</td>
+
+<td>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">A Message User Group (MUG), for the purposes of this book, is a group of users who have voluntarily agreed to support the specified message type and have registered with SWIFT to send or receive the specified message type. These messages are indicated in the preceding table in the column MUG.
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">Registration is free of charge. To register to use one or more message types, submit a registration request (<b>Order Message User Group</b>) through the forms available on <b>www.swift.com</b> > Ordering &amp; Support > Ordering > Order Products and Services > Message User Group (MUG).
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">To withdraw from a MUG, use the <b>Terminate your MUG subscription</b> request. These forms are available at <b>www.swift.com</b> > Ordering &amp; Support > Ordering > Terminate and deactivate > Message User Group (MUG).
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">To get the list of other members of a particular MUG, send an MT 999 to the Customer Implementation team (SWHQBEBBCOS).
+</p>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ac.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="ae.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+<a name="page-break"></a>
+</body>
+</html>
+

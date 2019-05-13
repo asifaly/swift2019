@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;361 - 135. Field 22B: Financial Centre</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 2 (MT 350 - MT 399), Standards Release Guide, MT 361 - 135. Field 22B: Financial Centre">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT361-135-FIELD-22B">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 2">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 361 - 135. Field 22B: Financial Centre">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 361 - 135. Field 22B: Financial Centre" ;
+// --></script>
+<meta name="bookid" content="cat3v2">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 361">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 2 (MT 350 - MT 399) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 361 - 135. Field 22B: Financial Centre" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 2";
+var linkself="ahg135.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ahg134.htm";
+var linkup="";
+var linkright="ahg136.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt361-135-field-22b"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<br>
+
+
+<h2 class="mtfldblock">MT&nbsp;361 Field Specifications</h2>
+
+
+
+<h3>135. Field 22B: Financial Centre</h3>
+
+
+
+<h4 class="fldfmt">FORMAT</h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option B</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Centre)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc">PRESENCE</h4>
+
+
+<p>Mandatory in optional sequence K
+</p>
+
+<h4 class="flddef">DEFINITION</h4>
+
+
+<p>This field specifies the financial centre (Business Days as per ISDA definitions) used to adjust the dates in the same sequence.
+</p>
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>One of the following codes may be used:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ARBA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Buenos Aires</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ATVI</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Vienna</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AUME</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Melbourne</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AUSY</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sydney</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BEBR</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Brussels</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BRSP</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">S&atilde;o Paulo</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CAMO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Montreal</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CATO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Toronto</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHGE</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Geneva</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CHZU</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Zurich</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CLSA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Santiago</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CNBE</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Beijing</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CZPR</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Prague</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DECB</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">European Central Bank</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DEFR</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Frankfurt</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DKCO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Copenhagen</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">EETA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tallinn</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ESMA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Madrid</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">EUTA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Target</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIHE</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Helsinki</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FRPA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Paris</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">GBLO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">London</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">GRAT</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Athens</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">HKHK</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Hong Kong</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">HUBU</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Budapest</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">IDJA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Jakarta</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">IEDU</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Dublin</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ILTA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tel Aviv</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INMU</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mumbai</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ITMI</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Milan</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ITRO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rome</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">JPTO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tokyo</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">KRSE</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Seoul</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LBBE</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Beirut</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LKCO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Colombo</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LULU</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Luxembourg</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MXMC</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mexico City</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MYKL</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Kuala Lumpur</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NLAM</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Amsterdam</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NOOS</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Oslo</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NYFD</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">New York Fed</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NYSE</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">New York Stock Exchange</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NZAU</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Auckland</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NZWE</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Wellington</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PAPC</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Panama City</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHMA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Manila</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PKKA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Karachi</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PLWA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Warsaw</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PTLI</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Lisbon</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ROBU</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Bucharest</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">RUMO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Moscow</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SARI</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Riyadh</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SEST</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Stockholm</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SGSI</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Singapore</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SKBR</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Bratislava</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">THBA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Bangkok</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TRAN</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Ankara</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TRIS</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Istanbul</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TWTA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Taipei</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">USCH</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Chicago</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">USGS</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">U.S. Government Securities</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">USLA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Los Angeles</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">USNY</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">New York</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">VNHA</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Hanoi</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ZAJO</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Johannesburg</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldusgrls">USAGE RULES</h4>
+
+
+<p>The codes are based on the ISO country code and the English name of the location.
+</p>
+<p>Additional location codes must be built as follows: the first 2 characters represent the ISO country code, the next two characters represent 1) if the location name is one word, the first two letters of the location 2) if the location name consists of at least two words, the first letter of the first word followed by the first letter of the second word.
+</p>
+<p>If new financial centres are added and codes are used which might cause confusion, for example, Dallas and Dayton in the US, the code OTHR must be used. (Field 37N in the same sequence must then contain: /LOCC/+ English location name.)
+</p>
+<p>All applicable financial centres must be included in the same repetitive block and ordered alphabetically.
+</p>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ahg134.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="ahg136.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

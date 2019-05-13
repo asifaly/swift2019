@@ -1,0 +1,148 @@
+/*
+This stylesheet specifically for NS 4 compliance
+
+IMPLEMENTATION NOTES: 
+- use font-family to force the same font to be used, avoid the "font" instruction as this will mess up font sizing 
+by multiplying with the specified size!!
+
+ss="doctitle">
+<div class="pretitle1">SWIFTNet</div>
+<div class="pretitle2">5.0 - General Availability</div>
+<p class="booktitle">Certificate Administration Guide</p>
+</div>
+<a name="lnot4"></a>
+<div class="legalnotices">
+
+
+*/
+
+
+/* ---------------------- Base containers ----------------------*/
+body {
+	background: #FFFFFF;
+	color: #000000;
+	font-family: Arial,Helvetica,sans-serif;
+/*	margin: auto 10px auto auto;*/
+	font-size:10pt;
+}
+
+div, p, li, td, th, ol, ul {
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+img {
+	border-width: 0px;
+}
+
+/* ---------------------- Anchors ----------------------*/
+a:link {
+	background: transparent;
+	color: #013b80;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+a:visited {
+	background: transparent;
+	color: #013b80;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+a:hover, a:active {
+	background: transparent;
+	color: #0878e5;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+/* ---------------------- Navigation ----------------------*/
+
+div.links {
+	background: #FFFFFF;
+}
+
+p.links {
+	/*padding-top: 80px;*/
+	text-align: center;
+}
+
+/* ---------------------- Page-specific containers ----------------------*/
+
+div.main {
+	margin: 25px 25px 25px 25px;
+}
+
+div.pretitle1 , div.front{
+	background: transparent;
+	color: #013b80;
+	font-size: 15pt;
+	font-weight: bold;
+	/*margin-bottom: 6px;*/
+}
+
+div.pretitle2, p.BookReleaseDate {
+	background: transparent;
+	color: #013b80;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+p.booktitle {
+	background: transparent;
+	color: #013b80;
+	font-size: 20pt;
+	font-weight: bold;
+/*	margin-bottom: 1.0em;*/
+}
+
+p.subtitle {
+	background: transparent;
+	color: #013b80;
+	font-size: 15pt;
+	font-weight: bold;
+	margin-bottom: 1.0em;
+}
+
+div.bottomtitle {
+	background: transparent;
+	color: #013b80;
+	font-size: 10pt;
+	font-weight: bold;
+	margin-bottom: 1.0em;
+}
+
+div.abstract {
+	border: thin solid #013b80;
+	margin-top: 0.5em;
+	margin-bottom:0.5em;
+	padding: 0 0.5em;
+	color: #000000;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+div.abstract .genlabel {
+	display: none;
+}
+
+.productname, .platform, .infrastructure, .market, .edition, .docversion {
+	display: none;
+}
+
+div.legalnotices {
+	border: thin solid #013b80;
+	padding: 0.5em;
+	margin-top: 0.6em;
+}
+
+.shorttitle {
+	background: transparent;
+	color: #013b80;
+	font-size: 12pt;
+}
+
+p.title {
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+
+

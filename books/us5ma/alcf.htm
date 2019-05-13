@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;506 Guidelines</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 1 (MT 500 - MT 518), Standards Release Guide, MT 506 Guidelines">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT506Title">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 506 Guidelines">
+<meta name="Type" content="Title">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 506 Guidelines" ;
+// --></script>
+<meta name="bookid" content="cat5v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 506">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 500 - MT 518) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 506 Guidelines" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 1";
+var linkself="alcf.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="alce.htm";
+var linkup="";
+var linkright="alcg001.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genalcf"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;506 Guidelines</h2>
+
+
+<p class="stem">A collateral and exposure statement can be sent:
+</p>
+
+<ul>
+<li>
+<p>by the taker to provide the details of the valuation of both the collateral and the exposure
+</p></li>
+
+<li>
+<p>by the giver to provide the details of the valuation of both the collateral and the exposure.
+</p></li>
+
+</ul>
+
+
+
+<h3>Industry Requirements</h3>
+
+<a name="genalcfdb"></a>
+
+
+<h4>ISDA Definitions</h4>
+
+<a name="genalcfdbb"></a>
+
+
+<h5>Credit Support Amount</h5>
+
+
+<p>Unless modified by the parties, the Credit Support Amount is generally the amount of Eligible Credit Support that the Secured Party is entitled to hold as of a particular Valuation Date.
+</p>
+<p class="stem">The Credit Support Amount is usually defined as:
+</p>
+
+<ul>
+<li>
+<p>the Secured Party's Exposure ;<b>plus</b>
+</p></li>
+
+<li>
+<p>the aggregate of all Independent Amounts applicable to the <b>Pledgor,</b> if any ;<b>minus</b>
+</p></li>
+
+<li>
+<p>the aggregate of all Independent Amounts applicable to the <b>Secured Party,</b> if any ;<b>minus</b>
+</p></li>
+
+<li>
+<p>the <b>Pledgor's Unsecured Threshold</b>.
+</p></li>
+
+</ul>
+
+
+<p>The Credit Support Amount, however, is deemed to be zero whenever its calculation would yield a number less than zero.
+</p>
+<a name="genalcfdbc"></a>
+
+
+<h5>Independent Amount</h5>
+
+
+<p>An Independent Amount is an amount that may be used as an add-on to Exposure which can reflect, among other things, the volatility of a particular Transaction or credit concerns relating to one or both counterparties.
+</p>
+<p>When an Independent Amount is applicable to a party, it increases the Credit Support Amount that is applicable when the other party is the Secured Party and decreases the Credit Support Amount that is applicable when that party is the Secured Party.
+</p>
+<p>However, some parties may wish to modify the Credit Support Amount formula specified above to eliminate the subtraction of Independent Amounts applicable to the Secured Party. In this case, the Independent Amount represents the <b>minimum</b> Credit Support Amount when that party is a Credit Support Taker.
+</p>
+<p class="stem">For example, Credit Support Amount may be defined as:
+</p>
+
+<ul>
+<li>
+<p>the Secured Party's Exposure ;<b>plus</b>
+</p></li>
+
+<li>
+<p>the aggregate of all Independent Amounts applicable to the <b>Pledgor</b>, if any ,<b>minus</b>
+</p></li>
+
+<li>
+<p>the <b>Pledgor's Unsecured Threshold.</b>
+</p></li>
+
+</ul>
+
+
+<p>Provided that in the case where the sum of the Independent Amounts applicable to the Pledgor exceeds zero, the Credit Support Amount will not be less than the sum of all Independent Amounts applicable to the Pledgor. In all other cases, the Credit Support Amount will be deemed to be zero whenever the calculation of Credit Support Amount yields an amount less than zero.
+</p>
+<p>Hence, in the Collateral Messages, Independent Amounts should default to be treated as nettable unless being explicitly stated as being <b>non-netted</b>.
+</p>
+<a name="genalcfdbd"></a>
+
+
+<h5>Basic Amount</h5>
+
+
+<p>The Basic Amount with respect to any one party represents the minimum value of Posted Credit Support required at all times from a counterparty independently of any exposure.
+</p>
+<p>Basic Amounts are not subject to any form of netting with Delivery or Return Amounts.
+</p>
+<a name="genalcfdbe"></a>
+
+
+<h5>Thresholds</h5>
+
+
+<p>The Threshold generally represents the amount of unsecured risk (measured by the Secured Party's Exposure and the aggregate of any Independent Amounts due, if any) that a party is willing to tolerate without holding any Posted Credit Support provided by the other party.
+</p>
+<p>Generally, under the standard definition of Credit Support Amount, the unsecured threshold is deducted from the current exposure in order to arrive at the Credit Support Amount required for a particular Valuation Date.
+</p>
+<p>Alternatively, given the flexibility provided under ISDA documentation, the parties can agree to vary the Credit Support Amount definition so that when the exposure is greater than the threshold, the Credit Support Amount is calculated without any deduction of the unsecured Threshold, that is, Credit Support Amount = the entire Secured Party's exposure.
+</p>
+<p>Such a threshold arrangement is commonly referred to by the market as a SECURED Threshold since, once breached, the whole exposure is effectively offset by Posted Credit Support.
+</p>
+<p>EXAMPLE - reporting currency is USD
+</p>
+<table width="98%" border="1" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Total Exposure Amount</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">25,000,090 USD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Adjusted Exposure Amount (based on bilateral agreements)</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">25,000,090 USD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Netted Independent Amount</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">1,000,000 USD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Unsecured Threshold Amount</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000,000 USD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">Subtotal</i></td>
+
+<td align="LEFT" valign="TOP" width="50%"><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">24,000,090 USD</i></td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Basic Amount</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">0</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">Credit Support Amount</i></td>
+
+<td align="LEFT" valign="TOP" width="50%"><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">24,000,090 USD</i></td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Value of Collateral Held</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">15,384,615 USD</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">Delivery Amount</i></td>
+
+<td align="LEFT" valign="TOP" width="50%"><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">8,615,475 USD</i></td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Minimum Transfer Amount)</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(5,000,000)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Rounding Integer Amount )</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(250,000)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">COLLATERAL CALL AMOUNT</b></td>
+
+<td align="LEFT" valign="TOP" width="50%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">8,750,000 USD</b></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p>The items stated in italics are not present on the message as they can be deducted from the other amounts.
+</p>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="alce.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="alcg001.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

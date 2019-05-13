@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;565 Usage Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 3 (MT 544 - MT 567), Standards Release Guide, MT 565 Usage Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT565UsageRules">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 3">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 565 Usage Rules">
+<meta name="Type" content="UsageRules">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 565 Usage Rules" ;
+// --></script>
+<meta name="bookid" content="cat5v3">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 565">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 3 (MT 544 - MT 567) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 565 Usage Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 3";
+var linkself="alfe.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="alfd.htm";
+var linkup="";
+var linkright="alff.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genalfe"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;565 Usage Rules</h2>
+
+
+
+<ul>
+<li>
+<p>Sequence Financial Instrument Attribute (FIA) is intended to provide additional information regarding the terms and conditions of a securities issue. The objective of the sequence FIA is to ensure unambiguous identification of the security by the Receiver. It is recommended that the sequence FIA not be used unless required by a specific corporate action event, pursuant to a bilateral agreement, or when a valid ISIN or security identifier is not available.
+</p></li>
+
+<li>
+<p class="stem">Field 11A Currency in sequence D Corporate Action Instruction provides an instruction to the account servicer to execute a forex deal on behalf of the account owner. The purpose of the forex deal is to fund an investment decision or to repatriate proceeds at the completion of a transaction. This field is not to be used when standing instructions have been established. The use of a forex instruction implies the following:
+</p>
+
+<ul>
+<li>
+<p>the currency required for funding a purchase of securities, for example, the currency to be purchased, is indicated by the settlement currency of the transaction. The currency to be sold to obtain settlement currency is indicated by the qualifier FXIS. Normally, this will be the base currency of the portfolio.
+</p></li>
+
+<li>
+<p>the currency received as proceeds from the sale of securities, for example, the currency to be sold, is indicated within the transaction details. Therefore, the currency to be bought must be indicated by the qualifier FXIB. If proceeds are repatriated, this will be the base currency of the portfolio.
+</p></li>
+
+<li>
+<p>the amount of currency to be bought/sold is equal to the settlement amount of the transaction. Thus the forex instruction must not be used for other transactions; a bulk forex deal must be instructed by other means.
+</p></li>
+
+<li>
+<p>a forex deal to fund the purchase of securities should be executed in time for the currency to be available on the settlement date of the securities transaction. A forex deal to repatriate proceeds after the sale of securities should be executed for the soonest possible value date after settlement of the securities, as permitted by market convention.
+</p></li>
+
+<li>
+<p>a bilateral agreement regarding the use of this field has been established.
+</p></li>
+
+</ul>
+</li>
+
+</ul>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="alfd.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="alff.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

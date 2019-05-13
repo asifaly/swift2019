@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;305 Usage Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 305 Usage Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT305UsageRules">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 305 Usage Rules">
+<meta name="Type" content="UsageRules">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 305 Usage Rules" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 305">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 305 Usage Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="ahe.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ahd.htm";
+var linkup="";
+var linkright="ahf.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genahe"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;305 Usage Rules</h2>
+
+
+
+<ul>
+<li>
+<p>If the underlying contract is amended/cancelled on a bilateral basis, this should be agreed upon by a bilateral exchange of confirmations with either code AMEND or CANCEL, respectively.
+</p></li>
+
+<li>
+<p>Changes to the amount, and/or strike price, and/or premium price, and/or exercise date and/or settlement information require another confirmation.
+</p></li>
+
+<li>
+<p>Some users have bilaterally agreed to confirm Non Deliverable Options in an MT 305 instead of an MT 306. This usage is based on bilateral agreements.
+</p></li>
+
+<li>
+<p>When there is optional early termination that applies to the confirmation of the transactions, the MT 306 should be used.
+</p></li>
+
+<li>
+<p>This message should not be used for commodities. For confirmations of commodities options the MT 601 should be used.
+</p></li>
+
+</ul>
+
+
+
+<h3>Industry requirements</h3>
+
+
+
+<ul>
+<li>
+<p>If field 77H specifies ISDA as the type of master agreement, the 1998 FX and Currency Option Definitions (the FX definitions, as published by the International Swaps and Derivatives Association, Inc., the Emerging Markets Traders Association and The Foreign Exchange Committee) as amended and supplemented from time to time are incorporated into this confirmation unless field 14C states another version of the above mentioned FX definitions.
+</p></li>
+
+<li>
+<p>If field 77H specifies ISDA as the type of master agreement and Party A and Party B are parties to an ISDA Master Agreement or an Interest Rate and Currency Exchange Agreement (each an Agreement), this Confirmation constitutes a Confirmation as referred to in, and supplements, forms a part of, and is subject to that Agreement.
+</p>
+<p>If Party A and Party B have not entered into any ISDA Master Agreement or other master agreement, Party A and Party B agree to use all reasonable efforts to promptly negotiate, execute, and deliver an agreement in the form of a 2002 ISDA Master Agreement (the "ISDA Form"), with such modifications as Party A and Party B will in good faith agree. Upon the execution by Party A and Party B of such an agreement, this Confirmation will supplement, form part of, and be subject to that agreement. All provisions contained or incorporated by reference in that agreement upon its execution will govern this Confirmation.
+</p></li>
+
+<li>
+<p>If field 77H specifies DERV as the type of master agreement and if Party A and Party B are parties to a Rahmenvertrag f&uuml;r Finanztermingesch&auml;fte (the German Master Agreement), this Transaction is subject to the terms and conditions of that German Master Agreement.
+</p>
+<p>If Party A and Party B have not entered into a German Master Agreement ("Rahmenvertrag f&uuml;r Finanztermingesch&auml;fte"), Party A and Party B agree to use all reasonable efforts to promptly negotiate, execute, and deliver a German Master Agreement. Upon the execution by Party A and Party B of such an agreement, this Confirmation will supplement, form part of, and be subject to that agreement. All provisions contained or incorporated by reference in that agreement upon its execution will govern this Confirmation.
+</p></li>
+
+<li>
+<p>If some of the standard definitions linked to the agreement specified in field 77H do not apply to the confirmation of a trade under that agreement, a long form confirmation must be sent.
+</p></li>
+
+</ul>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ahd.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="ahf.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

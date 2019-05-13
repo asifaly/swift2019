@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;306 Scope</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 306 Scope">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT306Scope">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 306 Scope">
+<meta name="Type" content="Scope">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 306 Scope" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 306">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 306 Scope" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="aib.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="aia.htm";
+var linkup="";
+var linkright="aic.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genaib"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;306 Scope</h2>
+
+
+<p>This message is exchanged to confirm a foreign currency option contract.
+</p>
+<p>The confirmed transaction is covered by an ICOM (International Currency Option Master from the British Bankers' Association), ISDA (International Swaps and Derivatives Association), Deutsche Rahmenvertrag, IFEMA, FEOMA or AFB (Association Fran&ccedil;aise de Banques) Master Agreement. These agreements are either signed or under negotiation. The message also caters for deals that are not covered by the above agreements.
+</p>
+<p class="stem">The message is used to confirm/notify the details of:
+</p>
+
+<ul>
+<li>
+<p>a new contract between the parties,
+</p></li>
+
+<li>
+<p>an amendment to a previously agreed contract,
+</p></li>
+
+<li>
+<p>the cancellation of a confirmation,
+</p></li>
+
+<li>
+<p>a trigger event: knock-in/knock-out of an option, hitting of a trigger level,
+</p></li>
+
+<li>
+<p>the close out of an option.
+</p></li>
+
+</ul>
+
+
+<p>It may also be used to report the details of a contract to a trade repository.
+</p>
+<p>This message is exchanged by or on behalf of the institutions or corporates, party A and party B, which have agreed to a foreign currency option contract.
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030063.gif" alt="D0030063" border="0">
+</p>
+</div>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030064.gif" alt="D0030064" border="0">
+</p>
+</div>
+
+
+<p>A money broker may also send this message to the two parties (party A and party B) for which he arranged the deal.
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030065.gif" alt="D0030065" border="0">
+</p>
+</div>
+
+
+<p>If there are two money brokers involved in arranging a deal between party A and party B, this message can also be exchanged between these money brokers.
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030066.gif" alt="D0030066" border="0">
+</p>
+</div>
+
+
+<p>Party A and party B are the legal entities which have agreed to the transaction.
+</p>
+<p class="stem">Party A is either:
+</p>
+
+<ul>
+<li>
+<p>the Sender, or
+</p></li>
+
+<li>
+<p>the institution/corporate on behalf of which the message is sent, or
+</p></li>
+
+<li>
+<p>one of the institutions for which the broker arranged the deal and to whom it is sending the confirmation, or
+</p></li>
+
+<li>
+<p>when a money broker confirms to another money broker, the party for which the sending broker arranged the deal.
+</p></li>
+
+</ul>
+
+
+<p class="stem">Party B is either:
+</p>
+
+<ul>
+<li>
+<p>the Receiver, or
+</p></li>
+
+<li>
+<p>the institution/corporate on behalf of which the message is received, or
+</p></li>
+
+<li>
+<p>the other institution for which the broker arranged the deal, that is, party A's counterparty, or
+</p></li>
+
+<li>
+<p>when a money broker confirms to another money broker, party A's counterparty.
+</p></li>
+
+</ul>
+
+
+
+<h3>Specifics of the instruments covered</h3>
+
+<a name="genaiblib"></a>
+
+
+<h4>List of instruments</h4>
+
+
+<p class="stem">The options covered by the confirmation are:
+</p>
+
+<ul>
+<li>
+<p>Vanilla options (American, European, Asian and Bermudan)
+</p></li>
+
+<li>
+<p>Binary options (American or European)
+</p></li>
+
+<li>
+<p>Digital options with single or double trigger level
+</p></li>
+
+<li>
+<p>Notouch options with single or double trigger level
+</p></li>
+
+<li>
+<p>Average rate forwards, average strike forwards and double average forwards
+</p></li>
+
+<li>
+<p>Average rate options, average strike options and double average options
+</p></li>
+
+</ul>
+
+
+<p>All options can also have a barrier. The barriers covered are single knock-in, single knock-out, double knock-in, double knock-out, knock-in-knock-out.
+</p>
+<p>All options can be non-deliverable.
+</p>
+<a name="genaiblic"></a>
+
+
+<h4>Option styles</h4>
+
+
+
+<ul>
+<li>
+<p>Vanilla: The contract that provides the buyer the right but not the obligation to buy or sell the underlying currency at a predetermined rate with expiration determined by the expiration style. The expiration style is European, American, Asian or Bermudan.
+</p></li>
+
+<li>
+<p>Binary: An agreement under which a fixed amount is paid out if a specific condition is met at any time during the exercise period. The payment date of the amount is either when the condition is met (American) or at expiration date (European). The binary option has only "payment triggers".
+</p></li>
+
+<li>
+<p>Digital: An agreement under which a fixed amount is paid out if a specific condition is met on expiration date. The digital option has only "payment triggers".
+</p></li>
+
+<li>
+<p>Notouch: An agreement under which a fixed amount is paid unless a specific condition is met. The notouch option has only "no payment triggers".
+</p></li>
+
+</ul>
+
+<a name="genaiblid"></a>
+
+
+<h4>Expiration styles</h4>
+
+
+
+<ul>
+<li>
+<p>American: can be exercised on any date prior to and including expiration date as agreed by the parties to the trade.
+</p></li>
+
+<li>
+<p>Asian: can be exercised on the expiration date which is the last day of the determination period that is used to calculate the value of the underlying instrument of the option.
+</p></li>
+
+<li>
+<p>European: can be exercised on expiration date, at or before expiration time.
+</p></li>
+
+<li>
+<p>Bermudan or Mid-Atlantic: can be exercised on predetermined exercise dates as agreed to by the counterparts.
+</p></li>
+
+</ul>
+
+
+<p>Optional early termination details can also be specified 
+</p>
+<a name="genaiblie"></a>
+
+
+<h4>Barriers</h4>
+
+
+
+<ul>
+<li>
+<p>Knock-in: The option has a specified spot level, which, if touched during the knock-in period, triggers the option into existence. Prior to that level being touched, no option exists.
+</p></li>
+
+<li>
+<p>Knock-out: The option has a specified spot level, which, if touched during the knock-out period, terminates the option.
+</p></li>
+
+</ul>
+
+<a name="genaiblif"></a>
+
+
+<h4>Non deliverable options (NDO)</h4>
+
+
+<p>In respect of an exercise date under the non deliverable currency option transaction, the seller will pay to the buyer the In-the-Money amount, if positive, on settlement date in the settlement currency. The conditions and provisions as stated in the 1998 FX and Currency Option Definitions apply.
+</p>
+<p>Some users have bilaterally agreed to confirm Non Deliverable Options in an MT 305 instead of an MT 306. This usage is based on bilateral agreements.
+</p>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="aia.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aic.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

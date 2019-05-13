@@ -1,0 +1,313 @@
+/* styles for hub */
+SPAN.edition {
+    font-size: x-small;
+}
+
+
+/* styles for copyright page titles */
+.sectitle {
+    font-weight : bold;
+}
+
+/* styles for CATEGORY title page (as in SRG+) */ 
+.subset { 
+    text-align: center;
+    font-weight : normal;
+    font-size : 120%;
+    color : #336699;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+DL {
+    color : #000000;
+}
+
+TABLE.tblinitem {
+    width: 90% ;
+}
+
+.cat {
+    text-align: center;
+    font-weight : bold;
+    font-size : 180%;
+    color : #336699;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+.volume {
+    text-align: center;
+    font-weight : bold;
+    font-size : 150%;
+    color : #336699;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+.publi {
+    text-align: center;
+    font-weight : bold;
+    font-size : 90%;
+    color : #336699;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+.release {
+    text-align: center;
+    font-weight : bold;
+    font-size : 90%;
+    color : #336699;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+.bktitle {
+    text-align: center;
+    font-weight : bold;
+    font-size : 120%;
+    color : #336699;
+    font-family : "Arial","Helvetica","sans-serif";
+}
+
+/* styles for CATEGORY field examples */
+.fldexmp {
+    background : #FFCC99;
+    border : none;
+    margin : -1%;
+    padding : 0em 0em 0.2em 0.3em;
+}
+
+BODY, P, LI, TD, UL, OL {
+    color : #000000;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+CODE {
+    font-family : monospace, courier;
+    font-size : small;
+}
+
+
+/* styles from MEDOC's TIDX stylesheet */
+BODY.TIDX {
+    color : #000000;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+BODY.TIDX A:LINK {
+    font-family : "Arial","Helvetica","sans-serif";
+    color : #0033cc;
+    font-size : small;
+}
+
+BODY.TIDX A:VISITED {
+    color : #663399;
+    font-size : small;
+}
+
+BODY.TIDX A:HOVER {
+    color : #FF6600;
+    font-size : small;
+}
+
+BODY.TIDX A:ACTIVE {
+    color : #FF6600;
+    font-size : small;
+}
+
+/* styles from MEDOC's BOOK stylesheet */
+BODY.BOOK {
+    background-color : #FFFFFF;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+    margin : 1%;
+}
+
+BODY.BOOK INS,DEL,DIV,P {
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+BODY.BOOK A:LINK {
+    background-color : transparent;
+    color : #333366;
+}
+
+BODY.BOOK A:VISITED {
+    background-color : transparent;
+    color : #663399;
+}
+
+BODY.BOOK A:HOVER {
+    background-color : transparent;
+    color : #FF9900;
+}
+
+BODY.BOOK A:ACTIVE {
+    background-color : transparent;
+    color : #FF9900;
+}
+
+BODY.BOOK H1, H1 {
+    background-color : transparent;
+    color : #336699;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : 200%;
+    font-weight : bolder;
+}
+
+BODY.BOOK H1.copytitle {
+    font-size: 150%;
+}
+
+BODY.BOOK H2, H2 {
+    border-bottom-color : #000000;
+    border-bottom-style : solid;
+    border-bottom-width : thin;
+    color : #003399;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : 150%;
+    margin-left : 0em;
+}
+
+BODY.BOOK H3, H3 {
+    border-bottom-color : #000000;
+    border-bottom-style : solid;
+    border-bottom-width : thin;
+    color : #003399;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : medium;
+    font-weight : lighter;
+    margin-left : 0em;
+}
+
+BODY.BOOK H4, H4 {
+    border-bottom-color : #000000;
+    border-bottom-style : solid;
+    border-bottom-width : thin;
+    color : #003399;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+    font-weight : lighter;
+}
+
+BODY.BOOK H5, H5 {
+    color : #003399;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+    font-weight : 200;
+}
+
+BODY.BOOK .cellupdated { 
+    background-color : #CCCCCC;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+BODY.BOOK DL {
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+BODY.BOOK CAPTION {
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+BODY.BOOK TD {
+    font-family : "Arial","Helvetica","sans-serif";
+    background-color : #FFFFFF;
+    font-size: small; 
+}
+
+BODY.BOOK TH, TH {
+    background-color : #EEEEEE;
+    color : #003399;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+BODY.BOOK LI TABLE {
+    margin-bottom : 6pt;
+    margin-top : 6pt;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+BODY.BOOK UL LI {
+    list-style : url(bullet.gif);
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : small;
+}
+
+/* Styles from Medoc's TOP stylesheet */
+.TOPTITLE{
+    background-color : transparent;
+    color : #FFFFFF;
+    font-size : 140%;
+    font-weight : bold;
+}
+
+/* Styles for CATEGORY TOC page (tree-like with icons) */ 
+TABLE.TREE {
+    border : 0 ;
+    font-size : small;
+}
+
+TABLE.TREE TR TD IMG {
+    vertical-align : top ;
+    border : 0 ;
+    font-size : small;
+}
+
+CAPTION {
+    color : #000000;
+    font-family : "Arial","Helvetica","sans-serif";
+    text-align : left ;
+    border : 0 ;
+    font-size : small;
+}
+
+/* added in 2003 exercise */
+BODY.BOOK TD.ERRORCODE {
+    background-color : #EEEEEE;
+    font-weight : bold;
+    color : #003399;
+}
+
+BODY.BOOK P.RELATEDMT {
+    color : #003399;
+    font-weight : bold;
+}
+
+BOOKTITLE {
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size: small; 
+}
+
+/* Styles for footnotes */
+A.FOOTNOTEREF {
+    font-size: 65%;
+    vertical-align: super;
+    line-height: 2.0em;
+}
+
+SPAN.FOOTNOTENUMBER {
+    font-size: 80%;
+    vertical-align: text-top;
+}
+
+P.FOOTNOTE {
+    font-size: 80%;
+    font-style: italic;
+    vertical-align: text-top;
+}
+
+IMG {
+    border-width: 0px;
+}
+
+DIV.ABSTRACT {
+    border : 1px solid black;
+    text-align: center;
+}
+
+DIV.ABSTRACT P {
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size: 80%; 
+}

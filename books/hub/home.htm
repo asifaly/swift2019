@@ -1,0 +1,53 @@
+<!doctype html public "-//w3c//dtd html 4.01 transitional//en">
+<HTML>
+<HEAD>
+
+<TITLE>SWIFT User Documentation - Home Page</TITLE>
+<META NAME="description" CONTENT="SWIFT User Documentation - Home Page">
+<META NAME="edition" CONTENT="December 2018">
+<META NAME="publisher" CONTENT="S.W.I.F.T. SCRL">
+<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=iso-8859-1">
+
+<SCRIPT LANGUAGE="javascript" TYPE="text/javascript">
+<!--
+var hubDir="../hub/";
+
+function showHelp(url) {
+  if (this.hubDir!=null) {
+    mywin = window.open(this.hubDir + url, "w" + name,"toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=1,width=640,height=480"); 
+    mywin.focus(); 
+  }
+}
+
+function confirmExit()
+{
+    if (location.protocol=="http:") {
+        if (confirm("Are you sure you want to quit this application?")) {
+            this.window.location="/exit.isapi?returnpage=/books/forms/exit.htm";
+        }
+    }
+    else {
+        if (navigator.appName=="Microsoft Internet Explorer") {
+            this.window.location = "about:blank" ;
+        }
+        else {
+            this.window.home();
+        }
+    }
+}
+
+// -->
+</SCRIPT>
+<SCRIPT LANGUAGE="javascript" SRC="topbar.js" TYPE="text/javascript"></SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#ffffff" CLASS="home">
+<MAP NAME="menumap">
+<AREA SHAPE="RECT" COORDS="257,272,343,296" HREF="welcome.htm" ALT="Welcome">
+<AREA SHAPE="RECT" COORDS="257,306,364,328" HREF="books.htm" ALT="List of books">
+<AREA SHAPE="RECT" COORDS="257,338,405,361" HREF="help/help.htm" target="new_window" ALT="Help and feedback">
+</MAP>
+<TABLE ALIGN="center" BORDER="0" HEIGHT="100%" WIDTH="100%"><TR><TD ALIGN="center" VALIGN="middle">
+<IMG SRC="homepage.gif" ALT="" WIDTH="800" HEIGHT="554" BORDER="0" USEMAP="#menumap" BORDER="0">
+</TD></TR></TABLE>
+</BODY>
+</HTML>

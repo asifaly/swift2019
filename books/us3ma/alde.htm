@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;341 Usage Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 341 Usage Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT341UsageRules">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 341 Usage Rules">
+<meta name="Type" content="UsageRules">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 341 Usage Rules" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 341">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 341 Usage Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="alde.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="aldd.htm";
+var linkup="";
+var linkright="aldf.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genalde"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;341 Usage Rules</h2>
+
+
+
+<ul>
+<li>
+<p>This message only confirms the settlement details of the forward rate agreement. For the actual transfer of funds at settlement or the confirmation of debits and credits, other messages outside Category 3 are available (for example, MT 202, 203, 205, 900, 910, 950).
+</p>
+<p>In all cases, the Common Reference of the MT 341 must be quoted in the relevant reference field, that is, field 21 of the MT 202, 203, 205.
+</p></li>
+
+<li>
+<p>Only one of the financial institutions involved in a contract will send a settlement confirmation to the second financial institution when there is a retransmission due to errors in a previously sent settlement confirmation.
+</p></li>
+
+<li>
+<p class="stem">When cancelling a previously sent message (field 22A is CANC) using MT 341:
+</p>
+
+<ul>
+<li>
+<p>field 21 must contain the reference, that is, the content of field 20, of the message containing the instruction to be cancelled
+</p></li>
+
+<li>
+<p>the cancellation message must contain at least the mandatory fields of the original message.
+</p></li>
+
+</ul>
+</li>
+
+<li>
+<p class="stem">To amend a previously sent message (field 22A is AMND):
+</p>
+
+<ul>
+<li>
+<p>field 21 must contain the reference, that is, the content of field 20, of the message containing the instruction to be amended
+</p></li>
+
+<li>
+<p>the amendment message must contain both the unchanged and the changed/new fields of the original message
+</p></li>
+
+<li>
+<p>the amendment message replaces the original message.
+</p></li>
+
+</ul>
+</li>
+
+</ul>
+
+
+<p>The MT 341 is used to confirm the settlement details between two parties, A and B:
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030060.gif" alt="D0030060" border="0">
+</p>
+</div>
+
+
+<p>It can also be exchanged on behalf of an institution or corporate:
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030061.gif" alt="D0030061" border="0">
+</p>
+</div>
+
+
+<p>Party A and party B are the legal entities which have agreed to the transaction.
+</p>
+<p class="stem">Party A is either:
+</p>
+
+<ul>
+<li>
+<p>the Sender
+</p></li>
+
+<li>
+<p>the institution/corporate on whose behalf the message is sent
+</p></li>
+
+</ul>
+
+
+<p class="stem">Party B is either:
+</p>
+
+<ul>
+<li>
+<p>the Receiver
+</p></li>
+
+<li>
+<p>the institution/corporate on whose behalf the message is received
+</p></li>
+
+</ul>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="aldd.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aldf.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

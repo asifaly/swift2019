@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;306 Usage Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 306 Usage Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT306UsageRules">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 306 Usage Rules">
+<meta name="Type" content="UsageRules">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 306 Usage Rules" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 306">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 306 Usage Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="aie.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="aid.htm";
+var linkup="";
+var linkright="aif.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genaie"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;306 Usage Rules</h2>
+
+
+
+<ul>
+<li>
+<p>For the actual transfer of funds or the confirmation of credits and debits, other messages outside Category 3 are available such as the MTs 202, 203, 205, financial institution transfer messages and the MTs 900, 910, 950, confirmation of debit/credit and statement messages, respectively.
+</p>
+<p>In all cases, the common reference of the MT 306 must be quoted in the relevant reference field, that is, field 21 of the MTs 202, 203, 205.
+</p></li>
+
+<li>
+<p class="stem">When cancelling a previously sent message (field 22A is CANC) using MT 306:
+</p>
+
+<ul>
+<li>
+<p>field 21 must contain the reference, that is, the content of field 20, of the message containing the instruction to be cancelled
+</p></li>
+
+<li>
+<p>the cancellation message must contain the full details of the confirmation to be cancelled.
+</p></li>
+
+</ul>
+</li>
+
+<li>
+<p class="stem">To amend a previously sent message (field 22A is AMND):
+</p>
+
+<ul>
+<li>
+<p>field 21 must contain the reference, that is, the content of field 20, of the message containing the instruction to be amended
+</p></li>
+
+<li>
+<p>the amendment message must contain both the unchanged and the changed/new fields of the original message
+</p></li>
+
+<li>
+<p>the amendment message replaces the original message.
+</p></li>
+
+</ul>
+</li>
+
+</ul>
+
+
+
+<h3>Industry requirements</h3>
+
+
+
+<ul>
+<li>
+<p>If field 77H specifies ISDA as the type of master agreement, the 1998 FX and Currency Option Definitions (the FX definitions, as published by the International Swaps and Derivatives Association, Inc., the Emerging Markets Traders Association and The Foreign Exchange Committee) as amended and supplemented from time to time are incorporated into this confirmation unless field 14C states another version of the above mentioned FX definitions.
+</p></li>
+
+<li>
+<p>If field 77H specifies ISDA as the type of master agreement and Party A and Party B are parties to an ISDA Master Agreement or an Interest Rate and Currency Exchange Agreement (each an Agreement), this Confirmation constitutes a Confirmation as referred to in, and supplements, forms a part of, and is subject to that Agreement.
+</p>
+<p>If Party A and Party B have not entered into any ISDA Master Agreement or other master agreement, Party A and Party B agree to use all reasonable efforts to promptly negotiate, execute, and deliver an agreement in the form of a 2002 ISDA Master Agreement (the "ISDA Form"), with such modifications as Party A and Party B will in good faith agree. Upon the execution by Party A and Party B of such an agreement, this Confirmation will supplement, form part of, and be subject to that agreement. All provisions contained or incorporated by reference in that agreement upon its execution will govern this Confirmation.
+</p></li>
+
+<li>
+<p>If field 77H specifies DERV as the type of master agreement and if Party A and Party B are parties to a Rahmenvertrag f&uuml;r Finanztermingesch&auml;fte (the German Master Agreement), this Transaction is subject to the terms and conditions of that German Master Agreement.
+</p>
+<p>If Party A and Party B have not entered into a German Master Agreement ("Rahmenvertrag f&uuml;r Finanztermingesch&auml;fte"), Party A and Party B agree to use all reasonable efforts to promptly negotiate, execute, and deliver a German Master Agreement. Upon the execution by Party A and Party B of such an agreement, this Confirmation will supplement, form part of, and be subject to that agreement. All provisions contained or incorporated by reference in that agreement upon its execution will govern this Confirmation.
+</p></li>
+
+<li>
+<p>If some of the standard definitions linked to the agreement specified in field 77H do not apply to the confirmation of a trade under that agreement, a long form confirmation must be sent.
+</p></li>
+
+<li>
+<p class="stem">Conventions for vanilla options with barriers:
+</p>
+
+<ul>
+<li>
+<p class="stem">spot market definition:
+</p>
+
+<ul>
+<li>
+<p>the <b>spot market</b> means any major over-the-counter foreign exchange trading center which is open for spot transactions at any time between Monday 5:00 am Sydney time and Friday 5:00 pm New York time inclusive in each week, up to and including the expiry time on the expiry date
+</p></li>
+
+<li>
+<p>the calculation agent, acting in good faith and in a commercially reasonable manner, shall be responsible for monitoring the prevailing spot market rate and determining a trigger/barrier event.
+</p></li>
+
+</ul>
+</li>
+
+
+<li>
+<p class="stem">trigger event:
+</p>
+
+<ul>
+<li>
+<p>a trigger event will occur, if at any time from the barrier window start time on the barrier window start date up to and including the barrier window end time on the barrier window end date, the spot exchange rate trades at or beyond a barrier level, as determined by the calculation agent
+</p></li>
+
+<li>
+<p>the calculation agent shall notify the counterparty within 24 hours if it determines that a trigger event has occurred. A failure to give such a notice shall not however prejudice or invalidate the occurrence or effect of that event.
+</p></li>
+
+</ul>
+</li>
+
+
+<li>
+<p class="stem">exercise of option (subject to trigger event):
+</p>
+
+<ul>
+<li>
+<p>valid exercise of an option entitles the buyer to buy and sell the currencies in the amounts specified for value on the final settlement date. (European style).
+</p></li>
+
+<li>
+<p>valid exercise of an option entitles the buyer to buy and sell the currencies in the amounts specified for value two business days after the exercise date. (American style).
+</p></li>
+
+<li>
+<p>a notice of exercise of the option may be given orally or in writing. If given orally, it shall be confirmed as soon as possible. However, any failure to confirm such notice of exercise shall not prejudice or invalidate such notice of exercise.
+</p></li>
+
+<li>
+<p>any notice of exercise must be received by the seller at or before the expiration time on the expiration date. No notice of exercise shall be valid if received by the seller later than the expiration time on the expiration date. A notice of exercise, once received by the seller, is irrevocable without the consent of the seller.
+</p></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+
+<li>
+<p class="stem">Conventions for binary options:
+</p>
+
+<ul>
+<li>
+<p class="stem">spot market definition:
+</p>
+
+<ul>
+<li>
+<p>the "spot market" means any major over-the-counter foreign exchange trading centre which is open for spot transactions at any time between Monday 5:00 am Sydney time and Friday 5:00 pm New York time inclusive in each week, up to and including the expire time on the expire date
+</p></li>
+
+<li>
+<p>the calculation agent, acting in good faith and in a commercially reasonable manner, shall be responsible for monitoring the prevailing spot market rate and determining a trigger/barrier event.
+</p></li>
+
+</ul>
+</li>
+
+
+<li>
+<p class="stem">payout arrangement:
+</p>
+
+<ul>
+<li>
+<p>the payout amount will become payable on the settlement date (European style) or two business days after the trigger date (American style) to the buyer in respect of the digital option, if the spot exchange rate trades at or beyond a trigger level, at any time up to and including the expiration time on the expiration date, as determined by the calculation agent, provided that only one payout amount shall be due in respect of the option
+</p></li>
+
+<li>
+<p>the calculation agent shall notify the counterparty within 24 hours if it determines that a payout amount is due. A failure to give such a notice shall not however prejudice or invalidate the occurrence or effect of that event.
+</p></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+
+<li>
+<p class="stem">Conventions for digital options:
+</p>
+
+<ul>
+<li>
+<p class="stem">spot market definition:
+</p>
+
+<ul>
+<li>
+<p>the <b>spot market</b> means any major over-the-counter foreign exchange trading centre which is open for spot transactions at any time between Monday 5:00 am Sydney time and Friday 5:00 pm New York time inclusive in each week, up to and including the expire time on the expire date
+</p></li>
+
+
+<li>
+<p>the calculation agent, acting in good faith and in a commercially reasonable manner, shall be responsible for monitoring the prevailing spot market rate and determining a trigger/barrier event.
+</p></li>
+
+</ul>
+</li>
+
+
+<li>
+<p class="stem">payout arrangement:
+</p>
+
+<ul>
+<li>
+<p>the payout amount will become payable on the settlement date to the buyer in respect of the digital option, if the spot level is beyond a trigger level at the expiration time on the expiration date, as determined by the calculation agent, provided that only one payout amount shall be due in respect of the option
+</p></li>
+
+
+<li>
+<p>the calculation agent shall notify the counterparty within 24 hours if it determines that a payout amount is due. A failure to give such a notice shall not however prejudice or invalidate the occurrence or effect of that event.
+</p></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+
+<li>
+<p class="stem">Conventions for notouch options:
+</p>
+
+<ul>
+<li>
+<p class="stem">spot market definition:
+</p>
+
+<ul>
+<li>
+<p>the <b>spot market</b> means any major over-the-counter foreign exchange trading centre which is open for spot transactions at any time between Monday 5:00 am Sydney time and Friday 5:00 pm New York time inclusive in each week, up to and including the expiry time on the expiry date
+</p></li>
+
+
+<li>
+<p>the calculation agent, acting in good faith and in a commercially reasonable manner, shall be responsible for monitoring the prevailing spot market rate and determining a trigger/barrier event.
+</p></li>
+
+</ul>
+</li>
+
+
+<li>
+<p class="stem">payout arrangement:
+</p>
+
+<ul>
+<li>
+<p>the seller of the option will make a payment equal to the payout amount, on the settlement date provided that the option has not lapsed in accordance with clause concerning trigger event below
+</p></li>
+
+
+<li>
+<p>once the option has deemed to have lapsed in accordance with clause concerning trigger event below, it will immediately expire and the buyer of the option will no longer be entitled to any payout amount under this option.
+</p></li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+
+<li>
+<p class="stem">trigger event:
+</p>
+
+<ul>
+<li>
+<p>a trigger event will occur, if at any time from trade inception, up to and including the expiration time on the expiration date, the spot exchange rate trades at or beyond a trigger level, as determined by the calculation agent
+</p></li>
+
+
+<li>
+<p>the calculation agent shall notify the counterparty within 24 hours if it determines that a trigger event has occurred. A failure to give such a notice shall not however prejudice or invalidate the occurrence or effect of that event.
+</p></li>
+
+</ul>
+</li>
+
+</ul>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="aid.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aif.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

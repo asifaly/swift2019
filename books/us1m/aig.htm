@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 1 - MT&#160;103 Guidelines</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 1, Message Reference Guide, Standards Release Guide, MT 103 Guidelines">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT103Title">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 1, Customer Payments and Cheques">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 103 Guidelines">
+<meta name="Type" content="Title">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 103 Guidelines" ;
+// --></script>
+<meta name="bookid" content="cat1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 1 - Customer Payments and Cheques">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 103">
+<meta name="Book.Product" content="Category 1 - Customer Payments and Cheques for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 103 Guidelines" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 1";
+var linkself="aig.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="aif.htm";
+var linkup="";
+var linkright="aih001.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genaig"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;103 Guidelines</h2>
+
+
+
+<ul>
+<li>
+<p>If the Sender and the Receiver wish to use their direct account relationship in the currency of the transfer, then the MT 103 message will contain the cover for the customer transfer as well as the payment details.
+</p></li>
+
+<li>
+<p>If the Sender and the Receiver have no direct account relationship in the currency of the transfer or do not wish to use their account relationship, then third banks will be involved to cover the transaction. The MT 103 contains only the payment details and the Sender must cover the customer transfer by sending an MT 202 COV General Financial Institution Transfer to a third bank. This payment method is called 'cover'.
+</p></li>
+
+<li>
+<p>Where more than two financial institutions are involved in the payment chain, and if the MT 103 is sent from one financial institution to the next financial institution in this chain, then the payment method is called 'serial'.
+</p></li>
+
+<li>
+<p>If the Receiver does not service an account for the beneficiary customer, and no account servicing institution is indicated, nor any alternative instructions given, then the Receiver will act upon the customer credit transfer instruction in an appropriate manner of its choice.
+</p></li>
+
+<li>
+<p>In order to allow better reconciliation by the beneficiary customer, the MT 103 supports full charges transparency and structured remittance information.
+</p></li>
+
+<li>
+<p>In order to allow better reconciliation by the Receiver, the MT 103 gives an unambiguous indication of the interbank amount booked by the Sender/to be booked by the Receiver.
+</p></li>
+
+<li>
+<p>The MT 103 gives the Sender the ability to identify in the message the level of service requested, that is, what service is expected from the Receiver for a particular payment, for example, SWIFTPay, Standard or Priority or any other bilaterally agreed service.
+</p></li>
+
+<li>
+<p>The message also allows for the inclusion of regulatory information in countries where regulatory reporting is requested.
+</p></li>
+
+</ul>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="aif.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aih001.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

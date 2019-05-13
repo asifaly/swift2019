@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 6 - MT&#160;600 Usage Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 6, Message Reference Guide, Standards Release Guide, MT 600 Usage Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT600UsageRules">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 6, Treasury Markets - Commodities">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 6PM">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 600 Usage Rules">
+<meta name="Type" content="UsageRules">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 600 Usage Rules" ;
+// --></script>
+<meta name="bookid" content="cat6PM">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 6 - Treasury Markets - Commodities">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 600">
+<meta name="Book.Product" content="Category 6 - Treasury Markets - Commodities for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 600 Usage Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 6PM";
+var linkself="afe.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="afd.htm";
+var linkup="";
+var linkright="aff001.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genafe"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;600 Usage Rules</h2>
+
+
+
+<ul>
+<li>
+<p>Changes to the quantity of commodity, and/or price per unit, and/or consideration and/or settlement instructions require another confirmation.
+</p></li>
+
+<li>
+<p>This message handles only the contract part of a commodity trade.
+</p>
+<p>The actual transfer/delivery of commodity is handled through the MT 604 Commodity Transfer/Delivery Order and the confirmation of debits or credits is handled through the MT 606 Commodity Debit Advice/MT 607 Commodity Credit Advice/MT 608 Statement of a Commodity Account. In all cases, the common reference of the MT 600 must be quoted in the relevant reference field (that is, field 21 of the MT 604/606/607 or field 61, subfield 7 of the MT 608).
+</p>
+<p>The actual transfer of funds (that is, the consideration) is handled through the financial institution transfer messages (MT 202/203/205) and the confirmation of debits or credits is handled through the MT 900/910/950. In all cases, the common reference of the MT 600 must be quoted in the relevant reference field (that is, field 21 of the MT 202/203/205/910 or field 61, subfield 7 of the MT 950).
+</p></li>
+
+</ul>
+
+
+
+<h3>Industry Requirements</h3>
+
+
+
+<ul>
+<li>
+<p>If field 77H specifies ISDA as the type of master agreement, the 1998 FX and Currency Option Definitions (the FX definitions, as published by the International Swaps and Derivatives Association, Inc., the Emerging Markets Traders Association and The Foreign Exchange Committee) as amended and supplemented from time to time are incorporated into this confirmation unless field 14C states another version of the above mentioned FX definitions.
+</p></li>
+
+<li>
+<p>If field 77H specifies ISDA as the type of master agreement and Party A and Party B are parties to an ISDA Master Agreement or an Interest Rate and Currency Exchange Agreement (each an Agreement), this Confirmation constitutes a Confirmation as referred to in, and supplements, forms a part of, and is subject to that Agreement.
+</p>
+<p>If Party A and Party B have not entered into any ISDA Master Agreement or other master agreement, Party A and Party B agree to use all reasonable efforts to promptly negotiate, execute, and deliver an agreement in the form of a 2002 ISDA Master Agreement (the "ISDA Form"), with such modifications as Party A and Party B will in good faith agree. Upon the execution by Party A and Party B of such an agreement, this Confirmation will supplement, form part of, and be subject to that agreement. All provisions contained or incorporated by reference in that agreement upon its execution will govern this Confirmation.
+</p></li>
+
+<li>
+<p>If some of the standard definitions linked to the agreement specified in field 77H do not apply to the confirmation of a trade under that agreement, a long form confirmation must be sent.
+</p></li>
+
+</ul>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="afd.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aff001.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

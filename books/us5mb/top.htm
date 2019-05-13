@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Top Navigation Bar</title>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<meta name="Description" content="Top Navigation Bar">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="ROBOTS" content="NOINDEX,FOLLOW">
+<link rel="stylesheet" type="text/css" href="top.css">
+<script type="text/JavaScript" language="JavaScript" src="revlist.js"></script>
+<script type="text/JavaScript" language="JavaScript" src="revision.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+// pathnames used in button actions that depend on the document type (STD, SRG, MEDOC etc)
+var linktoc="HTTOC.HTM";
+var linkPDF="us5mb.pdf";
+var linksearch="";
+var hubDir="../hub/";
+var docDir="";
+var imgDir="";
+// -->
+</script>
+<script language="JavaScript" src="topbar.js" type="text/JavaScript"></script>
+</head>
+<body onload="preloadImages();" onresize="if (this.preloadFlag==true) { updateNavBar(); };" bgcolor="#CCCCCC">
+<map name="CHGNAVIGBAR">
+<area shape="RECT" coords="20,0,44,25" href="Javascript:goRevision('First')" alt="First Change">
+<area shape="RECT" coords="51,0,75,25" href="Javascript:goRevision('Prev')" alt="Previous Change">
+<area shape="RECT" coords="82,0,105,25" href="Javascript:goRevision('Next')" alt="Next Change">
+<area shape="RECT" coords="113,0,137,25" href="Javascript:goRevision('Last')" alt="Last Change">
+</map>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="LEFT" valign="TOP"><p class="TOPTITLE"><img src="cat5.gif" alt=""></p></td>
+<td width="280" align="RIGHT" valign="TOP" nowrap="NOWRAP">
+<table width="280" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><a href="JavaScript:showHome()" onmouseover="changeImages('HOME', 'OVER'); return true;" onmouseout="changeImages('HOME', 'ON'); return true;"><img name="HOME" src="home.gif" width="39" height="34" border="0" alt=""></a></td>
+<td><a href="JavaScript:showBooks()" onmouseover="changeImages('BOOKS', 'OVER'); return true;" onmouseout="changeImages('BOOKS', 'ON'); return true;"><img name="BOOKS" src="books.gif" width="39" height="34" border="0" alt=""></a></td>
+<td><a href="JavaScript:showFeedback()" onmouseover="changeImages('FEEDBACK', 'OVER'); return true;" onmouseout="changeImages('FEEDBACK', 'ON'); return true;"><img name="FEEDBACK" src="feedbck.gif" width="39" height="34" border="0" alt=""></a></td>
+<td><a href="JavaScript:showHelp()" onmouseover="changeImages('HELP', 'OVER'); return true;" onmouseout="changeImages('HELP', 'ON'); return true;"><img name="HELP" src="help.gif" width="39" height="34" border="0" alt=""></a></td>
+<td><a href="JavaScript:showToc()" onmouseover="changeImages('TOC', 'OVER'); return true;" onmouseout="changeImages('TOC', 'ON'); return true;"><img name="TOC" src="toc.gif" width="39" height="34" border="0" alt=""></a></td>
+<td><a href="JavaScript:showPDF()" onmouseover="changeImages('PDF', 'OVER'); return true;" onmouseout="changeImages('PDF', 'ON'); return true;"><img name="PDF" src="pdf.gif" width="39" height="34" border="0" alt=""></a></td>
+<td><a href="JavaScript:showSearch()" onmouseover="changeImages('SEARCH', 'OVER'); return true;" onmouseout="changeImages('SEARCH', 'ON'); return true;"><img name="SEARCH" src="search.gif" width="39" height="34" border="0" alt=""></a></td>
+</tr>
+<tr>
+<td colspan="7"><img src="spacer.gif" height="2" alt=""></td>
+</tr>
+<tr>
+<td colspan="4"><img name="CHGNAVIG" src="chgnavig.gif" width="156" height="34" border="0" usemap="#chgnavigbar" alt=""></td>
+<td><a href="JavaScript:showPrevious()" onmouseover="changeImages('BACK', 'OVER'); return true;" onmouseout="changeImages('BACK', 'ON'); return true;"><img name="BACK" src="back.gif" width="39" height="34" border="0" alt=""></a></td>
+<td><a href="JavaScript:showTop()" onmouseover="changeImages('TOP', 'OVER'); return true;" onmouseout="changeImages('TOP', 'ON'); return true;"><img name="TOP" src="top.gif" width="39" height="34" border="0" alt=""></a></td>
+<td><a href="JavaScript:showNext()" onmouseover="changeImages('NEXT', 'OVER'); return true;" onmouseout="changeImages('NEXT', 'ON'); return true;"><img name="NEXT" src="next.gif" width="39" height="34" border="0" alt=""></a></td>
+</tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>

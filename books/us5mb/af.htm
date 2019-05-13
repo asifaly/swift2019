@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - Securities Data Source Schemes</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 2 (MT 519 - MT 543), Standards Release Guide, Securities Data Source Schemes">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="SecuritiesDataSourceSchemes">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 2">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="Securities Data Source Schemes">
+<meta name="Type" content="">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "Securities Data Source Schemes" ;
+// --></script>
+<meta name="bookid" content="cat5v2">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="Securities Data Source Schemes">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 2 (MT 519 - MT 543) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "Securities Data Source Schemes" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 2";
+var linkself="af.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ae.htm";
+var linkup="";
+var linkright="aga.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genaf"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+<a name="genafa"></a>
+
+
+<h1>Securities Data Source Schemes</h1>
+
+
+<p>Use of Data Source Schemes (previously called Issuer Codes) in ISO 15022 Compliant Messages:
+</p>
+<p class="stem">The data source scheme, [4!c[4c]], consists of two sub-fields:
+</p>
+
+<ul>
+<li>
+<p>data source issuer code - where the purpose is to identify the institution issuing a proprietary code
+</p></li>
+
+<li>
+<p>data source issuer sub-code - where the purpose is to explicitly identify the proprietary code in the case where a single institution issues more than one proprietary code for the same business purpose, for example, two codes for identification of parties.
+</p></li>
+
+</ul>
+
+<a name="genafe"></a>
+
+
+<h2>Process</h2>
+
+
+<p>An initial list of valid data source schemes, assigned on a field-by-field basis, has been agreed with ISO.
+</p>
+<p>Updates to this list will be agreed between the ISO 15022 Registration Authority (RA) and the ISO 15022 Registration Management Group (RMG).
+</p>
+<p class="stem">The following principles have been agreed and will be applied:
+</p>
+<ol type="A">
+<li value="1">
+<p>Generic fields for which there is agreement that no current need exists for a data source scheme.
+</p>
+<p>If an institution or market organisation requires the use of additional (proprietary) codes in one of these fields, they either have to request the RA to register new codes in the Data Dictionary, or they have to request a data source scheme from the RA. Such a request will need to be accompanied by a business justification of why they cannot use the standard codes. It is not the intention that every bank or institution should obtain a data source scheme. In case of appeal, the final decision will be taken by the Registration Management Group.
+</p>
+<p>Example fields: Account, Balance, Date/Time, Place, Rate, Status Code, Number Identification
+</p>
+<p class="itemnote"><b><i>Note:</i></b>&nbsp;For the number identification field, it is recommended to use the ISO standard for the transmission of certificate numbers (ISO 8532, Securities - Format for transmission of certificate numbers). If the ISO standard is followed, no data source scheme must be used. A data source scheme may only be used when an institution or market organisation wants to transmit proprietary certificate numbers.
+</p></li>
+
+<li value="2">
+<p>Generic fields for which there is agreement that an institution or market organisation may need to specify their proprietary scheme(s).
+</p>
+<p>In this case the RA will assign a data source scheme to each institution or market organisation requesting a data source scheme, that is, the assignment will be less restricted than for the previously listed fields.
+</p>
+<p>However, if an institution requests to register new codes in the Data Dictionary, the RA will not register the proprietary codes of each institution, but will translate and register any new business codes not already catered for within the ISO 15022 Standard.
+</p>
+<p>Example fields: Indicator, Reason Code, Type of Financial Instrument
+</p></li>
+
+<li value="3">
+<p>Generic fields for which there is agreement that the proprietary schemes for a specific list of institutions and market organisations may be used.
+</p>
+<p>Example fields: Party
+</p></li>
+
+</ol>
+
+
+<p>SWIFT is also reviewing the possibility of validating the data source scheme, that is, use of an invalid data source issuer code or issuer sub-code would cause the message to be NAKed.
+</p>
+<a name="genaff"></a>
+
+
+<h2>Data Source Scheme list</h2>
+
+
+<p>The list of institutions or market organisations have already been assigned a data source scheme, only to be used with the indicated field as specified in the Data source Scheme list.
+</p>
+<p>Consult <b>www.swift.com</b> or <b>www.iso15022.org</b> for the latest list.
+</p>
+<p>Any additional Data Source Schemes or updates to the existing Data Source Schemes should be submitted for approval to the ISO 15022 Registration Authority. The official Data Source Scheme request form (Request for a new Data Source Scheme) can be found on the ISO 15022 web site (<b>www.iso15022.org</b>).
+</p>
+<p>If you have any questions, contact the ISO 15022 Registration Authority Administrator:
+</p>
+<p>E-mail: <b>iso15022ra@iso15022.org</b>
+</p>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ae.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aga.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+<a name="page-break"></a>
+</body>
+</html>
+

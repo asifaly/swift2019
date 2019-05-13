@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;360 - 46. Field 14D: Day Count Fraction</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 2 (MT 350 - MT 399), Standards Release Guide, MT 360 - 46. Field 14D: Day Count Fraction">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT360-46-FIELD-14D">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 2">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 360 - 46. Field 14D: Day Count Fraction">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 360 - 46. Field 14D: Day Count Fraction" ;
+// --></script>
+<meta name="bookid" content="cat3v2">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 360">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 2 (MT 350 - MT 399) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 360 - 46. Field 14D: Day Count Fraction" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 2";
+var linkself="agg046.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="agg045.htm";
+var linkup="";
+var linkright="agg047.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt360-46-field-14d"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<br>
+
+
+<h2 class="mtfldblock">MT&nbsp;360 Field Specifications</h2>
+
+
+
+<h3>46. Field 14D: Day Count Fraction</h3>
+
+
+
+<h4 class="fldfmt">FORMAT</h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="26%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option D</td>
+
+<td align="LEFT" valign="TOP" width="74%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">7x</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc">PRESENCE</h4>
+
+
+<p>Mandatory in conditional (see rule C16) subsequence C1
+</p>
+
+<h4 class="flddef">DEFINITION</h4>
+
+
+<p>This field specifies the number of days taken into account for the calculation of the interest.
+</p>
+<p>For an ISDA Master (Type in field 77H = ISDA), this field specifies the Day Count Fraction as per ISDA definitions.
+</p>
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>Day Count Fraction must contain one of the following codes <span class="ecodes">(Error code(s): T36)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E/360</td>
+
+<td align="LEFT" valign="TOP" width="80%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E/360 (ISDA)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">360/360</td>
+
+<td align="LEFT" valign="TOP" width="80%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30/360, 360/360 or Bond Basis</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACT/360</td>
+
+<td align="LEFT" valign="TOP" width="80%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/360, Act/360, A/360</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACT/365</td>
+
+<td align="LEFT" valign="TOP" width="80%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/365, Actual/Actual, Actual/Actual (ISDA), Act/Act, Act/Act (ISDA)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AFI/365</td>
+
+<td align="LEFT" valign="TOP" width="80%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/365 (fixed)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">EBD/360</td>
+
+<td align="LEFT" valign="TOP" width="80%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E/360 or Eurobond Basis</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">EXA/EXA</td>
+
+<td align="LEFT" valign="TOP" width="80%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Base Exact/Exact as per September 1994 additives to AFB definitions or 1/1</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ICM/ACT</td>
+
+<td align="LEFT" valign="TOP" width="80%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/Actual (ICMA), Act/Act (ICMA)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">OTHER</td>
+
+<td align="LEFT" valign="TOP" width="80%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">The Day Count Fraction is specified in field 37N of the same sequence.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldusgrls">USAGE RULES</h4>
+
+
+<p>When the 2000 ISDA definitions are applicable, note that the following applies:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Codes</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ISDA 2000</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E/360</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E/360, Eurobond Basis</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">360/360</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30/360, 360/360, Bond Basis</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACT/360</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/360, Act/360, A/360</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACT/365</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/Actual, Act/365, A/365, Actual/Actual, Act/Act</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AFI/365</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/365 (Fixed), Act/365 (Fixed), A/365 (Fixed), A/365F</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+<p>When the 2006 ISDA definitions are applicable, note that the following applies:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Codes</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ISDA 2006</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E/360</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E/360 (ISDA)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">360/360</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30/360, 360/360, Bond Basis</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACT/360</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/360, Act/360, A/360</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACT/365</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/Actual, Actual/Actual (ISDA), Act/Act, Act/Act (ISDA)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AFI/365</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/365 (Fixed), Act/365 (Fixed), A/365 (Fixed), A/365F</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">EBD/360</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">30E/360, Eurobond Basis</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ICM/Act</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Actual/Actual (ICMA), Act/Act (ICMA)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="agg045.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="agg047.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

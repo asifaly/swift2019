@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 2 - MT&#160;203 - 6. Field 72: Sender to Receiver Information</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 2, Message Reference Guide, Standards Release Guide, MT 203 - 6. Field 72: Sender to Receiver Information">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT203-6-FIELD-72">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 2, Financial Institution Transfers">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 2">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 203 - 6. Field 72: Sender to Receiver Information">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 203 - 6. Field 72: Sender to Receiver Information" ;
+// --></script>
+<meta name="bookid" content="cat2">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 2 - Financial Institution Transfers">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 203">
+<meta name="Book.Product" content="Category 2 - Financial Institution Transfers for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 203 - 6. Field 72: Sender to Receiver Information" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 2";
+var linkself="ajf006.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ajf005.htm";
+var linkup="";
+var linkright="ajf007.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt203-6-field-72"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<br>
+
+
+<h2 class="mtfldblock">MT&nbsp;203 Field Specifications</h2>
+
+
+
+<h3>6. Field 72: Sender to Receiver Information</h3>
+
+
+
+<h4 class="fldfmt">FORMAT</h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="26%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">6*35x</td>
+
+<td align="LEFT" valign="TOP" width="74%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Narrative Structured Format)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p>The following line formats must be used:
+</p>
+<table class="LINESTABLE" width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="21%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Line 1</td>
+
+<td align="LEFT" valign="TOP" width="42%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">/8c/[additional information]</td>
+
+<td align="LEFT" valign="TOP" width="37%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Code)(Narrative)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="21%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Lines 2-6</td>
+
+<td align="LEFT" valign="TOP" width="42%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[//continuation of additional information]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">or<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">[/8c/[additional information]]</td>
+
+<td align="LEFT" valign="TOP" width="37%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Narrative)<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">or<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Code)(Narrative)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc">PRESENCE</h4>
+
+
+<p>Optional
+</p>
+
+<h4 class="flddef">DEFINITION</h4>
+
+
+<p>This field specifies additional information for the Receiver or another party identified in the field.
+</p>
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>One or more of the following codes may be used in Code, placed between slashes ('/'):
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACC</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account with institution</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructions following are for the account with institution.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BNF</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Beneficiary</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Information following is for the beneficiary.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INS</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructing institution</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">The instructing institution which instructed the Sender to execute the transaction.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">INT</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Intermediary institution</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructions following are for the intermediary institution.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHON</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Telephone</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise intermediary by phone.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHONBEN</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Telephone Beneficiary</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise/contact beneficiary/claimant by phone.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PHONIBK</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Phone Intermediary</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise intermediary by phone.</td>
+
+</tr>
+
+<tr>
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><a name="mt203-6-field-72-deleted"></a><del><span id="ES316.0000.0000" class="deleted"><a name="c1"><img src="cursor0.gif" alt="" name="imgC1" height="10" width="10"></a>REC</span></del>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="20%"><del><span id="ES316.0003.0000" class="deleted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Receiver</span></del>
+</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="60%"><del><span id="ES316.0006.0000" class="deleted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instructions following are for the Receiver of the message.</span></del>
+</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELE</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Telecommunication</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise the account with institution by the most efficient means of telecommunication.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELEBEN</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Telecommunication</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise the beneficiary/claimant by the most efficient means of telecommunication.</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TELEIBK</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Telecommunication</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Please advise the intermediary by the most efficient means of telecommunication.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldvalrls">NETWORK VALIDATED RULES</h4>
+
+
+<p>If the first six characters in line 1 contain the character string /REJT/ or /RETN/, then it is mandatory to follow the <i>Payments Reject/Return Guidelines</i> described in the <i>Standards MT Usage Guidelines</i><span class="ecodes">(Error code(s): T80)</span>.
+</p>
+
+<h4 class="fldusgrls">USAGE RULES</h4>
+
+
+<p>Field 72 must never be used for information for which another field is intended.
+</p>
+<p>Each item of information contained in this field must be preceded by a code which specifically indicates the party for which it is intended.
+</p>
+<p>Codes must be placed between slashes and at the beginning of a line. Additional explanatory information, which may be continued on the next lines, is preceded by a double slash '//'.
+</p>
+<p>Narrative text that is not qualified by a code, must start with a double slash '//' on a new line, and, should preferably be the last information in this field.
+</p>
+<p>It is strongly recommended to use the standard codes. However, where bilateral agreements covering the use of codes in this field are in effect, the code must conform to the structure of this field.
+</p>
+<p>Use of field 72, particularly with uncoded instructions, may cause delay, because in automated systems, the presence of this field will normally require manual intervention.
+</p>
+<p>This field may contain ERI to transport dual currencies, as specified in the chapter entitled "Euro-Related Information (ERI)" in the <i>Standards MT General Information</i>.
+</p>
+<p>In order to comply with the EC-directive on cross border credit transfers, the optional code word EXCH may be used to transport an exchange rate. In line with ERI, the code word EXCH is placed between slashes, followed by the exchange rate, format 12d, and terminated with another slash.
+</p>
+<p>If codes INS, ACC, or BNF are present in field 72 of a received message, then these codes and the related details must be passed, unchanged, in field 72 of the subsequent message in the payment chain. Additional codes and details may be added to field 72 of the subsequent message but the original INS, ACC and BNF and related details must not be altered or removed.
+</p>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ajf005.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="ajf007.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,439 @@
+/* - BASE elements - */
+
+
+body {
+	background: #FFF;
+	color: #000000;
+	cursor: default;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size:10pt;
+	margin: 5px 2% 0em 15px;
+}
+
+img {
+	border-width: 0px;
+}
+
+table {
+	margin: 4px 0;
+}
+
+table.TABLECONTAINER td, td {
+	padding: 2px 5px;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size:10pt;
+}
+
+th {
+	background: #EEEEEE;
+	color: #013b80;
+	text-align: center;
+}
+
+
+
+
+/* - classed elements - */
+
+div.commandcontainer, div.screenoutputcontainer, div.syntaxcontainer {
+	background-color: #CCCCCC;
+	border: thin solid #000000;
+	margin: 5px 0%;
+	padding: 0 5px;
+}
+
+div.caption {
+	color: #FF6600;
+	font-size: 9pt;
+	margin-top: 3px;
+}
+
+div.componentidentifier, div.property {
+	background-color: #EEEEEE;
+	color: #013b80;
+	padding: 5px 0px 5px 5px;
+}
+
+div.componentdescription {
+	margin-left: 1em;
+}
+
+div.definition {
+	background-color: #EEEEEE;
+}
+
+div.explanation {
+	margin-left: 1em;
+	padding: 0px 5px 5px 0;
+}
+
+div.shortexplanation {
+	font-weight: bold;
+}
+
+div.termcontext, div.termabbrev {
+	color: #FF6600;
+	padding: 0px 0px 0px 5px;
+}
+
+div.value {
+	margin-left: 1em;
+	padding: 5px 0;
+}
+
+li.step, li.stage {
+	border-bottom: thin solid #FF6600;
+	margin-top: 5px;
+}
+
+p.commandpara, p.screenoutputpara, p.syntaxpara {
+	font-family: courier, monospace;
+	margin: 0;
+	white-space: pre;
+}
+
+/* - Heading and title styles - */
+
+h1 ,h1.shorttitle, h1.legalsectiontitle {
+	/*background: #FFFFFF url(lines.gif) repeat;*/
+	margin: 0em 0% 0em -15px;
+	padding: 10px 0 10px 10px;
+    background-color : transparent;
+    color : #013b80;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size : 20pt;
+    font-weight : bolder;
+	}
+
+h2, p.label {
+    font-family : "Arial","Helvetica","sans-serif";
+    margin-left : 0em;
+	color: #013b80;
+	border-bottom-style: solid;
+	border-color: #013b80;
+	font-size:11pt;
+	}
+
+h3 {
+
+	color: #013b80;
+    border-bottom-style :  solid;
+	border-width: 0 0 thin 0;
+	border-bottom-color : #013b80;
+    font-family : "Arial","Helvetica","sans-serif";
+    font-size:10pt;
+    margin-left : 0em;
+}
+
+h4 {
+	color: #013b80;
+}
+
+h5 {
+	color: #013b80;
+}
+
+h6 {
+	color: #013b80;
+}
+
+p.title {
+	color: #013b80;
+	margin-bottom: 2px;
+}
+
+/* - Anchors - */
+
+a:link {
+	background: transparent;
+	color: #013b80;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+a:visited {
+	background: transparent;
+	color: #013b80;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+a:hover, a:active {
+	background: transparent;
+	color: #0878e5;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+a.footnoteref {
+	font-size: 7pt;
+	vertical-align: super;
+	line-height: 2.0em;
+}
+
+/* - Navigation - */
+
+div.links {
+	/*background: #FFFFFF url(lines.gif) repeat;*/
+	margin-left: -15px;
+}
+
+p.links {
+	padding-bottom: 2px;
+	padding-top: 5px;
+	text-align: center;
+	/*background: #FFFFFF url(lines.gif) repeat;*/
+}
+
+ul.downlinks {
+	line-height: 1.5em;
+}
+
+
+/* - Lists - */
+
+ul {
+	list-style: disc;
+	list-style: url(bullet.gif);
+}
+
+ol.arabic {
+	list-style-type: decimal;
+	list-style-image: none;
+	}
+
+ol.lalpha {
+	list-style-type: lower-alpha;
+	list-style-image: none;
+}
+
+ol.lroman {
+	list-style-type: lower-roman;
+	list-style-image: none;
+}
+
+ol.ualpha {
+	list-style-type: upper-alpha;
+	list-style-image: none;
+}
+
+ol.uroman {
+	list-style-type: upper-roman;
+	list-style-image: none;
+}
+
+
+/* - Admonition and Abstract Containers - */
+
+div.note, div.abstract, div.tip, div.important, div.warning {
+	width: 95%; 
+	font-size: 10pt;
+	border: 2px solid #013b80;
+	padding: 0 0 0 0;
+	max-width: 620px;
+	max-height: 620px;
+	margin: 0.5em 0;
+}
+
+div.important div.genlabel, div.warning div.genlabel {
+	background: #FF6600;
+	margin: 0;
+	padding: 0;
+	border: none none none;
+	color: #FF6600;
+	font-weight: bold;
+	width: 100%;
+}
+
+div.important div.genlabel p, div.warning div.genlabel p {
+	padding: 5px 30px 5px;
+	font-size: 1.2em; 
+	line-height: 1em;
+	margin: 0;
+	color: white; 
+	font-weight: bold; 
+}
+
+div.note div.genlabel, div.tip div.genlabel, div.abstract  div.genlabel {
+	background: #013b80;
+	margin: 0;
+	padding: 0;
+	border: none none none;
+	color: #013b80;
+	font-weight: bold;
+	width: 100%;
+}
+
+div.note div.genlabel p, div.tip div.genlabel p, div.abstract div.genlabel p {
+	margin: 0;
+	padding: 5px 30px 5px;
+	color: white; 
+	font-weight: bold; 
+	font-size: 1.2em; 
+	line-height: 1em;
+}
+
+div.note div.genbody, div.abstract div.genbody, div.tip div.genbody, div.important div.genbody, div.warning div.genbody {
+	margin: 0;
+	padding: 5px 30px 5px;
+	background: #FFFFFF;
+	height: auto;
+	width: auto;
+}
+
+div.SCcheck {
+    padding-top: 0.6em;
+}
+
+div.sas70 {
+    background-color: #DDDDFF;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+
+/* --- INLINE LEVEL --- */
+
+span.bookref {
+	color: #0775D9;
+	font-weight: bold;
+}
+
+span.button {
+	background-color: #eeeeee;
+	border: thin solid #000;
+	font-weight: bold;
+	padding: 1px;
+	border-bottom: thin solid #333333;
+	border-right: thin solid #333333;
+	border-top: thin solid #bbbbbb;
+	border-left: thin solid #bbbbbb;
+	padding-left: 2px;
+	padding-right: 2px;
+	line-height: 1.6em;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+span.command, span.screenoutput, span.syntax {
+	font-family: courier, monospace ;
+}
+
+span.emphasis {
+	color: #FF6600;
+}
+
+span.filename {
+	color: #013b80;
+}
+
+span.footnoteNumber {
+	font-size: 8pt;
+	vertical-align: text-top;
+}
+
+span.gentext {
+	color: #000000;
+	font-weight: bold;
+} 
+
+span.keyboardcommand {
+	background-color: #CCCCCC;
+	font-family: courier, monospace;
+	font-weight: bold;
+}
+
+span.menucommand {
+	background-color: #CCCCCC;
+	color: #013b80;
+	font-weight: bold;
+}
+
+span.menutitle {
+	background-color: #CCCCCC;
+	color: #013b80;
+}
+
+span.name {
+	color: #013b80;
+}
+
+span.quote {
+	color: #0775D9;
+}
+
+span.sas70Marker {
+	background-color: black;
+	color: white;
+	font-size: 9pt;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+span.strong {
+	font-weight: bold;
+}
+
+span.termref {
+	color: #013b80;
+	font-weight: bold;
+	text-decoration: underline ;
+}
+
+span.termrefLegB {
+	color: #666666;
+}
+
+span.weblink {
+	text-decoration: underline;
+}
+
+span.windowcomponent {
+	color: #013b80;
+}
+
+span.windowtitle {
+	color: #013b80;
+	font-weight: bold;
+}
+
+
+/* - Contextual rules - */
+
+div.related ul {
+	line-height: 1.5em;
+}
+
+div.term p { /* need to add P to avoid excessive padding! */
+	background-color: #013b80;
+	color: #EEEEEE;
+	padding: 5px 0px 5px 5px;
+}
+
+div.clause .genlabel p, div.article .genlabel p, div.legalsection p.title {
+	color: #013b80;
+	font: bold 12pt Arial, Helvetica, sans-serif;
+	border-width: 0 0 thin 0;
+	border-style: solid;
+	border-color: #00CCFF;
+	width: 98%;
+}
+
+body.volume div.abstract, body.part div.abstract {
+	border: thin solid #013b80;
+	padding: 0 0.5em;
+}
+
+body.volume div.abstract .genlabel, body.part div.abstract .genlabel {
+	display: none;
+}
+
+/* ---------------- HINTS --------------- */
+
+/*
+
+- Don't put 0 right margins on lists; IE 6 does not like it and eats the numbers and bullets!
+
+
+
+
+*/

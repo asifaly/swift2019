@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - Category 3 Message Types</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 2 (MT 350 - MT 399), Standards Release Guide, Category 3 Message Types">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="Category3MessageTypes">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 2">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="Category 3 Message Types">
+<meta name="Type" content="Category3MessageTypes">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "Category 3 Message Types" ;
+// --></script>
+<meta name="bookid" content="cat3v2">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="Category 3 Message Types">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 2 (MT 350 - MT 399) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "Category 3 Message Types" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 2";
+var linkself="ad.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ac.htm";
+var linkup="";
+var linkright="ae.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genad"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h1>Category 3 Message Types</h1>
+
+
+<p>The following table lists all message types defined in category 3.
+</p>
+<p>For each message type, there is a short description, an indicator whether the message type is signed (Y/N), the maximum message length on input (2,000 or 10,000 characters) and whether the use of the message requires registration with SWIFT for use in a message user group (Y/N).
+</p>
+<table width="98%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MT</th>
+
+<th align="CENTER" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MT Name</th>
+
+<th align="CENTER" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Purpose</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Signed&nbsp;
+<a class="FOOTNOTEREF" href="#fnot79601">(1)</a>&nbsp;</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Max. Length</th>
+
+<th align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MUG</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">300</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Foreign Exchange Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms information agreed to in the buying/selling of two currencies</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">304</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice/Instruction of a Third Party Deal</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises of or instructs settlement of a third party foreign exchange deal</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">305</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Foreign Currency Option Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms information agreed to in the buying and selling of options on currencies</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">306</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Foreign Currency Option Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms or notifies the details of a foreign currency option contract</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">320</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Fixed Loan/Deposit Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the terms of a contract relative to a fixed loan/deposit transaction</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">321</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Instruction to Settle a Third Party Loan/Deposit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the trade details and instructs the settlement of a fixed term loan/deposit done with a third party financial institution</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">330</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Call/Notice Loan/Deposit Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the terms of a contract relative to a call/notice loan/deposit transaction</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">340</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Forward Rate Agreement Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the details of a forward rate agreement</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">341</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Forward Rate Agreement Settlement Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the settlement details of a forward rate agreement</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">350</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of Loan/Deposit Interest Payment</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises of a loan/deposit interest payment</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">360</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Single Currency Interest Rate Derivative Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the details of a single currency interest rate derivative transaction</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">361</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Cross Currency Interest Rate Swap Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the details of a cross currency interest rate swap transaction</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">362</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Interest Rate Reset/Advice of Payment</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms or advises the reset rates of the floating interest rate(s) in a single or cross-currency interest rate derivative transaction and/or the payment of interest at the end of an interest period</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">364</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Single Currency Interest Rate Derivative Termination/Recouponing Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the details of the partial or full termination or recouponing of a single currency interest rate swap, cap, collar or floor</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">365</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Cross Currency Interest Rate Swap Termination/Recouponing Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the details of the partial or full termination or recouponing of a cross currency interest rate swap</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">370</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Netting Position Advice</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the netting position of a currency</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">380</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Foreign Exchange Order</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Orders to purchase or sell a specific amount of a certain currency</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">381</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Foreign Exchange Order Confirmation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Confirms the execution of a FX Order previously sent</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">390</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of Charges, Interest and Other Adjustments</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises an account owner of charges, interest or other adjustments</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">391</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Request for Payment of Charges, Interest and Other Expenses</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests payment of charges, interest or other expenses</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">392</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Request for Cancellation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests the Receiver to consider cancellation of the message identified in the request</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">395</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Queries</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests information relating to a previous message or amendment to a previous message</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">396</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Answers</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Responds to an MT&nbsp;395 Queries or an MT&nbsp;392 Request for Cancellation or other message where no specific message type has been provided for a response</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">398</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Proprietary Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Contains formats defined and agreed to between users and for those messages not yet live</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">399</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Free Format Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Contains information for which no other message type has been defined</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="FOOTNOTE"><span class="FOOTNOTENUMBER">(1)</span>
+<a name="fnot79601"></a>&nbsp;A Relationship Management Application (RMA) authorisation is required in order to sign a message.
+</p>
+<table class="tblnote" width="90%" border="0">
+<tbody>
+<tr>
+<td class="notehead" valign="TOP"><b><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">Note:</i></b>&nbsp;</td>
+
+<td>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">A Message User Group (MUG), for the purposes of this book, is a group of users who have voluntarily agreed to support the specified message type and have registered with SWIFT to send or receive the specified message type. These messages are indicated in the preceding table in the column MUG.
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">Registration is free of charge. To register to use one or more message types, submit a registration request (<b>Order Message User Group</b>) through the forms available on <b>www.swift.com</b> > Ordering &amp; Support > Ordering > Order Products and Services > Message User Group (MUG).
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">To withdraw from a MUG, use the <b>Terminate your MUG subscription</b> request. These forms are available at <b>www.swift.com</b> > Ordering &amp; Support > Ordering > Terminate and deactivate > Message User Group (MUG).
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">To get the list of other members of a particular MUG, send an MT 999 to the Customer Implementation team (SWHQBEBBCOS).
+</p>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ac.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="ae.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+<a name="page-break"></a>
+</body>
+</html>
+

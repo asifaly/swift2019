@@ -1,0 +1,9 @@
+A:FOCUS, A:HOVER, A:ACTIVE, A:VISITED, A:LINK, A {
+   text-decoration : none;
+   background-color : #CCCCCC;
+}
+
+.navbar {
+   background-color : #CCCCCC;
+   margin : 2px;
+}

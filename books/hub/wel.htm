@@ -1,0 +1,271 @@
+<!doctype html public "-//w3c//dtd html 4.01 transitional//en">
+<html>
+<head>
+<title>SWIFT User Documentation - Welcome</title>
+<meta name="description" content="SWIFT User Documentation - Welcome">
+<meta name="edition" content="December 2018">
+<meta name="publisher" content="S.W.I.F.T. SCRL">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+BODY.BOOK UL LI UL LI {
+	list-style-image : none;
+}
+</style>
+<base target="new">
+</head>
+<body class="book" bgcolor="#ffffff">
+<h2 class="heading">Welcome</h2>
+<p><strong>
+The Standards Release Guide 2019 (SRG 2019) describes the changes to the Standards MTs effective as of the cutover in the weekend of 16-17 November 2019, the scheduled release maintenance on FIN.
+</strong></p>
+<p>The main highlights of the SRG 2019 include the following changes:</p>
+<ul>
+	<li>
+		<p>Category 1:</p>
+		<ul>
+			<li><p>
+			MT 103, MT 103 REMIT, MT 110: Documentation change in field 72: Use of code word REC in field 72 is almost always causing non-STP processing and/or delays in payment settlement. There is an opportunity and need to clean this up in ISO 20022 migration. As of SR 2019, the code REC will no longer be published in the Message Reference Guides. This will stop promoting the use on a global level. Correspondents must either agree on a more appropriate code or cover the usage in bilateral agreements. This will have no validation impact.
+			</p></li>
+		</ul>
+	</li>
+</ul>
+
+<ul>
+	<li>
+		<p>Category 2:</p>
+		<ul>
+			<li><p>
+				MT 200, MT 201, MT 202, MT 202 COV, MT 203, MT 204, MT 205, MT 205 COV: Documentation change in field 72: Use of code word REC in field 72 is almost always causing non-STP processing and/or delays in payment settlement. There is an opportunity and need to clean this up in ISO 20022 migration. As of SR 2019, the code REC will no longer be published in the Message Reference Guides. This will stop promoting the use on a global level. Correspondents must either agree on a more appropriate code or cover the usage in bilateral agreements. This will have no validation impact.
+			</p></li>
+		</ul>
+	</li>
+</ul>
+
+<ul>
+	<li>
+		<p>Category 3:</p>
+		<ul>
+			<li><p>
+				MT 300, MT 304: Tighten settlement party fields and trade party fields: In order to promote more structured usage of the messages, in fields 82, 87, 83, 53, 56, 57, 58 when occurring in sequence A, B1, and B2 the following changes are included: 
+				<ul>
+				<li><p>Remove option D, which is free format text </p></li>
+				<li><p>Partially restructure option J codes, to provide more clarity </p></li>
+				<li><p>Mandate that a BIC cannot be the only information in option J. For those cases, option A must be used. </p></li>
+				</ul>
+			</p></li>
+			<li><p>
+				MT 304: Enlarge the scope of the message to also use it for a copy to third parties: Add 3 codes to field 22A Type of Operation to indicate that the message is a copy of an amendment, copy of a cancellation, or a copy of a new advice or instruction. This is used to notify a third party, such as a fund administrator about the details of a trade.
+			</p></li>
+			<li><p>
+				MT 300, MT 304, MT 305, MT 306, MT 340, MT 341, MT 360, MT 361: Replace Reporting Jurisdiction for Russia because the Federal Financial Market Service in Russia no longer exists. The code "FFMS" was indicated in the Message Reference Guides as optional code in several category 3 MTs in field 22L Reporting Jurisdiction, but the code is now replaced by "BankOfRussia" as they will be taking over the activities of the Federal Financial Market Service. 
+			</p></li>
+			<li><p>
+				MT 300: Add an optional sequence in MT 300 to address a requirement for some regions whereby trade life cycle events are offered on a FX Forward contract. These are known as "Post Trade Event" (PTE). That includes early delivery or take up; termination, close out or Net Present Value (NPV) or extension or rollover of the FX Forward contract. 
+			</p></li>
+			<li><p>
+				MT 300, MT 304, MT 305, MT 306, MT 340, MT 360, MT 361, MT 380, MT 381: Correct misleading message usage rule that refers to field 39M Payment Clearing Centre in field 77H because field 39M is used to designate the clearing centre for offshore currency trades, also HK for CNY.
+			</p></li>
+		</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><p>Category 4: no changes</p></li>
+</ul>
+
+<ul>
+	<li><p>Category 5:</p>
+		<p><b>Settlement and Reconciliation:</b></p>
+		<ul>
+			<li><p>
+			MT 535: Addition of a quarterly statement frequency indicator, a qualifier flag for Security Interest, Lien or Right of Set-Off and an optional narrative field to transfer additional requirements on the account and holdings linked to MiFID II (Article 63).
+			</p></li>
+			<li><p>
+			MT 537, MT 548: add a new sequence "Penalties". CSDs will implement a penalty mechanism for settlement fails which will serve as an effective deterrent for participants that cause settlement fails. Cash penalties will be calculated and reported on a daily basis for each business day that a transaction fails to be settled after its intended settlement date until the moment of the actual settlement date or until the end of buy-in process. In ISO 20022, a dedicated new message is being created, but the new sequence will cover the information in MT. 
+			</p></li>
+			<li><p>
+			MT 502, MT 540-549: Align code word used in ISO 15022 with the one used in ISO 20022 for Buy in. In the different standards, two codes existed to describe the same element. The definitions of these two codes were equal. As this code will be used for the CSDR regulation, it is decided to use BYIY in both to indicate that the transaction relates to a buy-in by the market following a delivery transaction failure.
+			</p></li>
+			<li><p>
+			MT 540, MT 541, MT 542, MT 543, MT 544, MT 545, MT 546, MT 547: code for research fees added in the settlement amount to comply with Markets in Financial Instruments Directive (MiFID II) and separate research fees from trading charges.
+			</p></li>
+		</ul>
+
+		<p><b>Trade Initiation and Confirmation:</b></p>
+		<ul>
+			<li><p>
+			MT 502, MT 509, MT 513, MT 514, MT 515, MT 517, MT 518, MT 535, MT 536, MT 537, MT 540-548, MT 578: SFTR: Addition of a new format option to indicate Unique Transaction Identifier (UTI) with 52 characters in each field where the deal reference is present.
+			</p></li>
+			<li><p>
+			MT 514, MT 515, MT 518, MT 541, MT 543, MT 545, MT 547: MiFIR: Addition of a qualifier to indicate Research Unbundling Amount Net Settlement Calculation Indicator.
+			</p></li>
+			</ul>
+
+		<p><b>Corporate Actions:</b></p>
+		<ul>
+			<li><p>
+			MT 564, MT 565: Following the introduction of MIFID2 and MIFIR, some corporate events are reportable. To allow institutional investors to report the event, the LEI of some parties (for instance the Issuer) needs to be communicated in the CA announcement and CA instruction messages via a separate format option L in field 95a, similarly as to what exists already in other securities messages.
+			</p></li>
+			<li><p>
+			MT 565: Add a new optional Additional Round Up Quantity qualifier (RDUQ) to enable CSD participants to indicate the additional quantity of new shares which must be added to the number of shares already calculated by the CSD based on the exercised rights provided by its participants (that is, QINS) on the Securities option with "Buy Up" disposition of fraction. 
+			</p></li>
+			<li><p>
+			MT 564, MT 566: Add new optional amount qualifiers to enable the account servicer to communicate the cash amounts components corresponding to the four deemed rate type codes defined for the Deemed Rate that may be used for Tax On Non-Distributed Proceeds events.
+			</p></li>
+			<li><p>
+			MT 567: Add two new rejection reason codes (DQBI and DQBV) to communicate the rejection of instructions on events with bidding ranges such as a Dutch auction.
+			</p></li>
+			<li><p>
+			MT 564, MT 565, MT 567: Add new optional Indicator qualifier (SHAR) for shareholder number and a new rejection reason code to enable agents/offerors to identify certain holders that have been given preferential rights when participating in voluntary reorganisation events such as offers or are used to identify certain holders participating in these events.
+			</p></li>
+			<li><p>
+			MT 566: Add two new optional amount qualifiers (ADJS, REFU) to enable the agent to communicate an adjustment to a subscription amount after the final rate of the rights offer has been fixed and to report also the part of the original subscription amount that must be refunded in case of pro-ration of the oversubscription.
+			</p></li>
+			<li><p>
+			MT 565, MT 567: Add a new Odd Lot Preference Indicator code (OPLF) to indicate that the particular instruction should be treated as an odd-lot. 
+			</p></li>
+			<li><p>
+			MT 564, MT 566: Rename CONV qualifier as "Event Sequence Type Indicator" and amend also definitions of FINL and INTE in order to align the semantic of the conversion type indicator in the standard with the new SMPG market practice defined on rolling/ongoing events.
+			</p></li>
+			<li><p>
+			MT 566: Remove the flag qualifier CERT as the usage of the flag is inconsistent at confirmation stage.
+			</p></li>
+			<li><p>
+			MT 565: Remove the usage rule on QINS in field 36a which has become invalid.
+			</p></li>
+			</ul>
+
+		<p><b>Triparty Collateral Management</b></p>
+		<ul>
+			<li><p>No changes</p></li>
+		</ul>
+
+		<p><b>Other Category 5 change:</b></p>
+		<ul>
+			<li><p>MT 559 will be deleted from the network. This change was accepted through country vote based on the fact that the message showed less than one live message per day sent over the network over the past 24 months.</p></li>
+		</ul>
+		
+		<p><b>Common to category 5 messages:</b></p>
+		<ul>
+			<li><p>No changes</p></li>
+		</ul>
+	</li>
+</ul>
+
+<ul>
+  <li>
+    <p>Category 6 Commodities:</p>
+		<ul>
+			<li><p>
+			MT 600, MT 601: The Federal Financial Market Service in Russia no longer exists. The code "FFMS" was indicated in the Message Reference Guides as optional code in field 22L Reporting Jurisdiction, but the code will be replaced by "BankOfRussia" as they will be taking over the activities of the Federal Financial Market Service.
+			</p></li>
+		</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><p>Category 6 Reference Data: no changes</p></li>
+</ul>
+
+<ul>
+	<li>
+		<p>Category 7: no changes</p>
+	</li>
+</ul>
+<ul>
+	<li><p>Category 8:</p>
+    <ul>
+      <li><p>
+	  MT 800 and MT 824 will be deleted from the network. This change was accepted through country vote based on the fact that the message showed less than one live message per day sent over the network over the past 24 months.
+      </p></li>	
+    </ul>
+	</li>
+</ul>
+<ul>
+	<li><p>Category 9: no changes</p></li>
+</ul>
+
+<ul>
+	<li>
+		<p>Category n:</p>
+		<ul>
+			<li><p>
+			MT n92: Add optional codes and usage rule to field 79 in addition to the structured codes implemented in SR 2018 and to align with ISO 20022. The SWIFT gpi Stop and Recall service will use these code words.
+			</p></li>
+			<li><p>
+			MT 190, MT 191, MT 192, MT 195, MT 196, MT 199, MT 292, MT 295, MT 296, MT 299, MT 992, MT 995, MT 996, MT 999: SWIFT users (also non-gpi members) can optionally use field 121 unique end-to-end transaction reference (UETR) in block 3 of enquiry messages.<br />
+			In SR 2018, field 121 became mandatory for all MT 103, MT 103 STP, MT 103 REMIT, MT 202, MT 202 COV, MT 205, MT 205 COV. Other UETR usage was restricted to messages sent by gpi members in the context of a SWIFT gpi service. From a receiving perspective, all SWIFT users had to be able to receive the fields in all category 1 and category 2 MTs. <br />
+			In SR 2019 all senders will get the opportunity to (optionally) include field 121 (without field 111 if MT not sent within a SWIFT gpi service) in other enquiry messages (MT 190, MT 191, MT 192, MT 195, MT 196, MT 199, MT 292, MT 295, MT 296, MT 299, MT 992, MT 995, MT 996, MT 999). Therefore the ability to receive is now also impacting all FIN users for MT 992, MT 996, MT 999.
+			</p></li>
+			<li><p>
+			MT 199: Allow payment credit confirmation (with UETR and structure) by any SWIFT user.<br />
+			The SWIFT gpi Customer Credit Transfer (gCCT) service uses MT 199 for gCCT confirmations to either confirm credit to beneficiary's account or confirm the (intermediate) transaction status.<br />
+			Non-gpi members willing to provide this information to the gpi Tracker will be allowed as of SR 2019 to use the gCCT confirmation message (MT 199) with only field 121 unique end-to-end transaction reference (not field 111 service type identifier) in the user header block of the message. <br />
+			This is an additional step towards enabling full end-to-end tracking within gpi of all payments sent over the SWIFT Network. Tracking will now also include the "last leg" of credit to the customer (creditor), when the beneficiary bank is a non-gpi bank. This will enable gpi members to report back the credit confirmation and/or payment status to the originator of the transaction. Additionally, a standard version of the gpi Tracker will be made available, enabling all SWIFT customers, including non-gpi banks, to trace and confirm their SWIFT payment instructions. <br />
+			Credit confirmations will be mandated by end of 2020. Use of the MT 199 gCCT confirmation message will only be 1 of more options to fulfil that requirement.
+			</p></li>
+			</ul>
+	</li>
+</ul>
+
+<p><strong>Fast-track process for Category 7 postponed defined changes to SR 2020</strong></p>
+<ul>
+	<li><p>
+	A request to initiate an additional, exceptional (fast-track) maintenance process was received for category 7 to consider deferring the implementation of the changes to SR 2020 instead of SR 2019. It got approved through country vote and was ratified by the SWIFT Banking and Services Committee (BSC).
+	</p></li>
+	<li><p>The Standards Release Guide 2019 and Message Format Validation Rules 2019 were updated on 8 February 2019 to make it clear that there will be no changes in the Standards MT Release for 2019 November implementation. It is nevertheless still recommended to analyse the accepted changes and start the preparation for implementing these changes in November 2020. Therefore, the changes will be published as "advance information for Standards MT Release 2020" on the Standards Releases timeline on swift.com as of 8 February 2019.
+	</p></li>
+	<li><p>
+	For several years, there have been no changes to category 7 in order to bundle them in a big release which will increase STP and fill gaps in transaction flows. In SR 2018, the revamp is focussing on Letters of credit. Next part of the changes (SR 2020) will focus on Guarantees:
+	<ul>
+		<li><p>MT 760, MT 767 are significantly enhanced
+			<ul>
+			<li><p>Previously had few structured fields and one large free-format field </p></li>
+			<li><p>New versions are highly detailed and structured </p></li>
+			<li><p>Sequences introduced to cater for undertaking details as well as local undertaking details </p></li>
+			</ul>
+		</p></li>
+		<li><p>MT 768, MT 769
+			<ul>
+			<li><p>Field 71B changed to 71D with z-character set</p></li>
+			<li><p>Field 72 changed to 72Z with z-character set</p></li>
+			<li><p>Possibility to identify the delivery channel</p></li>
+			</ul>
+		</p></li>
+		<li><p>6 new messages
+			<ul>
+			<li><p>MT 761 - Continuation of MT 760</p></li>
+			<li><p>MT 765 - Used to demand payment under an undertaking</p></li>
+			<li><p>MT 775 - Continuation of MT 767</p></li>
+			<li><p>MT 785 - Used to notify the beneficiary of the non-extension of the referenced undertaking </p></li>
+			<li><p>MT 786 - Used to notify the beneficiary that the demand has been refused</p></li>
+			<li><p>MT 787 - Used to indicate acceptance or rejection by the beneficiary of the amendment</p></li>
+			</ul>
+		</p></li>
+	</ul>
+	</p></li>
+</ul>
+
+<p><strong>Update for SR 2020</strong></p>
+<ul>
+	<li><p>
+	Free format options for fields 50 and 59 will not be removed in MT in SR 2020: During SR 2019 discussion, a change request submitted by the Payments Market Practice Group was accepted to no longer enforce format option F in MT party fields, but to enforce it when migrating to ISO 20022. ISO 20022 messages allow for more granular structure than the format option F in MT.<br />
+	Screening the name and address of the ordering customer (payer) and beneficiary (payee) against sanctions lists is required to comply with AML and anti-terrorist financing regulations. Being able to distinguish the different parts of name and address in a structured way is required for handling banks to properly perform screening against sanctions lists issued by various authorities. <br />
+	Structuring underlying customer data has far-reaching consequences for banks' payment processing systems and requires a multiyear effort. Banks must therefore continue their efforts in gathering the necessary input to update their systems, but there will be no change mandated in the MT messages.
+	</p></li>
+	<li><p>
+	Validation changes to the (optional) format option F in fields 50 and 59 of all relevant MT payments messages for implementation in SR 2020: use of format option F is still relevant to facilitate (local) regulatory and FATF requirements or to facilitate ISO 20022 migration, especially for institutions and market infrastructures already on (or moving to) ISO 20022 and dealing with coexistence of the different standards. <br />
+	In most cases, the name will be accompanied by address details, including country information. Inclusion of street name, country, town, etc. requires at least 2 lines in the MT format option F and restricts the number of lines left for the name to only 2. In SR 2020, the validation of format option F will therefore allow maximum 2 occurrences of lines starting with 1/ and mandate the presence of a line starting with 3/ which includes at least a country code.
+	</p></li>
+</ul>
+
+
+
+<p><strong>Customer Support</strong></p>
+<ul>
+	<li><p>
+	Should you need further clarifications, do not hesitate to contact your <a href="feedback.htm"> Customer Support Centre</a>.
+	</li></p>
+</ul>
+</body>

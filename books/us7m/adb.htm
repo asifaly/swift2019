@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 7 - Documentary Credit Message Types</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="08 February 2019">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 7, Message Reference Guide, Standards Release Guide, Documentary Credit Message Types">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="DocumentaryCreditMessageTypes">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 7, Documentary Credits and Guarantees/Standby Letters of Credit">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 7">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 08 February 2019. All rights reserved.">
+<meta name="Subject" content="Documentary Credit Message Types">
+<meta name="Type" content="DocumentaryCreditMessageTypes">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "Documentary Credit Message Types" ;
+// --></script>
+<meta name="bookid" content="cat7">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 7 - Documentary Credits and Guarantees/Standby Letters of Credit">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="Documentary Credit Message Types">
+<meta name="Book.Product" content="Category 7 - Documentary Credits and Guarantees/Standby Letters of Credit for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "Documentary Credit Message Types" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 7";
+var linkself="adb.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="ada.htm";
+var linkup="";
+var linkright="adca.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genadb"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h1>Documentary Credit Message Types</h1>
+
+
+<p>The following table lists all Documentary Credit message types defined in Category 7.
+</p>
+<p>For each message type, there is a short description, an indicator whether the message type is signed (Y or N), the maximum message length for input (2,000 or 10,000 characters) and whether the use of the message requires registration with SWIFT for use in a message user group (Y or N).
+</p>
+<table width="98%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MT</th>
+
+<th align="CENTER" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MT Name</th>
+
+<th align="CENTER" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Purpose</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Signed&nbsp;
+<a class="FOOTNOTEREF" href="#fnot79607">(1)</a>&nbsp;</th>
+
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Max Length</th>
+
+<th align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">MUG</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">700</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Issue of a Documentary Credit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicates the terms and conditions of a documentary credit</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">701</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Issue of a Documentary Credit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Continuation of an MT&nbsp;700</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">705</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Pre-Advice of a Documentary Credit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides brief advice of a documentary credit for which full details will follow</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">707</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Amendment to a Documentary Credit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Informs the Receiver of amendments to the terms and conditions of a documentary credit</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">708</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Amendment to a Documentary Credit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Continuation of an MT 707</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">710</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of a Third Bank's Documentary Credit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the Receiver of the terms and conditions of a documentary credit</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">711</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of a Third Bank's Documentary Credit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Continuation of an MT&nbsp;710</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">720</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Transfer of a Documentary Credit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the transfer of a documentary credit, or part thereof, to the bank advising the second beneficiary</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">721</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Transfer of a Documentary Credit</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Continuation of an MT&nbsp;720</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">730</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Acknowledgement</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Acknowledges the receipt of a documentary credit message and may indicate that the message has been forwarded according to instructions. It may also be used to account for bank charges or to advise of acceptance or rejection of an amendment of a documentary credit</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">732</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of Discharge</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises that documents received with discrepancies have been taken up</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">734</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of Refusal</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises the refusal of documents that are not in accordance with the terms and conditions of a documentary credit</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">740</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Authorisation to Reimburse</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests the Receiver to honour claims for reimbursement of payment(s) or negotiation(s) under a documentary credit</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">742</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reimbursement Claim</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Provides a reimbursement claim to the bank authorised to reimburse the Sender or its branch for its payments/negotiations</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">744</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Notice of Non-Conforming Reimbursement Claim</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Notifies the Receiver that the Sender considers the claim, on the face of it, as not to be in accordance with the instruction in the Reimbursement Authorisation for the reason(s) as stated in this message</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">747</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Amendment to an Authorisation to Reimburse</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Informs the reimbursing bank of amendments to the terms and conditions of a documentary credit, relative to the authorisation to reimburse</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">750</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of Discrepancy</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises of discrepancies and requests authorisation to honour documents presented that are not in accordance with the terms and conditions of the documentary credit</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">752</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Authorisation to Pay, Accept or Negotiate</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises a bank which has requested authorisation to pay, accept, negotiate or incur a deferred payment undertaking that the presentation of the documents may be honoured, notwithstanding the discrepancies, provided they are otherwise in order</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">754</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of Payment/Acceptance/Negotiation</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises that documents have been presented in accordance with the terms of a documentary credit and are being forwarded as instructed. This message type also handles the payment/negotiation</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">756</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advice of Reimbursement or Payment</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Advises of the reimbursement or payment for a drawing under a documentary credit in which no specific reimbursement instructions or payment provisions were given</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">2,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">759</td>
+
+<td align="LEFT" valign="TOP" width="23%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Ancillary Trade Structured Message</td>
+
+<td align="LEFT" valign="TOP" width="36%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Requests or provides information, such as a fraud alert or a financing request, concerning an existing trade transaction such as a documentary credit, demand guarantee, standby letter of credit or an undertaking (for example, a guarantee, surety, etc.).</td>
+
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Y</td>
+
+<td align="LEFT" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">10,000</td>
+
+<td align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">N</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="FOOTNOTE"><span class="FOOTNOTENUMBER">(1)</span>
+<a name="fnot79607"></a>&nbsp;A Relationship Management Application (RMA) authorisation is required in order to sign a message.
+</p>
+<table class="tblnote" width="90%" border="0">
+<tbody>
+<tr>
+<td class="notehead" valign="TOP"><b><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">Note:</i></b>&nbsp;</td>
+
+<td>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">A Message User Group (MUG), for the purposes of this book, is a group of users who have voluntarily agreed to support the specified message type and have registered with SWIFT to send or receive the specified message type. These messages are indicated in the preceding table in the column MUG.
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">Registration is free of charge. To register to use one or more message types, submit a registration request (<b>Order Message User Group</b>) through the forms available on <b>www.swift.com</b> > Ordering &amp; Support > Ordering > Order Products and Services > Message User Group (MUG).
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">To withdraw from a MUG, use the <b>Terminate your MUG subscription</b> request. These forms are available at <b>www.swift.com</b> > Ordering &amp; Support > Ordering > Terminate and deactivate > Message User Group (MUG).
+</p>
+<p><img src="cursor0.gif" alt="" name="space" height="10" width="10">To get the list of other members of a particular MUG, send an MT 999 to the Customer Implementation team (SWHQBEBBCOS).
+</p>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="ada.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="adca.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+<a name="page-break"></a>
+</body>
+</html>
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 6 - MT&#160;600 - 12. Field 33G: Price per Unit</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 6, Message Reference Guide, Standards Release Guide, MT 600 - 12. Field 33G: Price per Unit">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT600-12-FIELD-33G">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 6, Treasury Markets - Commodities">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 6PM">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 600 - 12. Field 33G: Price per Unit">
+<meta name="Type" content="Field">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 600 - 12. Field 33G: Price per Unit" ;
+// --></script>
+<meta name="bookid" content="cat6PM">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 6 - Treasury Markets - Commodities">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 600">
+<meta name="Book.Product" content="Category 6 - Treasury Markets - Commodities for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 600 - 12. Field 33G: Price per Unit" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 6PM";
+var linkself="aff012.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="aff011.htm";
+var linkup="";
+var linkright="aff013.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="mt600-12-field-33g"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+<br>
+
+
+<h2 class="mtfldblock">MT&nbsp;600 Field Specifications</h2>
+
+
+
+<h3>12. Field 33G: Price per Unit</h3>
+
+
+
+<h4 class="fldfmt">FORMAT</h4>
+
+
+<table width="98%" border="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Option G</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">3!a15d[5!c]</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(Currency)(Price)(Code)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldprsnc">PRESENCE</h4>
+
+
+<p>Mandatory in mandatory sequence A
+</p>
+
+<h4 class="flddef">DEFINITION</h4>
+
+
+<p>This field specifies the currency and amount of the price per unit of the agreement and optionally a code indicating a unit of the commodity different from that specified in field 32F.
+</p>
+
+<h4 class="fldcodes">CODES</h4>
+
+
+<p>Code must contain the following code <span class="ecodes">(Error code(s): T07)</span>:
+</p>
+<table width="98%" border="0" cellpadding="5">
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="13%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SEE72</td>
+
+<td align="LEFT" valign="TOP" width="87%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicates that more information can be found in field 72</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+
+<h4 class="fldvalrls">NETWORK VALIDATED RULES</h4>
+
+
+<p>Currency must be a valid ISO 4217 currency code <span class="ecodes">(Error code(s): T52)</span>.
+</p>
+<p>The integer part of Price must contain at least one digit. The decimal comma ',' is mandatory and is included in the maximum length <span class="ecodes">(Error code(s): T40,T43)</span>.
+</p>
+
+<h4 class="fldusgrls">USAGE RULES</h4>
+
+
+<p>When the price per unit of the agreement is based on a unit different from the unit specified in field 32F Quantity of the Commodity, Price must be converted based on the unit used in field 32F, and the code SEE72 must appear in Code (that is, [5!c]) with the conversion explained in field 72.
+</p>
+<p>The number of digits following the decimal comma will not be validated.
+</p>
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="aff011.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="aff013.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

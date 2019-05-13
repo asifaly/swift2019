@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta>
+   <level>public</level>
+   <uhb>true</uhb>
+   <booktitle>Message Reference Guide - Standards Release Guide</booktitle>
+   <abstract>
+      
+<para>
+This reference guide contains the category 5 message text standards, including a detailed description of the scope, the format specifications, the rules, the guidelines, and the field specifications of each message type.</para>
+   </abstract>
+   <description>Standards,Standards MT,November 2019,Category 5 - Securities Markets - Message Reference Guide - Standards Release Guide</description>
+   <language>English</language>
+   <pdf>us5ma.pdf</pdf>
+   <metadata>
+      <bookinfo>
+         <bookreldate>
+            <day>21</day>
+            <month>December</month>
+            <year>2018</year>
+         </bookreldate>
+         <bookcode>us5ma_20181221</bookcode>
+         <bookid>cat5v1</bookid>
+         <informationtypes>
+            <informationtype>Standards</informationtype>
+         </informationtypes>
+      </bookinfo>
+      <applicability>
+         <psfamily>Standards</psfamily>
+         <psname>Standards MT</psname>
+         <psrelease>November 2019</psrelease>
+         <psvar>Category 5 - Securities Markets</psvar>
+      </applicability>
+   </metadata>
+</meta>

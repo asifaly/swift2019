@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN">
+<html>
+  <head>
+<title>Standards - Category 5 - Volume 3</title>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<meta name="Description" content="Standards - Category 5 - Volume 3">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="ROBOTS" content="NOINDEX,FOLLOW">
+<script type="text/JavaScript">
+<!--
+      function loadBody() {
+         var isValidQuery=/^\?[A-Za-z\/0-9=,-_]*$/;
+         if(isValidQuery.test(location.search))
+         {
+            var query = location.search.substring(1);
+            var pairs = query.split(",");
+            for (var i=0; i<pairs.length; i++) {
+               var pos = pairs[i].indexOf("=");
+               if (pos == -1) continue ;
+               var argname = pairs[i].substring(0,pos);
+               if (argname == "subpage") {
+                  var subpage = pairs[i].substring(pos+1);
+                  var isValidSubpage=/^[A-Za-z0-9_-]+\.(htm|pdf)$/;
+                  if(isValidSubpage.test(subpage))
+                  {
+                     if (endsWith(subpage,".pdf")) {
+                        this.FRAME_BOTTOM.location.replace(subpage);
+                     }
+                     else {
+                        var anchorValue = location.hash.substring(1);
+                        var isValidAnchor = /^[A-Za-z0-9_-]+$/;
+                        if(isValidAnchor.test(anchorValue))
+                           {
+                              subpage+= "#" + anchorValue;
+                           }
+                        this.FRAME_BOTTOM.FRAME_BODY.location.replace(subpage);
+                     }
+                  }
+               }
+            }
+         }
+      }
+      function endsWith(str, suffix) {
+         res= str.indexOf(suffix, str.length - suffix.length) !== -1; return (res);
+      }
+//-->
+   </script>
+</head>
+
+  <frameset rows="97,*" framespacing="0" frameborder="YES">
+    <frame name="FRAME_TOPBAR" src="top.htm" scrolling="NO" marginwidth="0" marginheight="0" noresize="noresize" frameborder="YES">
+    <frame name="FRAME_BOTTOM" src="htframe.htm" frameborder="YES">
+    <noframes>
+      <body>
+        <p>Your browser must support frames to view this document!</p>
+        <p>Please upgrade to a browser supporting frames.</p>
+      </body>
+    </noframes>
+  </frameset>
+</html>

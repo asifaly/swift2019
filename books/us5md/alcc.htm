@@ -1,0 +1,1903 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;586 Format Specifications</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 4 (MT 568 - MT 599), Standards Release Guide, MT 586 Format Specifications">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT586FormatSpec">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 4">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 586 Format Specifications">
+<meta name="Type" content="FormatSpec">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 586 Format Specifications" ;
+// --></script>
+<meta name="bookid" content="cat5v4">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 586">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 4 (MT 568 - MT 599) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 586 Format Specifications" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 4";
+var linkself="alcc.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="alcb.htm";
+var linkup="";
+var linkright="alcd.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genalcc"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;586 Format Specifications</h2>
+
+
+<table class="formatspec" width="98%" border="1" cellpadding="5"><caption align="LEFT"><b>MT&nbsp;586 Statement of Settlement Allegements</b></caption>
+
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Status</th>
+
+<th align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Tag</th>
+
+<th align="CENTER" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Qualifier</th>
+
+<th align="CENTER" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Generic Field Name</th>
+
+<th align="CENTER" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Detailed Field Name</th>
+
+<th align="CENTER" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Content/Options</th>
+
+<th align="CENTER" valign="TOP" width="7%"><i><img src="cursor0.gif" alt="" name="space" height="10" width="10">No.</i></th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory Sequence A General Information</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">GENL</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf001.htm#mt586-1-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>1</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">28E</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Page Number/Continuation Indicator</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">5n/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf002.htm#mt586-2-field-28e"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>2</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">13a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">STAT</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Identification</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Statement Number</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or J</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf003.htm#mt586-3-field-13a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>3</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">20C</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SEME</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reference</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sender's Message Reference</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//16x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf004.htm#mt586-4-field-20c"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>4</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">23G</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Function of the Message</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c[/4!c]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf005.htm#mt586-5-field-23g"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>5</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, C, or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf006.htm#mt586-6-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>6</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf007.htm#mt586-7-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>7</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Subsequence A1 Linkages</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf008.htm#mt586-8-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>8</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">13a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Identification</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Linked Message</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf009.htm#mt586-9-field-13a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>9</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">20C</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reference</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//16x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf010.htm#mt586-10-field-20c"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>10</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf011.htm#mt586-11-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>11</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Subsequence A1 Linkages</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">95a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">L, P, Q, or R</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf012.htm#mt586-12-field-95a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>12</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">97a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SAFE</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Safekeeping Account</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf013.htm#mt586-13-field-97a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>13</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">17B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ACTI</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Flag</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Activity Flag</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//1!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf014.htm#mt586-14-field-17b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>14</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">GENL</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf015.htm#mt586-15-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>15</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Sequence A General Information</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Sequence B Allegement Details</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ALLDET</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf016.htm#mt586-16-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>16</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Subsequence B1 Linkages</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf017.htm#mt586-17-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>17</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">13a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Identification</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Linked Message</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf018.htm#mt586-18-field-13a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>18</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td class="cellupdated" align="CENTER" valign="TOP" width="6%"><ins><span id="ES868.0000" class="inserted"><a name="c1"><img src="cursor0.gif" alt="" name="imgC1" height="10" width="10"></a>20a</span></ins>
+<del><span id="ES850.0000" class="deleted">20C</span></del>
+</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reference</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td class="cellupdated" align="LEFT" valign="TOP" width="18%"><ins><span id="ES869.0000" class="inserted"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C or U</span></ins>
+<del><span id="ES862.0000" class="deleted">:4!c//16x</span></del>
+</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf019.htm#mt586-19-field-20a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a> <i><img src="cursor0.gif" alt="" name="space" height="10" width="10">19</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LINK</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf020.htm#mt586-20-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>20</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Subsequence B1 Linkages</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">25D</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ALLE</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Status Code</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Allegement Status</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf021.htm#mt586-21-field-25d"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>21</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B, H, or L</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf022.htm#mt586-22-field-94a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>22</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf023.htm#mt586-23-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>23</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">90a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DEAL</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Price</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Deal Price</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf024.htm#mt586-24-field-90a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>24</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">99A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DAAC</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Count</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number of Days Accrued</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//[N]3!n</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf025.htm#mt586-25-field-99a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>25</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">35B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Identification of the Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[ISIN1!e12!c]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">[4*35x]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf026.htm#mt586-26-field-35b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>26</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional Subsequence B2 Financial Instrument Attributes</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIA</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf027.htm#mt586-27-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>27</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PLIS</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place of Listing</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c[/30x]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf028.htm#mt586-28-field-94b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>28</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf029.htm#mt586-29-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>29</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">12a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Type of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf030.htm#mt586-30-field-12a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>30</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">11A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DENO</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Currency of Denomination</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf031.htm#mt586-31-field-11a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>31</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//8!n</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf032.htm#mt586-32-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>32</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//[N]15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf033.htm#mt586-33-field-92a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>33</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">13a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Identification</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf034.htm#mt586-34-field-13a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>34</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">17B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Flag</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//1!a</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf035.htm#mt586-35-field-17b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>35</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">90a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Price</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf036.htm#mt586-36-field-90a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>36</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">36B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//4!c/15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf037.htm#mt586-37-field-36b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>37</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">35B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Identification of the Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">[ISIN1!e12!c]<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">[4*35x]</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf038.htm#mt586-38-field-35b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>38</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">70E</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIAN</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Narrative</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Financial Instrument Attribute Narrative</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//10*35x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf039.htm#mt586-39-field-70e"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>39</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIA</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf040.htm#mt586-40-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>40</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Subsequence B2 Financial Instrument Attributes</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">F or H</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf041.htm#mt586-41-field-22a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>41</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory Subsequence B3 Financial Instrument/Account</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIAC</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf042.htm#mt586-42-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>42</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">36B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SETT</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument to be Settled</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//4!c/15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf043.htm#mt586-43-field-36b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>43</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">70D</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">DENC</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Narrative</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Denomination Choice</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//6*35x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf044.htm#mt586-44-field-70d"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>44</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">97a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CASH</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Cash Account</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf045.htm#mt586-45-field-97a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>45</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">94a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SAFE</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Place of Safekeeping</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">B, C, F, or L</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf046.htm#mt586-46-field-94a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>46</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Subsequence B3a Quantity Breakdown</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BREAK</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf047.htm#mt586-47-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>47</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">13B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LOTS</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Identification</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Lot Number</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/30x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf048.htm#mt586-48-field-13b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>48</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">36B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LOTS</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Quantity of Financial Instrument In The Lot</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//4!c/15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf049.htm#mt586-49-field-36b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>49</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LOTS</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Lot Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, C, or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf050.htm#mt586-50-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>50</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">90a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">LOTS</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Price</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Book/Lot Price</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf051.htm#mt586-51-field-90a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>51</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PRIC</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Type of Price Indicator</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf052.htm#mt586-52-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>52</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">BREAK</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf053.htm#mt586-53-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>53</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Subsequence B3a Quantity Breakdown</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">FIAC</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf054.htm#mt586-54-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>54</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Subsequence B3 Financial Instrument/Account</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional Subsequence B4 Two Leg Transaction Details</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPO</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf055.htm#mt586-55-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>55</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TERM</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Closing Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A, B, or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf056.htm#mt586-56-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>56</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf057.htm#mt586-57-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>57</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">20C</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reference</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//16x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf058.htm#mt586-58-field-20c"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>58</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf059.htm#mt586-59-field-92a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>59</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">99B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CADE</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Number Count</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Transaction Call Delay</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!n</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf060.htm#mt586-60-field-99b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>60</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">19A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Amount</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//[N]3!a15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf061.htm#mt586-61-field-19a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>61</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">70C</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SECO</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Narrative</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Second Leg Narrative</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//4*35x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf062.htm#mt586-62-field-70c"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>62</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPO</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf063.htm#mt586-63-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>63</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Subsequence B4 Two Leg Transaction Details</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory Subsequence B5 Settlement Details</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SETDET</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf064.htm#mt586-64-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>64</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">22F</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Indicator</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c/[8c]/4!c</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf065.htm#mt586-65-field-22f"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>65</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Mandatory Repetitive Subsequence B5a Settlement Parties</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SETPRTY</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf066.htm#mt586-66-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>66</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">95a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C, L, P, Q, R, or S</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf067.htm#mt586-67-field-95a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>67</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">97a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SAFE</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Account</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Safekeeping Account</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or B</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf068.htm#mt586-68-field-97a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>68</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PROC</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Processing Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf069.htm#mt586-69-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>69</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">20C</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">PROC</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Reference</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Processing Reference</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//16x</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf070.htm#mt586-70-field-20c"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>70</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">70a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Narrative</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C, D, or E</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf071.htm#mt586-71-field-70a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>71</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SETPRTY</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf072.htm#mt586-72-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>72</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Subsequence B5a Settlement Parties</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Subsequence B5b Amounts</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AMT</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf073.htm#mt586-73-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>73</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">19A</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Amount</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//[N]3!a15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf074.htm#mt586-74-field-19a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>74</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">98a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">VALU</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Value Date/Time</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">A or C</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf075.htm#mt586-75-field-98a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>75</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">92B</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">EXCH</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Rate</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Exchange Rate</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:4!c//3!a/3!a/15d</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf076.htm#mt586-76-field-92b"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>76</i></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">AMT</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf077.htm#mt586-77-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>77</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Subsequence B5b Amounts</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">SETDET</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf078.htm#mt586-78-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>78</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Subsequence B5 Settlement Details</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ALLDET</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf079.htm#mt586-79-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>79</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Sequence B Allegement Details</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> Optional Repetitive Sequence C Additional Information</b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16R</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Start of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ADDINFO</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf080.htm#mt586-80-field-16r"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>80</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----> </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">O</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">95a</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">4!c</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Party</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">(see qualifier description)</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">C, L, P, Q, R, or S</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf081.htm#mt586-81-field-95a"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>81</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| </b></td>
+
+</tr>
+
+<tr>
+<td align="CENTER" valign="TOP" width="10%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M</td>
+
+<td align="CENTER" valign="TOP" width="6%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">16S</td>
+
+<td align="LEFT" valign="TOP" width="11%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="30%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">End of Block</td>
+
+<td align="LEFT" valign="TOP" width="18%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ADDINFO</td>
+
+<td align="CENTER" valign="TOP" width="7%"><a href="alcf082.htm#mt586-82-field-16s"><img src="see_def.gif" alt="See specification" height="14" width="14" border="0"></a><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;<i>82</i></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="LEFT" valign="TOP" width="100%"><b><img src="cursor0.gif" alt="" name="space" height="10" width="10">-----| End of Sequence C Additional Information</b></td>
+
+</tr>
+
+<tr>
+<td colspan="7" align="CENTER" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">M = Mandatory, O = Optional - Network Validated Rules may apply</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="alcb.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="alcd.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

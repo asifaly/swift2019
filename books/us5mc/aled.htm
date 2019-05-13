@@ -1,0 +1,1187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 5 - MT&#160;564 Network Validated Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 5, Message Reference Guide: Volume 3 (MT 544 - MT 567), Standards Release Guide, MT 564 Network Validated Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT564NVR">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 5, Securities Markets">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 5 - Volume 3">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 564 Network Validated Rules">
+<meta name="Type" content="NVR">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 564 Network Validated Rules" ;
+// --></script>
+<meta name="bookid" content="cat5v3">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 5 - Securities Markets">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 564">
+<meta name="Book.Product" content="Category 5 - Securities Markets for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 3 (MT 544 - MT 567) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 564 Network Validated Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 5 - Volume 3";
+var linkself="aled.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="alec.htm";
+var linkup="";
+var linkright="alee.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genaled"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;564 Network Validated Rules</h2>
+
+
+<dl>
+<dt><b>C1&nbsp;</b></dt>
+
+<dd>
+<p>If Resulting Amount (field :19B::RESU) is present in subsequence E2, then the corresponding Exchange Rate (field :92B::EXCH) must be present in the same (sub)sequence. If the Resulting Amount is not present, the Exchange Rate is optional <span class="ecodes">(Error code(s): E62)</span>.
+</p>
+<p>This check applies to subsequence E2.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="51%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Subsequence E2<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :19B::RESU is ...</th>
+
+<th align="CENTER" valign="TOP" width="49%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Subsequence E2<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">then field :92B::EXCH is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="51%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="49%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="51%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="49%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C2&nbsp;</b></dt>
+
+<dd>
+<p class="stem">If the safekeeping accounts are not provided, that is, if field :97C::SAFE//GENR is present in any occurrence of subsequence B2, then:
+</p>
+
+<ul>
+<li>
+<p>subsequence B2 Account Information must not be repeated in the message
+</p></li>
+
+<li>
+<p>the Balance of Securities, that is, field 93a, must not be present in subsequence B2 Account Information.
+</p></li>
+
+<li>
+<p>the Quantity of Financial Instrument, that is, field 36B, must not be present in subsequence E1 Securities Movement.
+</p></li>
+
+<li>
+<p>the Amount, that is, field 19B, must not be present in subsequence E2 Cash Movement<span class="ecodes">(Error code(s): E94)</span>.
+</p></li>
+
+</ul>
+
+
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In subsequence B2<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :97C::SAFE//GENR is ...</th>
+
+<th align="CENTER" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then subsequence B2 is ...</th>
+
+<th align="CENTER" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in subsequence B2 field 93a is ...</th>
+
+<th align="CENTER" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in any occurrence of subsequence E1 field 36B is...</th>
+
+<th align="CENTER" valign="TOP" width="24%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in any occurrence of subsequence E2 field 19B is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not repetitive min-Max = 1-1</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+<td align="LEFT" valign="TOP" width="24%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Repetitive min-Max = 1-n</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+<td align="LEFT" valign="TOP" width="24%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C3&nbsp;</b></dt>
+
+<dd>
+<p>In sequence A, if field :23G:REPE is present, then
+</p>
+<p>when sequence C is present, field :36a::QINT is mandatory <span class="ecodes">(Error code(s): E02)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :23G:REPE is ...</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And sequence C is ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then in sequence C<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">field :36a::QINT is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td rowspan="2" align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="67%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C4&nbsp;</b></dt>
+
+<dd>
+<p>In sequence A, if field :22F::CAEV//OTHR is present, then sequence F must be present, and field :70E::ADTX must be present in the message.<span class="ecodes">(Error code(s): E03)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence A, if field:22F::CAEV//OTHR is ... &nbsp;
+<a class="FOOTNOTEREF" href="#foot1036">(1)</a>&nbsp;</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then sequence F is ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in sequence F field :70E::ADTX is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="FOOTNOTE"><span class="FOOTNOTENUMBER">(1)</span>
+<a name="foot1036"></a>&nbsp; if the Data Source Scheme is present in field :22F::CAEV//OTHR then the conditional rule does not apply.
+</p>
+</dd>
+
+<dt><b>C5&nbsp;</b></dt>
+
+<dd>
+<p>In each occurrence of sequence E, if field :22F::CAOP//OTHR is present, then in the same occurrence of sequence E field :70E::ADTX is mandatory <span class="ecodes">(Error code(s): E79)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In each occurrence of sequence E<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :22F::CAOP//OTHR is ... &nbsp;
+<a class="FOOTNOTEREF" href="#foot1037">(1)</a>&nbsp;</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In the same occurrence of sequence E<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">then field :70E::ADTX is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="FOOTNOTE"><span class="FOOTNOTENUMBER">(1)</span>
+<a name="foot1037"></a>&nbsp; if the Data Source Scheme is present in field :22F::CAOP//OTHR then the conditional rule does not apply.
+</p>
+</dd>
+
+<dt><b>C6&nbsp;</b></dt>
+
+<dd>
+<p>In sequence A, if field :22F::CAEV//RHDI is present, then sequence C is not allowed.
+</p>
+<p>In sequence A, if field :22F::CAEV//RHTS is present, then sequence C is mandatory.
+</p>
+<p>In sequence A, if field :22F::CAEV//INFO is present, then sequence C is not allowed and sequence E is not allowed <span class="ecodes">(Error code(s): E01)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field 22F::CAEV is ... &nbsp;
+<a class="FOOTNOTEREF" href="#foot1038">(1)</a>&nbsp;</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then sequence C is ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And sequence E is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:22F::CAEV//RHDI</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:22F::CAEV//RHTS</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:22F::CAEV//INFO</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Other</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="FOOTNOTE"><span class="FOOTNOTENUMBER">(1)</span>
+<a name="foot1038"></a>&nbsp; if the Data Source Scheme is present in field :22F::CAEV then the conditional rule does not apply.
+</p>
+</dd>
+
+<dt><b>C7&nbsp;</b></dt>
+
+<dd>
+<p class="stem">In each occurrence of sequence E and subsequence E2:
+</p>
+
+<ul>
+<li>
+<p>field :92F::GRSS cannot appear more than once, and field :92H::GRSS cannot appear more than once, and field :92K::GRSS cannot appear more than once and only one of the fields :92F::GRSS, :92H::GRSS and :92K::GRSS may be present.
+</p></li>
+
+<li>
+<p>field :92F::NETT cannot appear more than once, and field :92H::NETT cannot appear more than once, and field :92K::NETT cannot appear more than once and only one of the fields :92F::NETT, :92H::NETT and :92K::NETT may be present.
+</p></li>
+
+<li>
+<p>field :92A::TAXR cannot appear more than once, and field :92F::TAXR cannot appear more than once, and field :92K::TAXR cannot appear more than once and only one of the fields :92A::TAXR, :92F::TAXR and :92K::TAXR may be present.
+</p></li>
+
+<li>
+<p>field :92A::WITL cannot appear more than once, and field :92F::WITL cannot appear more than once, and field :92K::WITL cannot appear more than once and only one of the fields :92A::WITL, :92F::WITL and :92K::WITL may be present.
+</p></li>
+
+</ul>
+
+
+<p>In each occurrence of subsequence E2, field :92A::DEEM cannot appear more than once and field :92F::DEEM cannot appear more than once, and field :92K::DEEM cannot appear more than once and only one of the fields :92A::DEEM, :92F:: DEEM and :92K:: DEEM may be present.
+</p>
+<p><span class="ecodes">(Error code(s): E77)</span>.
+</p>
+</dd>
+
+<dt><b>C8&nbsp;</b></dt>
+
+<dd>
+<p class="stem">In each occurrence of sequence E and subsequence E2:
+</p>
+
+<ul>
+<li>
+<p>if field :92J::GRSS is present more than once, then for each occurrence of field :92J::GRSS, the Rate Type Code must be different.
+</p></li>
+
+<li>
+<p>if field :92J::NETT is present more than once, then for each occurrence of field :92J::NETT, the Rate Type Code must be different.
+</p></li>
+
+<li>
+<p>if field :92R::TAXR is present more than once, then for each occurrence of field :92R::TAXR, the Rate Type Code must be different .
+</p></li>
+
+<li>
+<p>if field :92R::WITL is present more than once, then for each occurrence of field :92R::WITL, the Rate Type Code must be different.
+</p></li>
+
+</ul>
+
+
+<p class="stem">In each occurrence of subsequence E2:
+</p>
+
+<ul>
+<li>
+<p>If field :92J::DEEM is present more than once, then for each occurrence of field :92J::DEEM, the Rate Type Code must be different.
+</p></li>
+
+<li>
+<p>If field :92R::DEEM is present more than once, then for each occurrence of field :92R::DEEM, the Rate Type Code must be different.
+</p></li>
+
+</ul>
+
+
+<p><span class="ecodes">(Error code(s): E78)</span>.
+</p>
+</dd>
+
+<dt><b>C9&nbsp;</b></dt>
+
+<dd>
+<p>If the message is a replacement, an eligible balance notification or a reminder, that is, Function of the Message (field 23G) is REPL, REPE or RMDR, then subsequence A1 (Linkages) must be present at least once in the message, and in one and only one occurrence of A1, field :20C::PREV must be present; consequently, in all other occurrences of A1, field :20C::PREV is not allowed.
+</p>
+<p>If the message is a cancellation or a withdrawal that is, Function of the Message (field 23G) is respectively CANC or WITH, then subsequence A1 (Linkages) is optional in the message, and field :20C::PREV may only appear once in only one occurrence of A1; consequently, in all other occurrences of A1, field :20C::PREV is not allowed <span class="ecodes">(Error code(s): E08)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">If field :23G: is ...</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then subsequence A1 is ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And field :20C::PREV is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPL, REPE or RMDR</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory (minimum one occurrence of A1 must be present)</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory in one occurrence of subsequence A1, and not allowed in all other occurrences of subsequence A1</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CANC or WITH</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional in one single occurrence of subsequence A1, and not allowed in all other occurrences of subsequence A1</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NEWM</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C10&nbsp;</b></dt>
+
+<dd>
+<p>If field :70E::NAME is used in sequence D, then field :22F::CAEV//CHAN must be present in sequence A and 22F::CHAN//NAME must be present in sequence D <span class="ecodes">(Error code(s): D99)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In sequence D<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :70E::NAME is ...</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then sequence A field :22F::CAEV//CHAN is ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And sequence D field :22F::CHAN//NAME is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory (DSS must not be present)</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory (DSS must not be present)</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C11&nbsp;</b></dt>
+
+<dd>
+<p>In sequence A, if field :22F::CAEV//RHDI is present , then sequence D must be present and field :22F::RHDI must be present in sequence D <span class="ecodes">(Error code(s): E06)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :22F::CAEV//RHDI is ... &nbsp;
+<a class="FOOTNOTEREF" href="#foot1040">(1)</a>&nbsp;</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then sequence D is ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in sequence D field :22F::RHDI is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="FOOTNOTE"><span class="FOOTNOTENUMBER">(1)</span>
+<a name="foot1040"></a>&nbsp; if the Data Source Scheme is present in field :22F::CAEV then the conditional rule does not apply.
+</p>
+</dd>
+
+<dt><b>C12&nbsp;</b></dt>
+
+<dd>
+<p>In each occurrence of subsequence B2, field :93B::ELIG cannot appear more than twice (maximum two occurrences). When repeated, one occurrence must have Quantity Type Code FAMT and the other occurrence must have Quantity Type Code AMOR <span class="ecodes">(Error code(s): C71)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Subsequence B2<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :93B::ELIG is ...</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then one occurrence of :93B::ELIG must be ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And the other occurrence of :93B::ELIG must be ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Repeated</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:93B::ELIG//FAMT and DSS must not be present</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:93B::ELIG//AMOR and DSS must not be present</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not repeated</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C13&nbsp;</b></dt>
+
+<dd>
+<p>In each occurrence of subsequence E1, field :36B::ENTL cannot appear more than twice (maximum two occurrences). When repeated, one occurrence must have Quantity Type Code FAMT and the other occurrence must have Quantity Type Code AMOR <span class="ecodes">(Error code(s): C72)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Subsequence E1<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :36B::ENTL is ...</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then one occurrence of :36B::ENTL must be ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And the other occurrence of :36B::ENTL must be ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Repeated</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:36B::ENTL//FAMT</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:36B::ENTL//AMOR</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not repeated</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C14&nbsp;</b></dt>
+
+<dd>
+<p>If the message is a replacement (:23G::REPL), then in sequence A field :25D::PROC, the code ENTL is not allowed and in sequence D field :22F::ADDB, the code CAPA is not allowed. If the message is an eligible balance notification (:23G::REPE), then in sequence A field :25D::PROC, the code ENTL is not allowed and in sequence D field :22F::ADDB, the code CAPA is optional <span class="ecodes">(Error code(s): E09)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :23G: is ...</th>
+
+<th align="CENTER" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then in field 25D ...</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in sequence D, in field 22F ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPL</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:25D::PROC//ENTL is not allowed without DSS</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:22F::ADDB//CAPA is not allowed without DSS</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REPE</td>
+
+<td align="LEFT" valign="TOP" width="33%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:25D::PROC//ENTL is not allowed without DSS</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:22F::ADDB//CAPA is optional</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C15&nbsp;</b></dt>
+
+<dd>
+<p>If the message is an additional business process (:23G::ADDB) then sequence D Corporate Action Details is mandatory, and in sequence D, field :22F::ADDB is mandatory, only one occurrence is allowed, and it must either contain code CLAI (Claim or Compensation), TAXR (Tax Refund) or REVR (Notification or Reversal)<span class="ecodes">(Error code(s): E11)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :23G: is ...</th>
+
+<th align="CENTER" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then sequence D is ...</th>
+
+<th align="CENTER" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And, in sequence D, field :22F::ADDB is ...</th>
+
+<th align="CENTER" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And, in sequence D, field :22F::ADDB//... must be</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td rowspan="3" align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">ADDB</td>
+
+<td rowspan="3" align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+<td rowspan="3" align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory, only one occurrence</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">CLAI, or</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">TAXR, or</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="100%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">REVR</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C16&nbsp;</b></dt>
+
+<dd>
+<p>If in all occurrences of sequence E, subsequence E1 and subsequence E2 are not present, then in sequence D field :98a::PAYD is optional, in all other cases, field :98a::PAYD, in sequence D, is not allowed <span class="ecodes">(Error code(s): E24)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">If sequence D is ...</th>
+
+<th align="CENTER" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And (in the message) subsequence E1 is ...</th>
+
+<th align="CENTER" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And (in the message) subsequence E2 is ...</th>
+
+<th align="CENTER" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then in sequence D, field :98a::PAYD is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">&nbsp;</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="25%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C17&nbsp;</b></dt>
+
+<dd>
+<p>If the message is new (:23G::NEWM) and if in sequence A field :25D::PROC the code ENTL is present, then sequence D Corporate Action Details is mandatory and in sequence D field :22F::ADDB is mandatory and one occurrence of :22F::ADDB must contain the code CAPA <span class="ecodes">(Error code(s): E22)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :23G: is ...</th>
+
+<th align="CENTER" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in field 25D ...</th>
+
+<th align="CENTER" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then sequence D is ...</th>
+
+<th align="CENTER" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And, in sequence D, field :22F::ADDB is ...</th>
+
+<th align="CENTER" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in sequence D, in field :22F::ADDB ... </th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NEWM</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:25D::PROC//ENTL is present without DSS</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+<td align="LEFT" valign="TOP" width="20%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">One occurrence must be :22F::ADDB//CAPA and DSS must not be present in that occurrence</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+<p>If the message is new (:23G::NEWM) and if in sequence A field :25D::PROC the code ENTL is not present, then in sequence D in field :22F::ADDB, the code CAPA is not allowed <span class="ecodes">(Error code(s): E22)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In sequence A<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :23G: is ...</th>
+
+<th align="CENTER" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in field 25D ...</th>
+
+<th align="CENTER" valign="TOP" width="21%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And if sequence D is ...</th>
+
+<th align="CENTER" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And if in sequence D, field :22F::ADDB is ...</th>
+
+<th align="CENTER" valign="TOP" width="22%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then in sequence D field :22F::ADDB// ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td rowspan="3" align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">NEWM</td>
+
+<td rowspan="3" align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:25D::PROC//ENTL is not present</td>
+
+<td rowspan="2" align="LEFT" valign="TOP" width="21%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="22%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">:22F::ADDB//CAPA is not allowed</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="81%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="21%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="19%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="60%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C18&nbsp;</b></dt>
+
+<dd>
+<p>If field :92B::IDFX Issuer Declared Exchange Rate is present in any occurrence of sequence E, then sequence D must be present and field :92a::DEVI Declared Rate must be present in sequence D <span class="ecodes">(Error code(s): E21)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In sequence E<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :92B::IDFX is ...</th>
+
+<th align="CENTER" valign="TOP" width="32%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Then sequence D is</th>
+
+<th align="CENTER" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">And in sequence D,<br><img src="cursor0.gif" alt="" name="space" height="10" width="10"> field :92a::DEVI is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="32%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="32%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+<td align="LEFT" valign="TOP" width="34%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not applicable</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C19&nbsp;</b></dt>
+
+<dd>
+<p>In each occurrence of sequence E and subsequence E2, if one or more than one occurrence of field :92a::WITL is present, then at least one occurrence of field :92a::TAXR must be present <span class="ecodes">(Error code(s): E20)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In each occurrence of sequence E and subsequence E2<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :92a::WITL is ...</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In the same occurrence of sequence E and subsequence E2<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">then field:92a::TAXR is ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Mandatory</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C20&nbsp;</b></dt>
+
+<dd>
+<p>In each occurrence of sequence E, if :22F::OPTF//QCAS is not present, then in the same occurrence of sequence E fields :90a::MACI, :90a::MICI and :90a::MMCI are not allowed <span class="ecodes">(Error code(s): E19)</span>.
+</p>
+<table class="tblinitem" width="90%" border="1" cellpadding="5">
+<thead>
+<tr>
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In each occurrence of sequence E<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">if field :22F::OPTF//QCAS is ...</th>
+
+<th align="CENTER" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">In the same occurrence of sequence E<br><img src="cursor0.gif" alt="" name="space" height="10" width="10">then fields :90a::MACI, :90a::MICI and :90a::MMCI are ...</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Present</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Optional</td>
+
+</tr>
+
+<tr>
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not present</td>
+
+<td align="LEFT" valign="TOP" width="50%"><img src="cursor0.gif" alt="" name="space" height="10" width="10">Not allowed</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<p class="spacer">
+</p>
+</dd>
+
+<dt><b>C21&nbsp;</b></dt>
+
+<dd>
+<p>In each occurrence of sequence E, field :98A::BORD cannot appear more than once, field :98B::BORD cannot appear more than once, field :98C::BORD cannot appear more than once and field :98E::BORD cannot appear more than once and only one of the fields :98A::BORD, :98B::BORD, :98C::BORD and :98E::BORD may be present <span class="ecodes">(Error code(s): E25)</span>.
+</p>
+</dd>
+
+<dt><b>C22&nbsp;</b></dt>
+
+<dd>
+<p>In each occurrence of sequence E, if field :98J::BORD is present more than once, then for each occurrence of :98J::BORD, the Identifier Code must be different.
+</p>
+<p>In each occurrence of sequence E, if field :98K::BORD is present more than once, then for each occurrence of :98K::BORD, the Proprietary Code must be different <span class="ecodes">(Error code(s): E26)</span>.
+</p>
+</dd>
+
+</dl>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="alec.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="alee.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

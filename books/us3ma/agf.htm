@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;304 Guidelines</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 304 Guidelines">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT304Title">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 304 Guidelines">
+<meta name="Type" content="Title">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 304 Guidelines" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 304">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 304 Guidelines" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="agf.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="age.htm";
+var linkup="";
+var linkright="agg001.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genagf"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;304 Guidelines</h2>
+
+
+<p>To cover securities transactions, fund managers may need to buy and sell currencies. The term 'fund managers' includes investment managers, investment advisors, advisors and managers.
+</p>
+<p>The fund manager arranges these deals either with an independent (third party) forex institution, the executing broker, or with the treasury department of its custodian. Having exchanged and matched the confirmation with the third party, the fund manager informs the custodian about the deal. This is done for accounting as well as for settlement purposes.
+</p>
+<p>The aim of the MT 304 is to automate the information flow between the fund manager and the custodian<ins><span id="ES3832" class="inserted"><a name="c1"><img src="cursor0.gif" alt="" name="imgC1" height="10" width="10"></a> and other interested third-parties, such as a fund administrator or fund accountant</span></ins>
+
+. The confirmation of the forex deal with the executing broker is still done through the exchange and matching of the MT 300 Foreign Exchange Confirmations:
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030011.gif" alt="D0030011" border="0">
+</p>
+</div>
+
+
+<p>Subsequently, the fund manager generates the MT 304 and sends it to the global custody department of its custodian bank for settlement and accounting.
+</p>
+<p>This implies that when the MT 304 is sent, the settlement instructions have been checked between the fund manager and the executing broker. Consequently, the MT 304 only needs to specify where the custodian is expecting the money from (delivery agent for the amount bought) and who it has to pay (receiving agent for the amount sold).
+</p>
+<p>If the deal was agreed with the treasury department of the custodian, an MT 304 is not always needed as the message confirming the forex deal covers the purpose of sending an MT 304.
+</p>
+<p>The custodian bank enters the instruction into its accounting systems for reporting and valuation. It is also entered into its payment system to effect payment depending on the type of settlement. For a spot foreign exchange an MT 202 or MT 210 may be generated; for a forward currency contract this may be the settlement of a gain or loss via a separate currency payment.
+</p>
+<p>Because the message constitutes a settlement instruction, the MT 304 must be authenticated.
+</p>
+<p>In the case of block trades, the fund manager groups several currency requirements into one deal. In this case a separate MT 304 is sent for each individual allocation.
+</p>
+<p class="stem">Regarding an MT 304 cancellation, the MT 392 can still be used instead of an MT 304 with CANC in Type of Operation. The following issues, however, have to be considered:
+</p>
+
+<ul>
+<li>
+<p>Acknowledgement: By sending the MT 392, the sender requests the receiver to cancel the confirmation previously sent. The receiver must acknowledge the request by sending an MT 396 back to the sender of the MT 392.
+</p></li>
+
+<li>
+<p>Routing: an MT 304 with CANC is easily routed to the same department as the original MT 304. MT 392s are usually routed like other MTs 3nn to the forex back office instead of to the custody department.
+</p></li>
+
+<li>
+<p>Authentication: in the SWIFT context, the 392 is not authenticated. Using the MT 392 to cancel an authenticated MT 304 instruction means that a non-authenticated message cancels an authenticated one.
+</p></li>
+
+<li>
+<p>Repetition of the original message: in the MT 392 only the Sender's Reference of the previous message is mandatory, all other fields are optional. When an MT 304 with CANC is used, the fields to be copied are mandated by the standard.
+</p></li>
+
+</ul>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="age.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="agg001.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+

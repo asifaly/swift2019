@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html><head>
+<title>Standards - Category 7 - Frameset</title>
+<meta name="Description" content="Standards - Category 7">
+<meta name="Date.Issued" content="08 February 2019">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+// preload images
+var img_blank = new Image();
+img_blank.src="blank.gif" ; // default icon for separator
+var img_folder = new Image();
+img_folder.src="fopenoff.gif" ; // default icon for folder
+var img_doc = new Image();
+img_doc.src="docoff.gif" ; // default icon for document
+// end of script -->
+</script>
+<script language="JavaScript" type="text/JavaScript" src="htframe.js"></script>
+</head>
+
+<script>
+   var Page = getBodyFrameURL();
+   //alert(Page);
+   if (Page.indexOf('.pdf')==-1) {
+      document.writeln("<frameset cols='35%,*' onresize='this.FRAME_TOC.location.reload()'>");
+      document.writeln("<frame src='httoc.htm' name='FRAME_TOC' scrolling='YES' marginwidth='0' marginheight='0' noresize='NORESIZE' frameborder='YES'>");
+      document.writeln("<frame src='" + Page + "' name='FRAME_BODY' scrolling='YES' marginwidth='0' marginheight='0' noresize='NORESIZE' frameborder='YES'>");
+      document.writeln("<noframes>");
+      document.writeln("<body>");
+      document.writeln("<p>Your browser must support frames to view this document!</p>");
+      document.writeln("<p>Please upgrade to a browser supporting frames.</p>");
+      document.writeln("</body>");
+      document.writeln("</noframes>");
+      document.writeln("</frameset>");
+   }
+   else {
+      document.location.replace(Page);
+   }
+</script>
+</html>

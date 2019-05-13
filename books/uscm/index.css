@@ -1,0 +1,137 @@
+/* - BASE elements - */
+
+
+body {
+	background: #FFF;
+	color: #000000;
+	cursor: default;
+	font: Arial,Helvetica,sans-serif;
+	font-size:10pt;
+	margin: 5px 2% 0em 15px;
+}
+
+img {
+	border-width: 0px;
+}
+
+table {
+	margin: 4px 0;
+}
+
+td {
+	padding: 2px 5px;
+}
+
+th {
+	background: #EEEEEE;
+	color: #013b80;
+	text-align: center;
+}
+
+
+/* - Heading and title styles - */
+
+h1.idxtitle {
+	/*background: #FFFFFF url(lines.gif) repeat;*/
+	color: #013b80;
+	margin: 0em 0% 0em -15px;
+	padding: 10px 0 10px 10px;
+}
+
+/* - Anchors - */
+
+a:link {
+	background: transparent;
+	color: #013b80;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size:10pt;
+}
+
+a:visited {
+	background: transparent;
+	color: #013b80;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size:10pt;
+}
+
+a:hover, a:active {
+	background: transparent;
+	color: #0878e5;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size:10pt;
+}
+
+a.footnoteref {
+	font-size: 8pt;
+	vertical-align: super;
+}
+
+/* - Navigation - */
+
+div.links {
+	/*/*background: #FFFFFF url(lines.gif) repeat;*/*/
+	margin-left: -15px;
+}
+
+p.links {
+	padding-bottom: 2px;
+	padding-top: 5px;
+	text-align: center;
+}
+
+
+
+/* ---------------------- Page-specific Containers ----------------------*/
+
+p.idxnav {
+	border: thin solid #00CCFF;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}
+
+p.label  {
+	/*background: #FFFFFF url(lines.gif) repeat;*/
+	font-family: Arial,Helvetica,sans-serif;
+	color: #013b80;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+ul.IdxEntryGroup{
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: #FFFFFF;
+	color: #000000;
+	margin-left: 0px;
+	padding: 5px 0px 5px 5px;
+}
+p.idxterm {
+	font-weight: bold;
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: #EEEEEE;
+	color: #013b80;
+	margin-left: 0px;
+	padding: 5px 0px 5px 5px;
+}
+ul.idxentry p.idxterm {
+	background-color: transparent;
+	font-weight: bold;
+}
+
+ul li {
+	list-style: none;
+	line-height: 85%;
+}
+
+.shorttitle
+{
+	font-family: Arial,Helvetica,sans-serif;
+	color: #013b80;
+	font-size: 20pt;
+	font-weight: bold;
+	margin-left: -10px;
+	padding-left: 10px;
+}
+
+
+

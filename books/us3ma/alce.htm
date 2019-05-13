@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+ 
+<html>
+<head>
+<title>Standards - Category 3 - MT&#160;340 Usage Rules</title>
+<link href="mark.css" type="text/css" rel="stylesheet">
+<meta http-equiv="Content-Language" content="EN_UK">
+<meta name="Creator" content="S.W.I.F.T. User Documentation">
+<meta name="Date.Issued" content="21 December 2018">
+<meta name="Description" content="Standards, Standards MT, November 2019, Category 3, Message Reference Guide: Volume 1 (MT 300 - MT 341), Standards Release Guide, MT 340 Usage Rules">
+<meta name="Format" content="HTML">
+<meta name="Identifier" content="MT340UsageRules">
+<meta name="Keywords" content="SWIFT, Standards, Standards MT, Category 3, Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="Language" content="EN_UK">
+<meta name="Publisher" content="S.W.I.F.T. SCRL">
+<meta name="Relation.IsPartOf" content="Standards - Category 3 - Volume 1">
+<meta name="Rights" content="Copyright (c) S.W.I.F.T. SCRL('SWIFT'), avenue Adele 1, B-1310 La Hulpe, Belgium. 21 December 2018. All rights reserved.">
+<meta name="Subject" content="MT 340 Usage Rules">
+<meta name="Type" content="UsageRules">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var selftitle  = "MT 340 Usage Rules" ;
+// --></script>
+<meta name="bookid" content="cat3v1">
+<meta name="productfamily" content="Standards">
+<meta name="productname" content="Standards MT">
+<meta name="productrelease" content="November 2019">
+<meta name="subproductname" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives">
+<meta name="subproductrelease" content="">
+<meta name="Book.Context" content="MT 340">
+<meta name="Book.Product" content="Category 3 - Treasury Markets - Foreign Exchange, Money Markets and Derivatives for Standards MT November 2019">
+<meta name="Book.Title" content="Message Reference Guide: Volume 1 (MT 300 - MT 341) - Standards Release Guide">
+<meta name="informationtypes" content="Standards">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var contextStr  = "MT 340 Usage Rules" ;
+// --></script>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=ISO-8859-1">
+<script type="text/JavaScript" language="JavaScript">
+<!--
+var imgCursorOn  = new Image() ;     // the image to show when the cursor is on
+imgCursorOn.src  = 'CURSOR1.GIF';
+var imgCursorOff = new Image() ;     // the image to show when the cursor is off
+imgCursorOff.src = 'CURSOR0.GIF' ;
+function refreshRev() {
+   if (parent!=self && parent.parent != parent.self && parent.parent.frames.length==2 && parent.parent.frames[1]==parent) {
+      if (parent.parent.frames[0].frames.length==0) {
+         if (parent.parent.frames[0].revMax!=null) {
+            parent.parent.frames[0].refreshRevCursor();
+         }
+      }
+      else {
+         if (parent.parent.frames[0].frames.length==2) {
+            if (parent.parent.frames[0].frames[1].revMax!=null) {
+               parent.parent.frames[0].frames[1].refreshRevCursor();
+            }
+         }
+      }
+   }
+}
+// end-of-script --></script>
+<link href="swiftuhb.css" type="text/css" rel="stylesheet">
+<script language="JavaScript" type="text/JavaScript" src="uhbdoc.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+var toptitle="Standards - Category 3 - Volume 1";
+var linkself="alce.htm";
+var linkparent="";
+var leaf=true;
+var linkleft="alcd.htm";
+var linkup="";
+var linkright="alcf.htm";
+var linktop="title.htm";
+
+function onLoadUhbDoc() {
+   resyncUhb();
+   refreshRev(); 
+}
+//-->
+</script>
+</head>
+<body onload="onLoadUhbDoc();" class="BOOK"><div class="noprint"><div class="showhidetoc"><a href="javascript:showHideToc();"><img src="hidetoc.gif" name="showhidetoc" alt="Show/Hide TOC"></a></div></div>
+<span class="noprint"><a name="c0"></a>
+</span>
+<a name="genalce"></a>
+<div class="noprint"><a name="top"></a>
+</div>
+
+
+
+<h2>MT&nbsp;340 Usage Rules</h2>
+
+
+
+<ul>
+<li>
+<p class="stem">When cancelling a previously sent message (field 22A is CANC) using MT 340:
+</p>
+
+<ul>
+<li>
+<p>field 21 must contain the reference, that is, the content of field 20, of the message containing the instruction to be cancelled
+</p></li>
+
+<li>
+<p>the cancellation message must contain at least the mandatory fields of the original message.
+</p></li>
+
+</ul>
+</li>
+
+<li>
+<p class="stem">To amend a previously sent message (field 22A is AMND):
+</p>
+
+<ul>
+<li>
+<p>field 21 must contain the reference, that is, the content of field 20, of the message containing the instruction to be amended
+</p></li>
+
+<li>
+<p>the amendment message must contain both the unchanged and the changed/new fields of the original message
+</p></li>
+
+<li>
+<p>the amendment message replaces the original message.
+</p></li>
+
+</ul>
+</li>
+
+</ul>
+
+
+<p>The MT 340 is used to confirm a deal between two parties, A and B:
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030062.gif" alt="D0030062" border="0">
+</p>
+</div>
+
+
+<p>It can also be exchanged on behalf of an institution or corporate:
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030057.gif" alt="D0030057" border="0">
+</p>
+</div>
+
+
+<p>The MT 340 can also be used as a unilateral confirmation from a money broker to the parties A and B:
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030058.gif" alt="D0030058" border="0">
+</p>
+</div>
+
+
+<p>Or, when two money brokers are involved, between the money brokers:
+</p>
+<div class="DIAGRAM">
+<p class="PIMG"><img src="d0030059.gif" alt="D0030059" border="0">
+</p>
+</div>
+
+
+<p class="stem">Party A and party B are the legal entities which have agreed to the transaction. Party A is either:
+</p>
+
+<ul>
+<li>
+<p>the Sender
+</p></li>
+
+<li>
+<p>the institution/corporate on whose behalf the message is sent
+</p></li>
+
+<li>
+<p>one of the institutions for which the broker arranged the deal and to whom he is sending the confirmation
+</p></li>
+
+<li>
+<p>or, when a money broker confirms to another money broker, the party for which the sending broker arranged the deal.
+</p></li>
+
+</ul>
+
+
+<p class="stem">Party B is either:
+</p>
+
+<ul>
+<li>
+<p>the Receiver
+</p></li>
+
+<li>
+<p>the institution/corporate on whose behalf the message is received
+</p></li>
+
+<li>
+<p>the other institutions for which the broker arranged the deal, that is, party A's counterparty
+</p></li>
+
+<li>
+<p>when a money broker confirms to another money broker, party A's counterparty.
+</p></li>
+
+</ul>
+
+
+<p><b>Industry Requirements</b>
+</p>
+<p class="stem">The following guidelines apply when sending/exchanging an MT 340:
+</p>
+
+<ul>
+<li>
+<p>When ISDA is mentioned in field 77H (Type), this confirmation constitutes a Confirmation as referred to in, and supplements, forms a part of and is subject to, the ISDA Master Agreement or the Interest Rate and Currency Exchange Agreement dated as of (see field 77H) between Party A and Party B as amended and supplemented from time to time (Agreement). All provisions contained in the Agreement govern this Confirmation except as expressly modified below.
+</p>
+<p>For the purpose of this document ISDA Master shall mean either the ISDA Master Agreement or the Interest Rate and Currency Exchange Agreement, or vice-versa.
+</p>
+<p>If Party A and Party B have not entered into any ISDA Master Agreement or other master agreement, Party A and Party B agree to use all reasonable efforts to promptly negotiate, execute, and deliver an agreement in the form of a 2002 ISDA Master Agreement (the "ISDA Form"), with such modifications as Party A and Party B will in good faith agree. Upon the execution by Party A and Party B of such an agreement, this Confirmation will supplement, form part of, and be subject to that agreement. All provisions contained or incorporated by reference in that agreement upon its execution will govern this Confirmation.
+</p></li>
+
+<li>
+<p>When AFB is mentioned in field 77H (Type), this Confirmation constitutes a Confirmation as referred to in, and supplements, forms a part of and is subject to, the AFB Master Agreement for foreign exchange and derivatives transactions dated (see field 77H) between Party A and Party B as amended and supplemented from time to time (Agreement). All provisions contained in the Agreement govern this Confirmation except as expressly modified below.
+</p></li>
+
+<li>
+<p>If field 77H specifies DERV as the type of master agreement and if Party A and Party B are parties to a Deutscher Rahmenvertrag f&uuml;r Finanztermingesch&auml;fte (the German Master Agreement), this Transaction is subject to the terms and conditions of that German Master Agreement.
+</p>
+<p>If Party A and Party B have not entered into a German Master Agreement ("Rahmenvertrag f&uuml;r Finanztermingesch&auml;fte"), Party A and Party B agree to use all reasonable efforts to promptly negotiate, execute, and deliver a German Master Agreement. Upon the execution by Party A and Party B of such an agreement, this Confirmation will supplement, form part of, and be subject to that agreement. All provisions contained or incorporated by reference in that agreement upon its execution will govern this Confirmation.
+</p></li>
+
+<li>
+<p>If some of the standard definitions linked to the agreement specified in field 77H do not apply to the confirmation of a trade under that agreement, a long form confirmation should be sent as there isn't an appropriate SWIFT message for it.
+</p></li>
+
+<li>
+<p>If a collateral agreement exists between two confirming parties, then the FRA is considered subject to that agreement.
+</p></li>
+
+<li>
+<p>The Reset Date Specification for all FRA's confirmed with the MT 340 is FIRST, that is, the first day of the Calculation Period.
+</p></li>
+
+<li>
+<p>The Reset Date is equal to the Payment Date.
+</p></li>
+
+<li>
+<p>Modified Following Business Day Convention means: the non-business date will be adjusted to the first following day that is a business day unless that day falls in the next calendar month, in which case that date will be the first preceding business day.
+</p></li>
+
+<li>
+<p>For all FRA's confirmed with the MT 340, the Effective Date is equal to the Payment Date if ISDA is specified in field 77H or the Settlement Date if FRABBA is specified in 77H; provided however that if the Effective Date is a non-business day it will remain unadjusted, however, the Payment Date/Settlement Date shall be adjusted in accordance with Modified Following Business Day Convention.
+</p></li>
+
+<li>
+<p>The message only handles the contract part of the Forward Rate Agreement. It is not used for confirming settlement details following the establishment of the settlement rate on fixing date. This information is confirmed using an MT 341.
+</p></li>
+
+<li>
+<p>For the actual transfer of funds or the confirmation of credits and debits, other messages outside Category 3 are available such as the MTs 202, 203, 205, Financial Institution Transfer messages and the MTs 900, 910, 950, Confirmation of Debit/Credit and statement messages, respectively.
+</p>
+<p>In all cases, the common reference of the MT 340 must be quoted in the relevant reference field, that is, field 21 of the MTs 202, 203, 205.
+</p></li>
+
+<li>
+<p>If the underlying contract is amended/cancelled on a bilateral basis, this should be agreed upon by a bilateral exchange of confirmations with either code AMND or CANC, respectively.
+</p></li>
+
+<li>
+<p>The cancellation function is only used to cancel an erroneous message, not to terminate the FRA.
+</p></li>
+
+</ul>
+
+<div class="noprint">
+<p class="footer" align="CENTER"><a href="alcd.htm"><img src="pgback.gif" alt="Previous Page"></a>&nbsp;
+<a href="#top"><img src="pgtop.gif" alt="Top Of Page"></a>&nbsp;
+<a href="alcf.htm"><img src="pgnext.gif" alt="Next Page"></a> 
+</p>
+</div>
+
+</body>
+</html>
+
